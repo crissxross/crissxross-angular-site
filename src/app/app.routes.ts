@@ -19,6 +19,10 @@ export const routes: Routes = [
     loadChildren: () => import('./features/oot/oot.module').then(m => m.OotModule)
   },
   {
+    path: 'remixworx',
+    loadChildren: () => import('./features/remixworx/remixworx.module').then(m => m.RemixworxModule)
+  },
+  {
     path: 'MovingPix',
     redirectTo: 'movingpix'
   },
