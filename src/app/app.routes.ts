@@ -11,6 +11,14 @@ export const routes: Routes = [
     loadChildren: () => import('./features/home/home.module').then(m => m.HomeModule)
   },
   {
+    path: 'elit',
+    loadChildren: () => import('./features/elit/elit.module').then(m => m.ElitModule)
+  },
+  {
+    path: 'MovingPix',
+    redirectTo: 'movingpix'
+  },
+  {
     path: '**',
     redirectTo: 'home'
   }
