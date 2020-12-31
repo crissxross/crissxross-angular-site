@@ -23,6 +23,10 @@ export const routes: Routes = [
     loadChildren: () => import('./features/remixworx/remixworx.module').then(m => m.RemixworxModule)
   },
   {
+    path: 'movingpix',
+    loadChildren: () => import('./features/movingpix/movingpix.module').then(m => m.MovingpixModule)
+  },
+  {
     path: 'MovingPix',
     redirectTo: 'movingpix'
   },
