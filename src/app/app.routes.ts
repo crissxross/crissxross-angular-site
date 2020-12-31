@@ -15,6 +15,10 @@ export const routes: Routes = [
     loadChildren: () => import('./features/elit/elit.module').then(m => m.ElitModule)
   },
   {
+    path: 'oot',
+    loadChildren: () => import('./features/oot/oot.module').then(m => m.OotModule)
+  },
+  {
     path: 'MovingPix',
     redirectTo: 'movingpix'
   },
