@@ -2,21 +2,26 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
+import { ArtworkCardComponent } from './artwork-card/artwork-card.component';
+
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    ArtworkCardComponent
+  ],
   imports: [
     CommonModule,
     RouterModule,
-
-    // material...
+    // material...?
   ],
   exports: [
     CommonModule, // ngIf, ngFor
     RouterModule, // routerLink, <router-outlet>
+    // material...?
 
-    // material...
+    // components
+    ArtworkCardComponent
   ]
 })
 export class SharedModule { }
