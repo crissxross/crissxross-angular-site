@@ -1,1 +1,7 @@
-<p>showcase works!</p>
+<h1>Showcase</h1>
+<div class="cards-grid">
+  <div *ngFor="let artwork of artworks">
+    <cx-artwork-card [artwork]="artwork" class="crissxross-light-theme"
+    ></cx-artwork-card>
+  </div>
+</div>

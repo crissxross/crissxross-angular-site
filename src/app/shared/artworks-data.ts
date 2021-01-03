@@ -4,7 +4,7 @@ import { ArtWork } from '../models/artwork.model';
 
 // TODO - OR - put paragraphs in an array of strings ???
 
-export const ARTWORKS: ArtWork[] = [
+export const artworksData: ArtWork[] = [
   {
     id: 'inkubus',
     workUrl: 'http://www.dreamingmethods.com/inkubus/',

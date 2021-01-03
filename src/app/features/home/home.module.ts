@@ -11,7 +11,11 @@ import { ShowcaseComponent } from './showcase/showcase.component';
 
 
 @NgModule({
-  declarations: [HomeComponent, AboutComponent, ShowcaseComponent],
+  declarations: [
+    HomeComponent,
+    AboutComponent,
+    ShowcaseComponent,
+  ],
   imports: [
     SharedModule,
     RouterModule.forChild(routes)

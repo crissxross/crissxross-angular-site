@@ -1,0 +1,49 @@
+/* reset - as from CSS Demystified course */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* compare with Andy Bell's similar reset https://hankchizljaw.com/wrote/a-modern-css-reset/ */

@@ -1,1 +1,27 @@
-<p>artwork-card works!</p>
+<mat-card>
+
+  <ng-container *ngIf="artwork">
+
+      <mat-card-title-group>
+        <mat-card-title> {{artwork.title}} </mat-card-title>
+
+        <img *ngIf="artwork.displayType === 'list'"
+            mat-card-sm-image [alt]="artwork.id"
+            src="assets/img/{{artwork.id}}-thumb.png">
+      </mat-card-title-group>
+
+      <img *ngIf="artwork.displayType === 'featured'"
+          mat-card-image [alt]="artwork.id"
+          src="assets/img/{{artwork.id}}.png">
+
+      <mat-card-content>
+        {{artwork.description}}
+      </mat-card-content>
+
+      <mat-card-footer>
+        <a mat-button>Link to artwork page</a>
+      </mat-card-footer>
+
+  </ng-container>
+
+</mat-card>

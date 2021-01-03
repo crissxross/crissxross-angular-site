@@ -1,0 +1,25 @@
+.wrapper {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* can also include padding left & right */
+
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+// wrapper as used in web-platform tonmjs
+// .wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   gap: var(--s-1);
+//   min-height: 100vh;
+//   padding: var(--s-1);
+//   padding-right: 6rem;
+// }
