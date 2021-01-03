@@ -10,7 +10,8 @@ import { ArtWork } from '../../models/artwork.model';
 })
 export class ArtworkCardComponent implements OnInit {
 
-  // because of strict, marked this as optional to avoid errors
+  // because of strict, marked this as optional to avoid errors (i.e. artwork can be undefined)
+  // for more info, see https://fluin.io/blog/property-has-no-initializer-and-is-not-definitely-assigned
   @Input() artwork?: ArtWork;
 
   constructor() { }

@@ -2,25 +2,47 @@
 
   <ng-container *ngIf="artwork">
 
-      <mat-card-title-group>
-        <mat-card-title> {{artwork.title}} </mat-card-title>
+    <mat-card-title> {{artwork.title}} </mat-card-title>
 
-        <img *ngIf="artwork.displayType === 'list'"
-            mat-card-sm-image [alt]="artwork.id"
-            src="assets/img/{{artwork.id}}-thumb.png">
-      </mat-card-title-group>
+    <!-- TODO: use ngIf else - see https://ultimatecourses.com/blog/angular-ngif-else-then -->
 
-      <img *ngIf="artwork.displayType === 'featured'"
+    <img *ngIf="artwork.displayType === 'featured'"
           mat-card-image [alt]="artwork.id"
           src="assets/img/{{artwork.id}}.png">
 
-      <mat-card-content>
-        {{artwork.description}}
+    <mat-card-content>
+
+      <div *ngIf="artwork.displayType === 'featured'; else minor" class="major">
+
+        <!-- <img mat-card-image [alt]="artwork.id"
+            src="assets/img/{{artwork.id}}.png"> -->
+
+        <p>{{artwork.description}}</p>
+        <p>{{artwork.collab}}</p>
+
+        <a mat-raised-button href="#">More about {{artwork.title}} </a>
+
+      </div>
+
+
+      <ng-template #minor>
+        <div class="minor">
+
+          <p>{{artwork.description}}</p>
+
+          <img *ngIf="artwork.displayType === 'list'"
+              mat-card-sm-image [alt]="artwork.id"
+              src="assets/img/{{artwork.id}}-thumb.png">
+
+          <a mat-raised-button href="#">More about {{artwork.title}} </a>
+        </div>
+      </ng-template>
+
       </mat-card-content>
 
-      <mat-card-footer>
-        <a mat-button>Link to artwork page</a>
-      </mat-card-footer>
+      <!-- <mat-card-footer>
+        <a mat-button href="#">More about {{artwork.title}} </a>
+      </mat-card-footer> -->
 
   </ng-container>
 
