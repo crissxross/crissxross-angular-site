@@ -1,0 +1,86 @@
+
+// copied from CSS_Demystified
+:root {
+  /* modular scale from Every Layout - https://every-layout.dev/rudiments/modular-scale/ */
+  --ratio: 1.2;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+
+  /* line length for ease of reading */
+  --measure: 60ch;
+  --box-measure: 45ch; // e.g. cards in a grid
+
+  --gap-s: 1rem;
+  --gap-m: 2rem;
+  --gap-l: 3rem;
+
+  /* FONT FAMILY */
+  --ff-sans: Roboto, "Helvetica Neue", sans-serif;
+  // --ff-serif: "IBM Plex Serif", serif;
+
+  // NOTE: 400 denotes normal/default
+
+  /* FONT SIZES for handheld screen sizes */
+  --fs-200: 0.75rem;
+  --fs-300: 1rem;
+  --fs-400: 1.25rem;
+  --fs-500: 1.375rem;
+  --fs-600: 1.75rem;
+  --fs-900: 2.125rem;
+
+  /* FONT WEIGHTS */
+  --fw-200: 200;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-700: 700;
+  /* Note: 400 = normal, 700 = bold */
+
+  /* COLOURS */
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(218, 31%, 95%);
+  --clr-neutral-300: hsl(221, 12%, 70%);
+  --clr-neutral-400: hsl(221, 10%, 50%);
+  --clr-neutral-500: hsl(221, 12%, 30%);
+  --clr-neutral-900: hsl(240, 20%, 1%);
+
+  --clr-primary-300: #f3f7ff;
+  --clr-primary-400: #8ea8da;
+
+}
+
+/* for larger viewports */
+@media (min-width: 40em) {
+  :root {
+    --fs-500: 1.75rem;
+    --fs-600: 2.125rem;
+    --fs-900: 4.25rem;
+  }
+}
+
+
+/*********** REFERENCE: REM to PX ***********/
+/*
+0.5rem    8px
+0.625rem  10px
+0.75rem   12px
+0.875rem  14px
+1         16px
+1.125rem  18px
+1.25rem   20px
+1.375rem  22px
+1.5rem    24px
+1.75rem   28px
+1.875rem  30px
+1.5rem    32px
+2.125rem  34px
+2.25rem   36px
+*/

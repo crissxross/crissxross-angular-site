@@ -1,0 +1,23 @@
+.container {
+  padding: 1rem;
+}
+
+// .grid {
+//   display: grid;
+//   gap: 1rem;
+//   grid-template-columns: repeat(auto-fit, minmax(min(45ch, 100%), 1fr));
+// }
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+@supports (width: min(45ch, 100%)) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(45ch, 100%), 1fr));
+  }
+}
+// 👆 min() calculates the shortest length from a set of comma-separated values
+// so if viewport is narrower than 45ch, it goes to 100%
+// @supports because a few mobile browsers don't yet support min()
+// See https://every-layout.dev/layouts/grid/#the-solution

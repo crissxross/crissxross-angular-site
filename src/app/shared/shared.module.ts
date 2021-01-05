@@ -6,6 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 
 import { ArtworkCardComponent } from './artwork-card/artwork-card.component';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -19,12 +20,14 @@ import { ArtworkCardComponent } from './artwork-card/artwork-card.component';
     // material
     MatButtonModule,
     MatCardModule,
+    MatIconModule,
   ],
   exports: [
     CommonModule, // ngIf, ngFor
     RouterModule, // routerLink, <router-outlet>
     // material
     MatButtonModule,
+    MatIconModule,
 
     // components
     ArtworkCardComponent,
