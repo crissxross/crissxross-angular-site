@@ -1,6 +1,10 @@
+/* For styling bare HTML elements */
+
 // added by ng add material schematic
 html, body {
   height: 100%;
+  // TODO: why not 100vh?
+  // height: 100vh;
 }
 
 body {

@@ -1,6 +1,36 @@
-.container {
-  padding: 1rem;
+/* Class-based selectors for layouts */
+
+/* LAYOUT PRIMITIVES based on Every Layout https://every-layout.dev/layouts/ */
+
+/* LAYOUT PRIMITIVES */
+
+/* box-sizing overrides to content-box so that if left & right padding is needed, it won't take away from the --measure (60ch) maximum width */
+.center {
+  box-sizing: content-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--measure);
+  padding-left: var(--s1);
+  padding-right: var(--s1);
+/*   border: 1px solid green; */
 }
+
+.stack {
+  --space: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.stack > * + * {
+  margin-top: var(--space);
+}
+
 
 // .grid {
 //   display: grid;
@@ -10,14 +40,35 @@
 
 .grid {
   display: grid;
-  gap: 1rem;
+  gap: var(--space-lg);
 }
-@supports (width: min(45ch, 100%)) {
+@supports (width: min(var(--box-measure), 100%)) {
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(min(45ch, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--box-measure), 100%), 1fr));
   }
 }
 // 👆 min() calculates the shortest length from a set of comma-separated values
-// so if viewport is narrower than 45ch, it goes to 100%
+// so if viewport is narrower than --box-measure (45ch), it goes to 100%
 // @supports because a few mobile browsers don't yet support min()
 // See https://every-layout.dev/layouts/grid/#the-solution
+
+// TODO: check these
+/* LAYOUT PRIMITIVE COMPONENTS - intrinsically styled */
+
+.box {
+  padding: var(--s0);
+  border: 1px #000 solid;
+  --color-light: #fff;
+  --color-dark: #000;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.box * {
+  color: inherit;
+}
+
+.box.invert {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
