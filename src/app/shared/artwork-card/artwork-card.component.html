@@ -4,20 +4,20 @@
 
     <mat-card-title> {{artwork.title}} </mat-card-title>
 
-    <img *ngIf="artwork.displayType === 'featured'"
+    <img *ngIf="artwork.displayGroup !== 'movingpix'"
           mat-card-image [alt]="artwork.id"
           src="assets/img/{{artwork.id}}.png">
 
     <mat-card-content>
 
-      <div class="major" *ngIf="artwork.displayType === 'featured'; else minor">
-        <p>{{artwork.description}}</p>
-        <p>{{artwork.collab}}</p>
+      <div class="major" *ngIf="artwork.displayGroup !== 'movingpix'; else minor">
+        <p>{{artwork.blurb}}</p>
+        <p>{{artwork.collaborators}}</p>
       </div>
 
       <ng-template #minor>
         <div class="minor">
-          <p>{{artwork.description}}</p>
+          <p>{{artwork.blurb}}</p>
           <img mat-card-sm-image [alt]="artwork.id"
             src="assets/img/{{artwork.id}}-thumb.png">
         </div>
@@ -30,7 +30,7 @@
     </mat-card-content>
 
     <footer>
-      <span class="specs">{{artwork.pubdate}}, {{artwork.tech}}</span> <a mat-raised-button href={{artwork.workUrl}}>More...</a>
+      <span class="specs">{{artwork.pubdate}}, {{artwork.tech}}</span> <a mat-raised-button href={{artwork.url}}>More...</a>
     </footer>
 
   </ng-container>

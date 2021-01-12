@@ -4,9 +4,9 @@ import { RouterModule } from '@angular/router';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 
 import { ArtworkCardComponent } from './artwork-card/artwork-card.component';
-import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -27,6 +27,7 @@ import { MatIconModule } from '@angular/material/icon';
     RouterModule, // routerLink, <router-outlet>
     // material
     MatButtonModule,
+    MatCardModule,
     MatIconModule,
 
     // components

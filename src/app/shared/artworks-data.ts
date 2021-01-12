@@ -1,21 +1,21 @@
 import { ArtWork } from '../models/artwork.model';
 
-// TODO: change model also use ` ` so that I can have paragraphs & line breaks.
+// TODO - put paragraphs in an array of strings
 
-// TODO - OR - put paragraphs in an array of strings ???
+// TODO: Add YouTube link/url (& any metadata?)
 
 export const artworksData: ArtWork[] = [
   {
     id: 'inkubus',
-    workUrl: 'https://dreamingmethods.com/portfolio/inkubus/',
+    url: 'https://dreamingmethods.com/portfolio/inkubus/',
     title: 'Inkubus',
     // tslint:disable-next-line:max-line-length
-    description: 'A first-person 3D video-game and coming-of-age story about a contemporary teenage girl. She’s connected, clued-in and canny but what lurks in the deepest darkest regions beyond the screen?',
-    imageUrl: 'images/inkubus_150x150.jpg',
+    blurb: 'A first-person 3D video-game and coming-of-age story about a contemporary teenage girl. She’s connected, clued-in and canny but what lurks in the deepest darkest regions beyond the screen?',
+    description: [''],
     pubdate: '2014',
     tech: 'Unity 3D',
-    displayType: 'featured',
-    collab: 'Made in collaboration with Andy Campbell.',
+    displayGroup: 'elit',
+    collaborators: 'Made in collaboration with Andy Campbell.',
     publisher: 'Dreaming Methods',
     moreinfo: `TESTING - Some more info that I'm testing.
 
@@ -45,15 +45,15 @@ export const artworksData: ArtWork[] = [
   },
   {
     id: 'underbelly',
-    workUrl: 'http://crissxross.net/elit/underbelly.html',
+    url: 'http://crissxross.net/elit/underbelly.html',
     title: 'Underbelly',
     // tslint:disable-next-line:max-line-length
-    description: 'An award-winning playable story about a woman sculptor, carving on the site of a former colliery in the north of England. As she carves, she is disturbed by a medley of voices, some from the site\'s dark industrial past, and the player/reader is plunged into an underworld of repressed fears and desires.',
-    imageUrl: 'images/Underbelly150x150.png',
+    blurb: 'An award-winning playable story about a woman sculptor, carving on the site of a former colliery in the north of England. As she carves, she is disturbed by a medley of voices, some from the site\'s dark industrial past, and the player/reader is plunged into an underworld of repressed fears and desires.',
+    description: [''],
     pubdate: '2010',
     tech: 'originally created in Flash',
-    displayType: 'featured',
-    collab: '',
+    displayGroup: 'elit',
+    collaborators: '',
     // tslint:disable-next-line:max-line-length
     publisher: 'Published in the ELMCIP Anthology of European Electronic Literature, Nov 2012; Studies in the Maternal, Volume 3, Issue 2, 2011; Hyperrhiz.08, Issue 8, Spring 2011.',
     awards: [
@@ -144,15 +144,15 @@ export const artworksData: ArtWork[] = [
   },
   {
     id: 'fitting-the-pattern',
-    workUrl: 'http://crissxross.net/elit/fitting_the_pattern.html',
+    url: 'http://crissxross.net/elit/fitting_the_pattern.html',
     title: 'Fitting the Pattern',
     // tslint:disable-next-line:max-line-length
-    description: 'Cutting through memories, pinning down facts, stitching fabrications, unpicking the past - an interactive, animated memoir, exploring aspects of my relationship with my dressmaking mother.',
-    imageUrl: 'images/FitPat_thumb.jpg',
+    blurb: 'Cutting through memories, pinning down facts, stitching fabrications, unpicking the past - an interactive, animated memoir, exploring aspects of my relationship with my dressmaking mother.',
+    description: [''],
     pubdate: '2008',
     tech: 'originally created in Flash',
-    displayType: 'featured',
-    collab: '',
+    displayGroup: 'elit',
+    collaborators: '',
     publisher: 'Published in the Electronic Literature Collection, Volume 2, Feb 2011',
     accolades: [
       {
@@ -200,15 +200,15 @@ export const artworksData: ArtWork[] = [
   },
   {
     id: 'tailspin',
-    workUrl: 'http://crissxross.net/elit/Tailspin.html',
+    url: 'http://crissxross.net/elit/Tailspin.html',
     title: 'Tailspin',
     // tslint:disable-next-line:max-line-length
-    description: 'An interactive story about a grandfather, his daughter and her children. The old man\'s Tinnitus and partial deafness is a source of friction yet he stubbornly refuses to contemplate treatment or hearing aids. The daughter is hurt and mystified by his angry reactions, but the key to his behaviour lies deep in the past.',
-    imageUrl: 'images/Tailspin_thumb.png',
+    blurb: 'An interactive story about a grandfather, his daughter and her children. The old man\'s Tinnitus and partial deafness is a source of friction yet he stubbornly refuses to contemplate treatment or hearing aids. The daughter is hurt and mystified by his angry reactions, but the key to his behaviour lies deep in the past.',
+    description: [''],
     pubdate: '2008',
     tech: 'originally created in Flash',
-    displayType: 'featured',
-    collab: '',
+    displayGroup: 'elit',
+    collaborators: '',
     publisher: 'Published in the Electronic Literature Collection, Volume 2, Feb 2011',
     accolades: [
       {
@@ -223,15 +223,15 @@ export const artworksData: ArtWork[] = [
   },
   {
     id: 'rememori',
-    workUrl: 'http://crissxross.net/elit/rememori.html',
+    url: 'http://crissxross.net/elit/rememori.html',
     title: 'Rememori',
     // tslint:disable-next-line:max-line-length
-    description: 'A poignant memory game and playable poem. The title, \'Rememori\', is a conflation of the words, remember, memory and memento mori. Through multiple levels, the player grapples with the effects of degenerative dementia on an intimate circle of characters.',
-    imageUrl: 'images/Rememori_thumb.png',
+    blurb: 'A poignant memory game and playable poem. The title, \'Rememori\', is a conflation of the words, remember, memory and memento mori. Through multiple levels, the player grapples with the effects of degenerative dementia on an intimate circle of characters.',
+    description: [''],
     pubdate: '2011',
     tech: 'originally created in Flash',
-    displayType: 'featured',
-    collab: '',
+    displayGroup: 'elit',
+    collaborators: '',
     publisher: 'The New River Journal, Spring 2012',
     // tslint:disable-next-line:max-line-length
     moreinfo: 'In memory of my father, Bernard Wilks (1925-2012). I made the work while he was still living but in the latter stages of Alzheimer\'s disease.',
@@ -261,15 +261,15 @@ export const artworksData: ArtWork[] = [
   },
   {
     id: 'upsidedown-chandelier',
-    workUrl: 'http://crissxross.net/remixworx/Tabacka-6.html',
+    url: 'http://crissxross.net/remixworx/Tabacka-6.html',
     title: 'Upside Down Chandelier',
     // tslint:disable-next-line:max-line-length
-    description: 'A digital installation by an international group of women artists responding to the idea of repurposing during our residency at DIG Gallery in a former Slovak tobacco factory which had employed mostly women. (Web version shown here.)',
-    imageUrl: 'images/upsidedownchandelier.png',
+    blurb: 'A digital installation by an international group of women artists responding to the idea of repurposing during our residency at DIG Gallery in a former Slovak tobacco factory which had employed mostly women. (Web version shown here.)',
+    description: [''],
     pubdate: '2013/2014',
     tech: 'originally created in Flash',
-    displayType: 'featured',
-    collab: 'Made in collaboration with María Mencía, Jeneen Naji and Zuzana Husárová.',
+    displayGroup: 'elit',
+    collaborators: 'Made in collaboration with María Mencía, Jeneen Naji and Zuzana Husárová.',
     publisher: 'María Mencía',
     // tslint:disable-next-line:max-line-length
     moreinfo: '\"This multiplatform digital work references an event connected with the history of Košice and its tobacco factory from 1851 which employed mostly women workers. Some decades later, when St. Elizabeth\'s Cathedral was being renovated, the women workers donated a candle chandelier. The chandelier itself was repurposed twice – from the original candles, to gas lighting and with the advent of electricity, was turned upside down. In the installation, images of the chandelier from the cathedral are randomly generated and projected onto a screen in a flux of forms. Simultaneously the words connected with this story appear projected on the walls of the room, and phonetic sounds from Slovakian, Hungarian and German are generatively mixed in to create the soundscape of languages that were once spoken in the very same place by women workers\" (María Mencía 2013).',
@@ -295,15 +295,15 @@ export const artworksData: ArtWork[] = [
   },
   {
     id: 'out-of-touch',
-    workUrl: 'http://crissxross.net/oot/outoftouch.html',
+    url: 'http://crissxross.net/oot/outoftouch.html',
     title: 'Out of Touch',
     // tslint:disable-next-line:max-line-length
-    description: 'In our world of perpetual connectivity, touching interfaces that keep us out of reach, we form attachments whilst remaining detached, by turns kindling and dampening emotions. An animated multimedia poem.',
-    imageUrl: 'images/OOT_thumbnail.jpg',
+    blurb: 'In our world of perpetual connectivity, touching interfaces that keep us out of reach, we form attachments whilst remaining detached, by turns kindling and dampening emotions. An animated multimedia poem.',
+    description: [''],
     pubdate: '2011',
     tech: 'originally created in Flash',
-    displayType: 'featured',
-    collab: '',
+    displayGroup: 'oot',
+    collaborators: '',
     publisher: 'SFMOMA\'s Open Space; Mad Hatters\' Review',
     // tslint:disable-next-line:max-line-length
     moreinfo: '\'Out of Touch\' was commissioned by the San Francisco Museum of Modern Art for the Third Hand Plays series, curated by Brian Kim Stefans, published at SFMOMA\'s Open Space in Summer 2011. The poem randomly generates the text so it\'s different every time you view it.',
@@ -320,15 +320,15 @@ export const artworksData: ArtWork[] = [
   },
   {
     id: 'io-out-of-touch',
-    workUrl: 'http://crissxross.net/oot/indexoot.html',
+    url: 'http://crissxross.net/oot/indexoot.html',
     title: 'I/O Out of Touch',
     // tslint:disable-next-line:max-line-length
-    description: 'Variations of \'Out of Touch\' - a suite of digital works I made for live performance. Touching interfaces that keep us out of reach yet perpetually connected and forever desiring...',
-    imageUrl: 'images/OOT_thumbnail.jpg',
+    blurb: 'Variations of \'Out of Touch\' - a suite of digital works I made for live performance. Touching interfaces that keep us out of reach yet perpetually connected and forever desiring...',
+    description: [''],
     pubdate: '2012',
     tech: 'originally created in Flash',
-    displayType: 'featured',
-    collab: '',
+    displayGroup: 'oot',
+    collaborators: '',
     publisher: '',
     // tslint:disable-next-line:max-line-length
     moreinfo: 'After making the original \'Out of Touch\' piece for San Francisco Museum of Modern Art\'s Open Space, I developed the ideas further, in \'Out of Hand\' and \'Out of Sight\', to create a collection of playable media for live digital performance.',
@@ -349,15 +349,15 @@ export const artworksData: ArtWork[] = [
   },
   {
     id: 'crissxross-trail-remixworx',
-    workUrl: 'http://crissxross.net/remixworx/indexcxtrail.html',
+    url: 'http://crissxross.net/remixworx/indexcxtrail.html',
     title: 'A crissxross trail < R3M1XW0RX',
     // tslint:disable-next-line:max-line-length
-    description: 'Conceived as a poetic interactive infographic with plenty of multimedia animated content, this \'scenic route\' through Remixworx presents a sample trail of 33 remixes out of the 100 or more that I\'ve created since joining the online collaborative creative project in Jan 2007.',
-    imageUrl: 'images/janus.jpg',
+    blurb: 'Conceived as a poetic interactive infographic with plenty of multimedia animated content, this \'scenic route\' through Remixworx presents a sample trail of 33 remixes out of the 100 or more that I\'ve created since joining the online collaborative creative project in Jan 2007.',
+    description: [''],
     pubdate: '2012',
     tech: 'HTML & video (originally included Flash)',
-    displayType: 'featured',
-    collab: '',
+    displayGroup: 'remixworx',
+    collaborators: '',
     publisher: '',
     moreinfo: 'The R3M1XW0RX site hosts more than 500 remixes of digital art, animation, sound, music, poetry and writing.',
     accolades: [
@@ -373,15 +373,15 @@ export const artworksData: ArtWork[] = [
   },
   {
     id: 'remixworx',
-    workUrl: 'http://remixworx.com',
+    url: 'http://remixworx.com',
     title: 'R3M1XW0RX',
     // tslint:disable-next-line:max-line-length
-    description: 'Remixworx was a collaborative creative space for remixing visual poetry, e-poetry, playable media, animation, art, music, spoken word, texts and more. Initiated by Randy Adams as a blog in 2006, it grew to number more than 500 individual creative works. I contributed approximately 100 Flash works.',
-    imageUrl: 'images/devilsrope.jpg',
+    blurb: 'Remixworx was a collaborative creative space for remixing visual poetry, e-poetry, playable media, animation, art, music, spoken word, texts and more. Initiated by Randy Adams as a blog in 2006, it grew to number more than 500 individual creative works. I contributed approximately 100 Flash works.',
+    description: [''],
     pubdate: '2006-2016',
     tech: 'various media',
-    displayType: 'featured',
-    collab: 'Made by the R3M1XW0RX collective',
+    displayGroup: 'remixworx',
+    collaborators: 'Made by the R3M1XW0RX collective',
     publisher: 'R3M1XW0RX',
     moreinfo: 'R3M1XW0RX is a tribute to the creativity, generosity and unique spirit of Randy Adams, aka runran, (1951-2014).',
     accolades: [
@@ -405,15 +405,15 @@ export const artworksData: ArtWork[] = [
   },
   {
     id: 'revolution-of-words',
-    workUrl: 'http://crissxross.github.io/RevolOWords/',
+    url: 'http://crissxross.github.io/RevolOWords/',
     title: 'A Revolution of Words',
     // tslint:disable-next-line:max-line-length
-    description: 'This interactive work invites you to \'Spin the Revolution\' and thus a play on words becomes a game of chance where meaning is at stake. Give it a spin and see which dictum, watchword, slogan, epigram, mantra, motto, pitch, patter or spiel fortune favours for you!',
-    imageUrl: 'images/RevolScreenThumb150.jpg',
+    blurb: 'This interactive work invites you to \'Spin the Revolution\' and thus a play on words becomes a game of chance where meaning is at stake. Give it a spin and see which dictum, watchword, slogan, epigram, mantra, motto, pitch, patter or spiel fortune favours for you!',
+    description: [''],
     pubdate: '2013',
     tech: 'HTML, CSS & JavaScript',
-    displayType: 'featured',
-    collab: 'My last collaboration with Randy Adams (1951-2014).',
+    displayGroup: 'remixworx',
+    collaborators: 'My last collaboration with Randy Adams (1951-2014).',
     publisher: 'remixworx',
     // tslint:disable-next-line:max-line-length
     moreinfo: 'In memory of Randy, aka runran. The concept was his and he wrote the text and sourced the images between bouts of chemotherapy. I wrote the code and designed the user experience.',
@@ -427,13 +427,13 @@ export const artworksData: ArtWork[] = [
   {
     id: 'intravenus',
     title: 'IntraVenus',
-    workUrl: 'http://crissxross.net/MovingPix/IntraVenus.html',
+    url: 'http://crissxross.net/MovingPix/IntraVenus.html',
     // tslint:disable-next-line:max-line-length
-    description: 'Dark musings on the artist\'s muse. A poetic multimedia work in which I repurpose a series of disturbing images I made as a young art student, giving both the artist and her muse a voice. ',
-    imageUrl: '',
+    blurb: 'Dark musings on the artist\'s muse. A poetic multimedia work in which I repurpose a series of disturbing images I made as a young art student, giving both the artist and her muse a voice. ',
+    description: [''],
     pubdate: '2005',
     tech: 'originally created in Flash',
-    displayType: 'list',
+    displayGroup: 'movingpix',
     moreinfo: 'I discuss the work in more detail in an interview I gave for De geuzen\'s \'Female Icons\' (link to interview coming soon).',
     accolades: [
       {
@@ -461,12 +461,12 @@ export const artworksData: ArtWork[] = [
   {
     id: 'we-drank',
     title: 'We Drank',
-    workUrl: 'http://crissxross.net/MovingPix/We_Drank.html',
-    description: 'An animated digital poem with my own ambient music.',
-    imageUrl: '',
+    url: 'http://crissxross.net/MovingPix/We_Drank.html',
+    blurb: 'An animated digital poem with my own ambient music.',
+    description: [''],
     pubdate: '2005',
     tech: 'originally created in Flash',
-    displayType: 'list',
+    displayGroup: 'movingpix',
     moreinfo: '',
     accolades: [
       {
@@ -486,13 +486,13 @@ export const artworksData: ArtWork[] = [
   {
     id: 'heights',
     title: 'Heights',
-    workUrl: 'http://crissxross.net/MovingPix/Heights.html',
+    url: 'http://crissxross.net/MovingPix/Heights.html',
     // tslint:disable-next-line:max-line-length
-    description: 'An animated poem with my own ambient music based on my experience of visiting Gaudi\'s \'Sagrada Familia\' in Barcelona some years before.',
-    imageUrl: '',
+    blurb: 'An animated poem with my own ambient music based on my experience of visiting Gaudi\'s \'Sagrada Familia\' in Barcelona some years before.',
+    description: [''],
     pubdate: '2006',
     tech: 'originally created in Flash',
-    displayType: 'list',
+    displayGroup: 'movingpix',
     moreinfo: '',
     accolades: [
       {
@@ -504,13 +504,13 @@ export const artworksData: ArtWork[] = [
   {
     id: 'social-dis-ease',
     title: 'Social Dis-Ease',
-    workUrl: 'http://crissxross.net/MovingPix/SocialDis-Ease.html',
+    url: 'http://crissxross.net/MovingPix/SocialDis-Ease.html',
     // tslint:disable-next-line:max-line-length
-    description: 'My first digital poem created in Flash where I begin to explore some possibilities of animating text and using sound.',
-    imageUrl: '',
+    blurb: 'My first digital poem created in Flash where I begin to explore some possibilities of animating text and using sound.',
+    description: [''],
     pubdate: '2004',
     tech: 'originally created in Flash',
-    displayType: 'list',
+    displayGroup: 'movingpix',
     moreinfo: '',
     accolades: [
       {
@@ -522,13 +522,13 @@ export const artworksData: ArtWork[] = [
   {
     id: 'sitting-pretty',
     title: 'Sitting Pretty',
-    workUrl: 'http://crissxross.net/MovingPix/BeforeWeBegin/index.html',
+    url: 'http://crissxross.net/MovingPix/BeforeWeBegin/index.html',
     // tslint:disable-next-line:max-line-length
-    description: 'This interactive and whimisical \'Hypertext\' was my first creative work for the web, combining text, image and sound.',
-    imageUrl: '',
+    blurb: 'This interactive and whimisical \'Hypertext\' was my first creative work for the web, combining text, image and sound.',
+    description: [''],
     pubdate: '2004',
     tech: 'HTML & CSS',
-    displayType: 'list',
+    displayGroup: 'movingpix',
     moreinfo: '',
     accolades: [
       {

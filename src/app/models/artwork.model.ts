@@ -1,13 +1,16 @@
 export interface ArtWork {
   id: string;
-  workUrl: string;
+  url: string;
   title: string;
-  description: string;
-  imageUrl: string;
+  blurb: string;
+  description?: string[];
+  images?: string[];
+  // TODO: check youTube type
+  youTube?: string;
   pubdate: string;
   tech: string;
-  displayType: 'featured' | 'list';
-  collab?: string;
+  displayGroup?: string;
+  collaborators?: string;
   publisher?: string;
   moreinfo?: string;
   awards?: Award[];
@@ -25,4 +28,6 @@ interface Award {
 }
 
 
-// TODO: add/change description to short description + long description. Add type (e.g. elit/oot/remixworx/movingpix). Change displayType to featured: boolean. Change collab to collaborators: string | string[]
+// NOTE: displayGroup: e.g. elit/oot/remixworx/movingpix.
+
+// TODO: featured: boolean??? Or set featured work/s dynamically in a featured component.

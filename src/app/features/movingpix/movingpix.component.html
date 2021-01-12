@@ -1,1 +1,14 @@
-<p>movingpix works!</p>
+<main class="container">
+
+  <h1>Archive of early 'Moving Pix' works</h1>
+  <!-- TODO: change heading and add intro -->
+  <div class="grid">
+    <p>A paragraph of introduction...</p>
+    <div *ngFor="let artwork of artworks" class="artwork">
+      <cx-artwork-card [artwork]="artwork" class="crissxross-light-theme"
+      ></cx-artwork-card>
+    </div>
+  </div>
+
+</main>
+
