@@ -27,8 +27,14 @@
 
     <footer>
       <span class="specs">{{artwork.pubdate}}, {{artwork.tech}}</span>
-      <a mat-raised-button href={{artwork.url}}>External link</a>
-      <a mat-raised-button routerLink="{{artwork.url}}">More...</a>
+
+      <ng-container *ngIf="!externalLink; else external">
+        <a mat-raised-button [routerLink]="artwork.url">View</a>
+      </ng-container>
+
+      <ng-template #external>
+        <a mat-raised-button href={{artwork.url}}>View <mat-icon>launch</mat-icon> </a>
+      </ng-template>
     </footer>
 
   </ng-container>
