@@ -293,7 +293,7 @@ export const artworksData: ArtWork[] = [
     ]
   },
   {
-    id: 'out-of-touch',
+    id: 'outoftouch',
     // url: 'http://crissxross.net/oot/outoftouch.html',
     url: '/oot/outoftouch',
     title: 'Out of Touch',
@@ -324,7 +324,7 @@ export const artworksData: ArtWork[] = [
     ]
   },
   {
-    id: 'io-out-of-touch',
+    id: 'io-outoftouch',
     url: 'http://crissxross.net/oot/indexoot.html',
     title: 'I/O Out of Touch',
     // tslint:disable-next-line:max-line-length
@@ -412,7 +412,7 @@ export const artworksData: ArtWork[] = [
     ]
   },
   {
-    id: 'revolution-of-words',
+    id: 'revolutionwords',
     url: 'http://crissxross.github.io/RevolOWords/',
     title: 'A Revolution of Words',
     // tslint:disable-next-line:max-line-length
@@ -469,7 +469,7 @@ export const artworksData: ArtWork[] = [
     ]
   },
   {
-    id: 'we-drank',
+    id: 'wedrank',
     title: 'We Drank',
     url: 'http://crissxross.net/MovingPix/We_Drank.html',
     blurb: 'An animated digital poem with my own ambient music.',
@@ -514,7 +514,7 @@ export const artworksData: ArtWork[] = [
     ]
   },
   {
-    id: 'social-dis-ease',
+    id: 'socialdis-ease',
     title: 'Social Dis-Ease',
     url: 'http://crissxross.net/MovingPix/SocialDis-Ease.html',
     // tslint:disable-next-line:max-line-length
@@ -533,8 +533,10 @@ export const artworksData: ArtWork[] = [
     ]
   },
   {
-    id: 'sitting-pretty',
-    title: 'Sitting Pretty',
+    // id: 'sitting-pretty',
+    // title: 'Sitting Pretty',
+    id: 'beforewebegin',
+    title: 'Before We Begin',
     url: 'http://crissxross.net/MovingPix/BeforeWeBegin/index.html',
     // tslint:disable-next-line:max-line-length
     blurb: 'This interactive and whimisical \'Hypertext\' was my first creative work for the web, combining text, image and sound.',

@@ -17,7 +17,7 @@ export class OutoftouchComponent implements OnInit {
 
   ngOnInit(): void {
     // uses destructuring
-    this.outoftouch = this.artworks.find( ( {id} ) => id === 'out-of-touch');
+    this.outoftouch = this.artworks.find( ( {id} ) => id === 'outoftouch');
   }
 
 }
