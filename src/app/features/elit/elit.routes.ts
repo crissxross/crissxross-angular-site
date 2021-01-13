@@ -4,7 +4,6 @@ import { FittingThePatternComponent } from './fitting-the-pattern/fitting-the-pa
 import { RememoriComponent } from './rememori/rememori.component';
 import { TailspinComponent } from './tailspin/tailspin.component';
 import { UnderbellyComponent } from './underbelly/underbelly.component';
-import { UpsidedownChandelierComponent } from './upsidedown-chandelier/upsidedown-chandelier.component';
 
 export const routes: Routes = [
   {
@@ -15,7 +14,6 @@ export const routes: Routes = [
   },
   {
     path: 'fitting-the-pattern', component: FittingThePatternComponent
-    // redirect
   },
   {
     path: 'tailspin', component: TailspinComponent
@@ -23,8 +21,11 @@ export const routes: Routes = [
   {
     path: 'rememori', component: RememoriComponent
   },
+  // redirects
   {
-    path: 'upsidedown-chandelier', component: UpsidedownChandelierComponent
-    // redirect
+    path: 'fitting_the_pattern', redirectTo: 'fitting-the-pattern'
+  },
+  {
+    path: 'Tailspin', redirectTo: 'tailspin'
   },
 ];

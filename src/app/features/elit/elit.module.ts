@@ -9,7 +9,6 @@ import { UnderbellyComponent } from './underbelly/underbelly.component';
 import { TailspinComponent } from './tailspin/tailspin.component';
 import { RememoriComponent } from './rememori/rememori.component';
 import { FittingThePatternComponent } from './fitting-the-pattern/fitting-the-pattern.component';
-import { UpsidedownChandelierComponent } from './upsidedown-chandelier/upsidedown-chandelier.component';
 
 
 
@@ -20,7 +19,6 @@ import { UpsidedownChandelierComponent } from './upsidedown-chandelier/upsidedow
     TailspinComponent,
     RememoriComponent,
     FittingThePatternComponent,
-    UpsidedownChandelierComponent
   ],
   imports: [
     SharedModule,

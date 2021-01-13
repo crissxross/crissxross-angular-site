@@ -2,9 +2,7 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: '',
-    pathMatch: 'full',
-    redirectTo: 'home'
+    path: '', pathMatch: 'full', redirectTo: 'home'
   },
   {
     path: 'home',
@@ -27,11 +25,9 @@ export const routes: Routes = [
     loadChildren: () => import('./features/movingpix/movingpix.module').then(m => m.MovingpixModule)
   },
   {
-    path: 'MovingPix',
-    redirectTo: 'movingpix'
+    path: 'MovingPix', redirectTo: 'movingpix'
   },
   {
-    path: '**',
-    redirectTo: 'home'
+    path: '**', redirectTo: 'home'
   }
 ];

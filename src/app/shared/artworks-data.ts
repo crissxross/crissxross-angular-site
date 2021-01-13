@@ -260,44 +260,6 @@ export const artworksData: ArtWork[] = [
     ]
   },
   {
-    id: 'upsidedown-chandelier',
-    // url: 'http://crissxross.net/remixworx/Tabacka-6.html',
-    url: '/elit/upsidedown-chandelier',
-    title: 'Upside Down Chandelier',
-    // tslint:disable-next-line:max-line-length
-    blurb: 'A digital installation by an international group of women artists responding to the idea of repurposing during our residency at DIG Gallery in a former Slovak tobacco factory which had employed mostly women. (Web version shown here.)',
-    description: [
-      `A digital installation by an international group of women artists responding to the idea of repurposing during our residency at DIG Gallery in a former Slovak tobacco factory which had employed mostly women. (Web version shown here.)`,
-
-      `"This multiplatform digital work references an event connected with the history of Košice and its tobacco factory from 1851 which employed mostly women workers. Some decades later, when St. Elizabeth's Cathedral was being renovated, the women workers donated a candle chandelier. The chandelier itself was repurposed twice – from the original candles, to gas lighting and with the advent of electricity, was turned upside down. In the installation, images of the chandelier from the cathedral are randomly generated and projected onto a screen in a flux of forms. Simultaneously the words connected with this story appear projected on the walls of the room, and phonetic sounds from Slovakian, Hungarian and German are generatively mixed in to create the soundscape of languages that were once spoken in the very same place by women workers" (María Mencía 2013).`,
-  ],
-    pubdate: '2013/2014',
-    tech: 'originally created in Flash',
-    tags: ['elit'],
-    displayType: 'major',
-    collaborators: 'Made in collaboration with María Mencía, Jeneen Naji and Zuzana Husárová.',
-    publisher: 'María Mencía',
-    accolades: [
-      {
-        // tslint:disable-next-line:max-line-length
-        name: 'Electronic Literature Organization 2017: Electronic Literature: Affiliations, Communities, Translations; Exhibits, Porto, Portugal',
-        url: 'https://conference.eliterature.org/2017/exhibits'
-      },
-      {
-        name: 'Electronic Literature Organization 2014: Hold the Light, Media Arts Show, Milwaukee, USA',
-        url: 'http://conference.eliterature.org/2014/media'
-      },
-      {
-        name: 'Upside Down Chandelier: installation at DIG Gallery, Košice, Slovakia, 2013',
-        url: 'http://www.mariamencia.com/pages/upsidedown.html'
-      },
-      {
-        name: '‘Women Shift Digital’ Conference (in Digital Textualities Showcase curated by Maria Mencía), London, UK, 2013',
-        url: 'http://www.bodydataspace.net/projects/women-shift-digital-conference/'
-      }
-    ]
-  },
-  {
     id: 'outoftouch',
     // url: 'http://crissxross.net/oot/outoftouch.html',
     url: '/oot/outoftouch',
@@ -413,6 +375,44 @@ export const artworksData: ArtWork[] = [
       {
         name: '\'Devil\'s Rope\' (a remixworx special edition) at Interactive Futures 2007, Victoria, Canada',
         url: 'http://if2007.ecuad.ca/?page_id=6'
+      }
+    ]
+  },
+  {
+    id: 'upsidedown-chandelier',
+    // url: 'http://crissxross.net/remixworx/Tabacka-6.html',
+    url: '/remixworx/upsidedown-chandelier',
+    title: 'Upside Down Chandelier',
+    // tslint:disable-next-line:max-line-length
+    blurb: 'A digital installation by an international group of women artists responding to the idea of repurposing during our residency at DIG Gallery in a former Slovak tobacco factory which had employed mostly women. (Web version shown here.)',
+    description: [
+      `A digital installation by an international group of women artists responding to the idea of repurposing during our residency at DIG Gallery in a former Slovak tobacco factory which had employed mostly women. (Web version shown here.)`,
+
+      `"This multiplatform digital work references an event connected with the history of Košice and its tobacco factory from 1851 which employed mostly women workers. Some decades later, when St. Elizabeth's Cathedral was being renovated, the women workers donated a candle chandelier. The chandelier itself was repurposed twice – from the original candles, to gas lighting and with the advent of electricity, was turned upside down. In the installation, images of the chandelier from the cathedral are randomly generated and projected onto a screen in a flux of forms. Simultaneously the words connected with this story appear projected on the walls of the room, and phonetic sounds from Slovakian, Hungarian and German are generatively mixed in to create the soundscape of languages that were once spoken in the very same place by women workers" (María Mencía 2013).`,
+  ],
+    pubdate: '2013/2014',
+    tech: 'originally created in Flash',
+    tags: ['remixworx'],
+    displayType: 'major',
+    collaborators: 'Made in collaboration with María Mencía, Jeneen Naji and Zuzana Husárová.',
+    publisher: 'María Mencía',
+    accolades: [
+      {
+        // tslint:disable-next-line:max-line-length
+        name: 'Electronic Literature Organization 2017: Electronic Literature: Affiliations, Communities, Translations; Exhibits, Porto, Portugal',
+        url: 'https://conference.eliterature.org/2017/exhibits'
+      },
+      {
+        name: 'Electronic Literature Organization 2014: Hold the Light, Media Arts Show, Milwaukee, USA',
+        url: 'http://conference.eliterature.org/2014/media'
+      },
+      {
+        name: 'Upside Down Chandelier: installation at DIG Gallery, Košice, Slovakia, 2013',
+        url: 'http://www.mariamencia.com/pages/upsidedown.html'
+      },
+      {
+        name: '‘Women Shift Digital’ Conference (in Digital Textualities Showcase curated by Maria Mencía), London, UK, 2013',
+        url: 'http://www.bodydataspace.net/projects/women-shift-digital-conference/'
       }
     ]
   },

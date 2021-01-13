@@ -11,18 +11,27 @@ export const routes: Routes = [
   },
   {
     path: 'intravenus', component: IntravenusComponent
-    // redirect
   },
   {
     path: 'wedrank', component: WedrankComponent
-    // redirect
   },
   {
     path: 'heights', component: HeightsComponent
-    // redirect
   },
   {
     path: 'socialdis-ease', component: SocialdisEaseComponent
-    // redirect
-  }
+  },
+  // redirects
+  {
+    path: 'We_Drank', redirectTo: 'wedrank'
+  },
+  {
+    path: 'IntraVenus', redirectTo: 'intravenus'
+  },
+  {
+    path: 'Heights', redirectTo: 'heights'
+  },
+  {
+    path: 'SocialDis-Ease', redirectTo: 'socialdis-ease'
+  },
 ];
