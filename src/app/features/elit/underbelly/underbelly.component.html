@@ -1,1 +1,11 @@
-<p>underbelly works!</p>
+<main class="container">
+
+  <h1> {{underbelly?.title}} </h1>
+
+  <p *ngFor="let para of underbelly?.description"> {{para}} </p>
+
+  <cx-accolades-list
+    [artwork]=underbelly
+  ></cx-accolades-list>
+
+</main>

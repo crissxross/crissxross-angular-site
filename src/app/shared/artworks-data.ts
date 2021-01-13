@@ -9,7 +9,9 @@ export const artworksData: ArtWork[] = [
     title: 'Inkubus',
     // tslint:disable-next-line:max-line-length
     blurb: 'A first-person 3D video-game and coming-of-age story about a contemporary teenage girl. She’s connected, clued-in and canny but what lurks in the deepest darkest regions beyond the screen?',
-    description: [''],
+    description: [
+      `A first-person 3D video-game and coming-of-age story about a contemporary teenage girl. She’s connected, clued-in and canny but what lurks in the deepest darkest regions beyond the screen?`
+    ],
     pubdate: '2014',
     tech: 'Unity 3D',
     tags: ['elit'],
@@ -42,7 +44,9 @@ export const artworksData: ArtWork[] = [
     title: 'Underbelly',
     // tslint:disable-next-line:max-line-length
     blurb: `An award-winning playable story about a woman sculptor, carving on the site of a former colliery in the north of England. As she carves, she is disturbed by a medley of voices, some from the site's dark industrial past, and the player/reader is plunged into an underworld of repressed fears and desires.`,
-    description: [''],
+    description: [
+      `An award-winning playable story about a woman sculptor, carving on the site of a former colliery in the north of England. As she carves, she is disturbed by a medley of voices, some from the site's dark industrial past, and the player/reader is plunged into an underworld of repressed fears and desires.`
+    ],
     pubdate: '2010',
     tech: 'originally created in Flash',
     tags: ['elit'],
@@ -143,7 +147,9 @@ export const artworksData: ArtWork[] = [
     title: 'Fitting the Pattern',
     // tslint:disable-next-line:max-line-length
     blurb: 'Cutting through memories, pinning down facts, stitching fabrications, unpicking the past - an interactive, animated memoir, exploring aspects of my relationship with my dressmaking mother.',
-    description: [''],
+    description: [
+      `Cutting through memories, pinning down facts, stitching fabrications, unpicking the past - an interactive, animated memoir, exploring aspects of my relationship with my dressmaking mother.`
+  ],
     pubdate: '2008',
     tech: 'originally created in Flash',
     tags: ['elit'],
@@ -201,7 +207,9 @@ export const artworksData: ArtWork[] = [
     title: 'Tailspin',
     // tslint:disable-next-line:max-line-length
     blurb: 'An interactive story about a grandfather, his daughter and her children. The old man\'s Tinnitus and partial deafness is a source of friction yet he stubbornly refuses to contemplate treatment or hearing aids. The daughter is hurt and mystified by his angry reactions, but the key to his behaviour lies deep in the past.',
-    description: [''],
+    description: [
+      `An interactive story about a grandfather, his daughter and her children. The old man's Tinnitus and partial deafness is a source of friction yet he stubbornly refuses to contemplate treatment or hearing aids. The daughter is hurt and mystified by his angry reactions, but the key to his behaviour lies deep in the past.`
+  ],
     pubdate: '2008',
     tech: 'originally created in Flash',
     tags: ['elit'],
@@ -226,7 +234,11 @@ export const artworksData: ArtWork[] = [
     title: 'Rememori',
     // tslint:disable-next-line:max-line-length
     blurb: 'A poignant memory game and playable poem. The title, \'Rememori\', is a conflation of the words, remember, memory and memento mori. Through multiple levels, the player grapples with the effects of degenerative dementia on an intimate circle of characters.',
-    description: [''],
+    description: [
+      `A poignant memory game and playable poem. The title, 'Rememori', is a conflation of the words, remember, memory and memento mori. Through multiple levels, the player grapples with the effects of degenerative dementia on an intimate circle of characters.`,
+
+      `In memory of my father, Bernard Wilks (1925-2012). I made the work while he was still living but in the latter stages of Alzheimer's disease.`
+    ],
     pubdate: '2011',
     tech: 'originally created in Flash',
     tags: ['elit'],
@@ -296,7 +308,11 @@ export const artworksData: ArtWork[] = [
     title: 'I/O Out of Touch',
     // tslint:disable-next-line:max-line-length
     blurb: 'Variations of \'Out of Touch\' - a suite of digital works I made for live performance. Touching interfaces that keep us out of reach yet perpetually connected and forever desiring...',
-    description: [''],
+    description: [
+      `Variations of 'Out of Touch' - a suite of digital works I made for live performance. Touching interfaces that keep us out of reach yet perpetually connected and forever desiring...`,
+
+      `After making the original 'Out of Touch' piece for San Francisco Museum of Modern Art's Open Space, I developed the ideas further, in 'Out of Hand' and 'Out of Sight', to create a collection of playable media for live digital performance.`
+    ],
     pubdate: '2012',
     tech: 'originally created in Flash',
     tags: ['oot'],
@@ -326,7 +342,11 @@ export const artworksData: ArtWork[] = [
     title: 'A crissxross trail < R3M1XW0RX',
     // tslint:disable-next-line:max-line-length
     blurb: 'Conceived as a poetic interactive infographic with plenty of multimedia animated content, this \'scenic route\' through Remixworx presents a sample trail of 33 remixes out of the 100 or more that I\'ve created since joining the online collaborative creative project in Jan 2007.',
-    description: [''],
+    description: [
+      `Conceived as a poetic interactive infographic with plenty of multimedia animated content, this 'scenic route' through Remixworx presents a sample trail of 33 remixes out of the 100 or more that I've created since joining the online collaborative creative project in Jan 2007.`,
+
+      `The R3M1XW0RX site hosts more than 500 remixes of digital art, animation, sound, music, poetry and writing.`
+    ],
     pubdate: '2012',
     tech: 'HTML & video (originally included Flash)',
     tags: ['remixworx'],
@@ -351,7 +371,11 @@ export const artworksData: ArtWork[] = [
     title: 'R3M1XW0RX',
     // tslint:disable-next-line:max-line-length
     blurb: 'Remixworx was a collaborative creative space for remixing visual poetry, e-poetry, playable media, animation, art, music, spoken word, texts and more. Initiated by Randy Adams as a blog in 2006, it grew to number more than 500 individual creative works. I contributed approximately 100 Flash works.',
-    description: [''],
+    description: [
+      `Remixworx was a collaborative creative space for remixing visual poetry, e-poetry, playable media, animation, art, music, spoken word, texts and more. Initiated by Randy Adams as a blog in 2006, it grew to number more than 500 individual creative works. I contributed approximately 100 Flash works.`,
+
+      `R3M1XW0RX is a tribute to the creativity, generosity and unique spirit of Randy Adams, aka runran, (1951-2014).`
+    ],
     pubdate: '2006-2016',
     tech: 'various media',
     tags: ['remixworx'],
@@ -422,7 +446,11 @@ export const artworksData: ArtWork[] = [
     title: 'A Revolution of Words',
     // tslint:disable-next-line:max-line-length
     blurb: 'This interactive work invites you to \'Spin the Revolution\' and thus a play on words becomes a game of chance where meaning is at stake. Give it a spin and see which dictum, watchword, slogan, epigram, mantra, motto, pitch, patter or spiel fortune favours for you!',
-    description: [''],
+    description: [
+      `This interactive work invites you to 'Spin the Revolution' and thus a play on words becomes a game of chance where meaning is at stake. Give it a spin and see which dictum, watchword, slogan, epigram, mantra, motto, pitch, patter or spiel fortune favours for you!`,
+
+      `In memory of Randy, aka runran. The concept was his and he wrote the text and sourced the images between bouts of chemotherapy. I wrote the code and designed the user experience.`
+    ],
     pubdate: '2013',
     tech: 'HTML, CSS & JavaScript',
     tags: ['remixworx'],
@@ -445,7 +473,11 @@ export const artworksData: ArtWork[] = [
     url: '/movingpix/intravenus',
     // tslint:disable-next-line:max-line-length
     blurb: 'Dark musings on the artist\'s muse. A poetic multimedia work in which I repurpose a series of disturbing images I made as a young art student, giving both the artist and her muse a voice. ',
-    description: [''],
+    description: [
+      `Dark musings on the artist's muse. A poetic multimedia work in which I repurpose a series of disturbing images I made as a young art student, giving both the artist and her muse a voice.`,
+
+      `I discuss the work in more detail in an interview I gave for De geuzen's 'Female Icons' (link to interview coming soon).`
+    ],
     pubdate: '2005',
     tech: 'originally created in Flash',
     tags: ['movingpix'],
@@ -480,7 +512,9 @@ export const artworksData: ArtWork[] = [
     // url: 'http://crissxross.net/MovingPix/We_Drank.html',
     url: '/movingpix/wedrank',
     blurb: 'An animated digital poem with my own ambient music.',
-    description: [''],
+    description: [
+      `An animated digital poem with my own ambient music.`
+    ],
     pubdate: '2005',
     tech: 'originally created in Flash',
     tags: ['movingpix'],
@@ -508,7 +542,9 @@ export const artworksData: ArtWork[] = [
     url: '/movingpix/heights',
     // tslint:disable-next-line:max-line-length
     blurb: 'An animated poem with my own ambient music based on my experience of visiting Gaudi\'s \'Sagrada Familia\' in Barcelona some years before.',
-    description: [''],
+    description: [
+      `An animated poem with my own ambient music based on my experience of visiting Gaudi's 'Sagrada Familia' in Barcelona some years before.`
+    ],
     pubdate: '2006',
     tech: 'originally created in Flash',
     tags: ['movingpix'],
@@ -528,7 +564,9 @@ export const artworksData: ArtWork[] = [
     url: '/movingpix/socialdis-ease',
     // tslint:disable-next-line:max-line-length
     blurb: 'My first digital poem created in Flash where I begin to explore some possibilities of animating text and using sound.',
-    description: [''],
+    description: [
+      `My first digital poem created in Flash where I begin to explore some possibilities of animating text and using sound.`
+    ],
     pubdate: '2004',
     tech: 'originally created in Flash',
     tags: ['movingpix'],
@@ -549,7 +587,9 @@ export const artworksData: ArtWork[] = [
     url: 'http://crissxross.net/MovingPix/BeforeWeBegin/index.html',
     // tslint:disable-next-line:max-line-length
     blurb: 'This interactive and whimisical \'Hypertext\' was my first creative work for the web, combining text, image and sound.',
-    description: [''],
+    description: [
+      `This interactive and whimisical 'Hypertext' was my first creative work for the web, combining text, image and sound.`
+    ],
     pubdate: '2004',
     tech: 'HTML & CSS',
     tags: ['movingpix'],

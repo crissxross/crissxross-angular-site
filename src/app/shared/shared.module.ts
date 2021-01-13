@@ -7,12 +7,14 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 
 import { ArtworkCardComponent } from './artwork-card/artwork-card.component';
+import { AccoladesListComponent } from './accolades-list/accolades-list.component';
 
 
 
 @NgModule({
   declarations: [
-    ArtworkCardComponent
+    ArtworkCardComponent,
+    AccoladesListComponent
   ],
   imports: [
     CommonModule,
@@ -32,6 +34,7 @@ import { ArtworkCardComponent } from './artwork-card/artwork-card.component';
 
     // components
     ArtworkCardComponent,
+    AccoladesListComponent,
   ]
 })
 export class SharedModule { }
