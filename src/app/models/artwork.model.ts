@@ -9,7 +9,8 @@ export interface ArtWork {
   youTube?: string;
   pubdate: string;
   tech: string;
-  displayGroup?: string;
+  tags?: string[];
+  displayType?: 'minor' | 'major';
   collaborators?: string;
   publisher?: string;
   moreinfo?: string;
@@ -27,7 +28,5 @@ interface Award {
   url: string;
 }
 
-
-// NOTE: displayGroup: e.g. elit/oot/remixworx/movingpix.
 
 // TODO: featured: boolean??? Or set featured work/s dynamically in a featured component.

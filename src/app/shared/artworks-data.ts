@@ -1,7 +1,5 @@
 import { ArtWork } from '../models/artwork.model';
 
-// TODO - put paragraphs in an array of strings
-
 // TODO: Add YouTube link/url (& any metadata?)
 
 export const artworksData: ArtWork[] = [
@@ -14,16 +12,10 @@ export const artworksData: ArtWork[] = [
     description: [''],
     pubdate: '2014',
     tech: 'Unity 3D',
-    displayGroup: 'elit',
+    tags: ['elit'],
+    displayType: 'major',
     collaborators: 'Made in collaboration with Andy Campbell.',
     publisher: 'Dreaming Methods',
-    moreinfo: `TESTING - Some more info that I'm testing.
-
-    To see if I can add separate paragraphs.
-
-    But how am I going to turn these into paragraphs?
-
-    "She wondered in quotation marks."`,
     accolades: [
       {
         name: 'The New River Journal, Spring 2014',
@@ -48,14 +40,15 @@ export const artworksData: ArtWork[] = [
     url: 'http://crissxross.net/elit/underbelly.html',
     title: 'Underbelly',
     // tslint:disable-next-line:max-line-length
-    blurb: 'An award-winning playable story about a woman sculptor, carving on the site of a former colliery in the north of England. As she carves, she is disturbed by a medley of voices, some from the site\'s dark industrial past, and the player/reader is plunged into an underworld of repressed fears and desires.',
+    blurb: `An award-winning playable story about a woman sculptor, carving on the site of a former colliery in the north of England. As she carves, she is disturbed by a medley of voices, some from the site's dark industrial past, and the player/reader is plunged into an underworld of repressed fears and desires.`,
     description: [''],
     pubdate: '2010',
     tech: 'originally created in Flash',
-    displayGroup: 'elit',
+    tags: ['elit'],
+    displayType: 'major',
     collaborators: '',
     // tslint:disable-next-line:max-line-length
-    publisher: 'Published in the ELMCIP Anthology of European Electronic Literature, Nov 2012; Studies in the Maternal, Volume 3, Issue 2, 2011; Hyperrhiz.08, Issue 8, Spring 2011.',
+    publisher: `Published in the ELMCIP Anthology of European Electronic Literature, Nov 2012; Studies in the Maternal, Volume 3, Issue 2, 2011; Hyperrhiz.08, Issue 8, Spring 2011.`,
     awards: [
       {
         name: 'Winner of the New Media Writing Prize 2010',
@@ -151,7 +144,8 @@ export const artworksData: ArtWork[] = [
     description: [''],
     pubdate: '2008',
     tech: 'originally created in Flash',
-    displayGroup: 'elit',
+    tags: ['elit'],
+    displayType: 'major',
     collaborators: '',
     publisher: 'Published in the Electronic Literature Collection, Volume 2, Feb 2011',
     accolades: [
@@ -207,7 +201,8 @@ export const artworksData: ArtWork[] = [
     description: [''],
     pubdate: '2008',
     tech: 'originally created in Flash',
-    displayGroup: 'elit',
+    tags: ['elit'],
+    displayType: 'major',
     collaborators: '',
     publisher: 'Published in the Electronic Literature Collection, Volume 2, Feb 2011',
     accolades: [
@@ -230,7 +225,8 @@ export const artworksData: ArtWork[] = [
     description: [''],
     pubdate: '2011',
     tech: 'originally created in Flash',
-    displayGroup: 'elit',
+    tags: ['elit'],
+    displayType: 'major',
     collaborators: '',
     publisher: 'The New River Journal, Spring 2012',
     // tslint:disable-next-line:max-line-length
@@ -265,14 +261,17 @@ export const artworksData: ArtWork[] = [
     title: 'Upside Down Chandelier',
     // tslint:disable-next-line:max-line-length
     blurb: 'A digital installation by an international group of women artists responding to the idea of repurposing during our residency at DIG Gallery in a former Slovak tobacco factory which had employed mostly women. (Web version shown here.)',
-    description: [''],
+    description: [
+      `A digital installation by an international group of women artists responding to the idea of repurposing during our residency at DIG Gallery in a former Slovak tobacco factory which had employed mostly women. (Web version shown here.)`,
+
+      `"This multiplatform digital work references an event connected with the history of Košice and its tobacco factory from 1851 which employed mostly women workers. Some decades later, when St. Elizabeth's Cathedral was being renovated, the women workers donated a candle chandelier. The chandelier itself was repurposed twice – from the original candles, to gas lighting and with the advent of electricity, was turned upside down. In the installation, images of the chandelier from the cathedral are randomly generated and projected onto a screen in a flux of forms. Simultaneously the words connected with this story appear projected on the walls of the room, and phonetic sounds from Slovakian, Hungarian and German are generatively mixed in to create the soundscape of languages that were once spoken in the very same place by women workers" (María Mencía 2013).`,
+  ],
     pubdate: '2013/2014',
     tech: 'originally created in Flash',
-    displayGroup: 'elit',
+    tags: ['elit'],
+    displayType: 'major',
     collaborators: 'Made in collaboration with María Mencía, Jeneen Naji and Zuzana Husárová.',
     publisher: 'María Mencía',
-    // tslint:disable-next-line:max-line-length
-    moreinfo: '\"This multiplatform digital work references an event connected with the history of Košice and its tobacco factory from 1851 which employed mostly women workers. Some decades later, when St. Elizabeth\'s Cathedral was being renovated, the women workers donated a candle chandelier. The chandelier itself was repurposed twice – from the original candles, to gas lighting and with the advent of electricity, was turned upside down. In the installation, images of the chandelier from the cathedral are randomly generated and projected onto a screen in a flux of forms. Simultaneously the words connected with this story appear projected on the walls of the room, and phonetic sounds from Slovakian, Hungarian and German are generatively mixed in to create the soundscape of languages that were once spoken in the very same place by women workers\" (María Mencía 2013).',
     accolades: [
       {
         // tslint:disable-next-line:max-line-length
@@ -295,14 +294,20 @@ export const artworksData: ArtWork[] = [
   },
   {
     id: 'out-of-touch',
-    url: 'http://crissxross.net/oot/outoftouch.html',
+    // url: 'http://crissxross.net/oot/outoftouch.html',
+    url: '/oot/outoftouch',
     title: 'Out of Touch',
     // tslint:disable-next-line:max-line-length
     blurb: 'In our world of perpetual connectivity, touching interfaces that keep us out of reach, we form attachments whilst remaining detached, by turns kindling and dampening emotions. An animated multimedia poem.',
-    description: [''],
+    description: [
+      `In our world of perpetual connectivity, touching interfaces that keep us out of reach, we form attachments whilst remaining detached, by turns kindling and dampening emotions. An animated multimedia poem.`,
+
+      `'Out of Touch' was commissioned by the San Francisco Museum of Modern Art for the Third Hand Plays series, curated by Brian Kim Stefans, published at SFMOMA's Open Space in Summer 2011. The poem randomly generates the text so it's different every time you view it.`
+  ],
     pubdate: '2011',
     tech: 'originally created in Flash',
-    displayGroup: 'oot',
+    tags: ['oot'],
+    displayType: 'major',
     collaborators: '',
     publisher: 'SFMOMA\'s Open Space; Mad Hatters\' Review',
     // tslint:disable-next-line:max-line-length
@@ -327,7 +332,8 @@ export const artworksData: ArtWork[] = [
     description: [''],
     pubdate: '2012',
     tech: 'originally created in Flash',
-    displayGroup: 'oot',
+    tags: ['oot'],
+    displayType: 'major',
     collaborators: '',
     publisher: '',
     // tslint:disable-next-line:max-line-length
@@ -356,7 +362,8 @@ export const artworksData: ArtWork[] = [
     description: [''],
     pubdate: '2012',
     tech: 'HTML & video (originally included Flash)',
-    displayGroup: 'remixworx',
+    tags: ['remixworx'],
+    displayType: 'major',
     collaborators: '',
     publisher: '',
     moreinfo: 'The R3M1XW0RX site hosts more than 500 remixes of digital art, animation, sound, music, poetry and writing.',
@@ -380,7 +387,8 @@ export const artworksData: ArtWork[] = [
     description: [''],
     pubdate: '2006-2016',
     tech: 'various media',
-    displayGroup: 'remixworx',
+    tags: ['remixworx'],
+    displayType: 'major',
     collaborators: 'Made by the R3M1XW0RX collective',
     publisher: 'R3M1XW0RX',
     moreinfo: 'R3M1XW0RX is a tribute to the creativity, generosity and unique spirit of Randy Adams, aka runran, (1951-2014).',
@@ -412,7 +420,8 @@ export const artworksData: ArtWork[] = [
     description: [''],
     pubdate: '2013',
     tech: 'HTML, CSS & JavaScript',
-    displayGroup: 'remixworx',
+    tags: ['remixworx'],
+    displayType: 'major',
     collaborators: 'My last collaboration with Randy Adams (1951-2014).',
     publisher: 'remixworx',
     // tslint:disable-next-line:max-line-length
@@ -433,7 +442,8 @@ export const artworksData: ArtWork[] = [
     description: [''],
     pubdate: '2005',
     tech: 'originally created in Flash',
-    displayGroup: 'movingpix',
+    tags: ['movingpix'],
+    displayType: 'minor',
     moreinfo: 'I discuss the work in more detail in an interview I gave for De geuzen\'s \'Female Icons\' (link to interview coming soon).',
     accolades: [
       {
@@ -466,7 +476,8 @@ export const artworksData: ArtWork[] = [
     description: [''],
     pubdate: '2005',
     tech: 'originally created in Flash',
-    displayGroup: 'movingpix',
+    tags: ['movingpix'],
+    displayType: 'minor',
     moreinfo: '',
     accolades: [
       {
@@ -492,7 +503,8 @@ export const artworksData: ArtWork[] = [
     description: [''],
     pubdate: '2006',
     tech: 'originally created in Flash',
-    displayGroup: 'movingpix',
+    tags: ['movingpix'],
+    displayType: 'minor',
     moreinfo: '',
     accolades: [
       {
@@ -510,7 +522,8 @@ export const artworksData: ArtWork[] = [
     description: [''],
     pubdate: '2004',
     tech: 'originally created in Flash',
-    displayGroup: 'movingpix',
+    tags: ['movingpix'],
+    displayType: 'minor',
     moreinfo: '',
     accolades: [
       {
@@ -528,7 +541,8 @@ export const artworksData: ArtWork[] = [
     description: [''],
     pubdate: '2004',
     tech: 'HTML & CSS',
-    displayGroup: 'movingpix',
+    tags: ['movingpix'],
+    displayType: 'minor',
     moreinfo: '',
     accolades: [
       {

@@ -4,13 +4,13 @@
 
     <mat-card-title> {{artwork.title}} </mat-card-title>
 
-    <img *ngIf="artwork.displayGroup !== 'movingpix'"
+    <img *ngIf="artwork.displayType === 'major'"
           mat-card-image [alt]="artwork.id"
           src="assets/img/{{artwork.id}}.png">
 
     <mat-card-content>
 
-      <div class="major" *ngIf="artwork.displayGroup !== 'movingpix'; else minor">
+      <div class="major" *ngIf="artwork.displayType === 'major'; else minor">
         <p>{{artwork.blurb}}</p>
         <p>{{artwork.collaborators}}</p>
       </div>
@@ -23,14 +23,12 @@
         </div>
       </ng-template>
 
-      <!-- <p class="specs">{{artwork.pubdate}}</p>
-      <p class="specs">{{artwork.tech}}</p>
-      <a mat-raised-button href="#">More about {{artwork.title}} </a> -->
-
     </mat-card-content>
 
     <footer>
-      <span class="specs">{{artwork.pubdate}}, {{artwork.tech}}</span> <a mat-raised-button href={{artwork.url}}>More...</a>
+      <span class="specs">{{artwork.pubdate}}, {{artwork.tech}}</span>
+      <a mat-raised-button href={{artwork.url}}>External link</a>
+      <a mat-raised-button routerLink="{{artwork.url}}">More...</a>
     </footer>
 
   </ng-container>

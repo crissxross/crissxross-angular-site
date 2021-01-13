@@ -17,7 +17,7 @@ export class ElitComponent implements OnInit {
 
   ngOnInit(): void {
     this.artworks = this.allArtworks.filter(
-      artwork => artwork.displayGroup === 'elit'
+      artwork => artwork.tags?.includes('elit')
     )
   }
 

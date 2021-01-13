@@ -17,7 +17,7 @@ export class RemixworxComponent implements OnInit {
 
   ngOnInit(): void {
     this.artworks = this.allArtworks.filter(
-      artwork => artwork.displayGroup === 'remixworx'
+      artwork => artwork.tags?.includes('remixworx')
     )
   }
 

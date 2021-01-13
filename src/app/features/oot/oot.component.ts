@@ -17,7 +17,7 @@ export class OotComponent implements OnInit {
 
   ngOnInit(): void {
     this.artworks = this.allArtworks.filter(
-      artwork => artwork.displayGroup === 'oot'
+      artwork => artwork.tags?.includes('oot')
     )
   }
 

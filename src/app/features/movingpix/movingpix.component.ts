@@ -17,7 +17,7 @@ export class MovingpixComponent implements OnInit {
 
   ngOnInit(): void {
     this.artworks = this.allArtworks.filter(
-      artwork => artwork.displayGroup === 'movingpix'
+      artwork => artwork.tags?.includes('movingpix')
     )
   }
 
