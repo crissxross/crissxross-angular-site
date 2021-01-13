@@ -5,11 +5,15 @@ import { SharedModule } from '../../shared/shared.module';
 import { routes } from './oot.routes';
 
 import { OotComponent } from './oot.component';
+import { OutoftouchComponent } from './outoftouch/outoftouch.component';
 
 
 
 @NgModule({
-  declarations: [OotComponent],
+  declarations: [
+    OotComponent,
+    OutoftouchComponent
+  ],
   imports: [
     SharedModule,
     RouterModule.forChild(routes)
