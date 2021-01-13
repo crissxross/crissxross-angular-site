@@ -1,1 +1,12 @@
-<p>fitting-the-pattern works!</p>
+<main class="container">
+
+  <h1> {{fittingThePattern?.title}} </h1>
+
+  <p *ngFor="let para of fittingThePattern?.description"> {{para}} </p>
+
+  <cx-accolades-list
+    [artwork]=fittingThePattern
+  ></cx-accolades-list>
+
+</main>
+
