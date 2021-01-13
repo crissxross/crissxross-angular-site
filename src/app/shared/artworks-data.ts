@@ -37,7 +37,8 @@ export const artworksData: ArtWork[] = [
   },
   {
     id: 'underbelly',
-    url: 'http://crissxross.net/elit/underbelly.html',
+    // url: 'http://crissxross.net/elit/underbelly.html',
+    url: '/elit/underbelly',
     title: 'Underbelly',
     // tslint:disable-next-line:max-line-length
     blurb: `An award-winning playable story about a woman sculptor, carving on the site of a former colliery in the north of England. As she carves, she is disturbed by a medley of voices, some from the site's dark industrial past, and the player/reader is plunged into an underworld of repressed fears and desires.`,
@@ -137,7 +138,8 @@ export const artworksData: ArtWork[] = [
   },
   {
     id: 'fitting-the-pattern',
-    url: 'http://crissxross.net/elit/fitting_the_pattern.html',
+    // url: 'http://crissxross.net/elit/fitting_the_pattern.html',
+    url: '/elit/fitting-the-pattern',
     title: 'Fitting the Pattern',
     // tslint:disable-next-line:max-line-length
     blurb: 'Cutting through memories, pinning down facts, stitching fabrications, unpicking the past - an interactive, animated memoir, exploring aspects of my relationship with my dressmaking mother.',
@@ -194,7 +196,8 @@ export const artworksData: ArtWork[] = [
   },
   {
     id: 'tailspin',
-    url: 'http://crissxross.net/elit/Tailspin.html',
+    // url: 'http://crissxross.net/elit/Tailspin.html',
+    url: '/elit/tailspin',
     title: 'Tailspin',
     // tslint:disable-next-line:max-line-length
     blurb: 'An interactive story about a grandfather, his daughter and her children. The old man\'s Tinnitus and partial deafness is a source of friction yet he stubbornly refuses to contemplate treatment or hearing aids. The daughter is hurt and mystified by his angry reactions, but the key to his behaviour lies deep in the past.',
@@ -218,7 +221,8 @@ export const artworksData: ArtWork[] = [
   },
   {
     id: 'rememori',
-    url: 'http://crissxross.net/elit/rememori.html',
+    // url: 'http://crissxross.net/elit/rememori.html',
+    url: '/elit/rememori',
     title: 'Rememori',
     // tslint:disable-next-line:max-line-length
     blurb: 'A poignant memory game and playable poem. The title, \'Rememori\', is a conflation of the words, remember, memory and memento mori. Through multiple levels, the player grapples with the effects of degenerative dementia on an intimate circle of characters.',
@@ -257,7 +261,8 @@ export const artworksData: ArtWork[] = [
   },
   {
     id: 'upsidedown-chandelier',
-    url: 'http://crissxross.net/remixworx/Tabacka-6.html',
+    // url: 'http://crissxross.net/remixworx/Tabacka-6.html',
+    url: '/elit/upsidedown-chandelier',
     title: 'Upside Down Chandelier',
     // tslint:disable-next-line:max-line-length
     blurb: 'A digital installation by an international group of women artists responding to the idea of repurposing during our residency at DIG Gallery in a former Slovak tobacco factory which had employed mostly women. (Web version shown here.)',
@@ -436,7 +441,8 @@ export const artworksData: ArtWork[] = [
   {
     id: 'intravenus',
     title: 'IntraVenus',
-    url: 'http://crissxross.net/MovingPix/IntraVenus.html',
+    // url: 'http://crissxross.net/MovingPix/IntraVenus.html',
+    url: '/movingpix/intravenus',
     // tslint:disable-next-line:max-line-length
     blurb: 'Dark musings on the artist\'s muse. A poetic multimedia work in which I repurpose a series of disturbing images I made as a young art student, giving both the artist and her muse a voice. ',
     description: [''],
@@ -471,7 +477,8 @@ export const artworksData: ArtWork[] = [
   {
     id: 'wedrank',
     title: 'We Drank',
-    url: 'http://crissxross.net/MovingPix/We_Drank.html',
+    // url: 'http://crissxross.net/MovingPix/We_Drank.html',
+    url: '/movingpix/wedrank',
     blurb: 'An animated digital poem with my own ambient music.',
     description: [''],
     pubdate: '2005',
@@ -497,7 +504,8 @@ export const artworksData: ArtWork[] = [
   {
     id: 'heights',
     title: 'Heights',
-    url: 'http://crissxross.net/MovingPix/Heights.html',
+    // url: 'http://crissxross.net/MovingPix/Heights.html',
+    url: '/movingpix/heights',
     // tslint:disable-next-line:max-line-length
     blurb: 'An animated poem with my own ambient music based on my experience of visiting Gaudi\'s \'Sagrada Familia\' in Barcelona some years before.',
     description: [''],
@@ -516,7 +524,8 @@ export const artworksData: ArtWork[] = [
   {
     id: 'socialdis-ease',
     title: 'Social Dis-Ease',
-    url: 'http://crissxross.net/MovingPix/SocialDis-Ease.html',
+    // url: 'http://crissxross.net/MovingPix/SocialDis-Ease.html',
+    url: '/movingpix/socialdis-ease',
     // tslint:disable-next-line:max-line-length
     blurb: 'My first digital poem created in Flash where I begin to explore some possibilities of animating text and using sound.',
     description: [''],
