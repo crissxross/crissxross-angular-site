@@ -9,7 +9,7 @@ import { ArtWork } from '../../models/artwork.model';
 })
 export class AccoladesListComponent implements OnInit {
 
-  @Input() artwork?: ArtWork;
+  @Input() artwork?: ArtWork
 
   constructor() { }
 

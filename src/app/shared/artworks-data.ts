@@ -12,6 +12,8 @@ export const artworksData: ArtWork[] = [
     description: [
       `A first-person 3D video-game and coming-of-age story about a contemporary teenage girl. She’s connected, clued-in and canny but what lurks in the deepest darkest regions beyond the screen?`
     ],
+    youtubeId: '',
+    images: [''],
     pubdate: '2014',
     tech: 'Unity 3D',
     tags: ['elit'],
@@ -47,6 +49,8 @@ export const artworksData: ArtWork[] = [
     description: [
       `An award-winning playable story about a woman sculptor, carving on the site of a former colliery in the north of England. As she carves, she is disturbed by a medley of voices, some from the site's dark industrial past, and the player/reader is plunged into an underworld of repressed fears and desires.`
     ],
+    youtubeId: '',
+    images: [''],
     pubdate: '2010',
     tech: 'originally created in Flash',
     tags: ['elit'],
@@ -150,7 +154,9 @@ export const artworksData: ArtWork[] = [
     description: [
       `Cutting through memories, pinning down facts, stitching fabrications, unpicking the past - an interactive, animated memoir, exploring aspects of my relationship with my dressmaking mother.`
   ],
-    pubdate: '2008',
+  youtubeId: 'XlMetNCa_Cc',
+  images: [''],
+  pubdate: '2008',
     tech: 'originally created in Flash',
     tags: ['elit'],
     displayType: 'major',
@@ -210,7 +216,9 @@ export const artworksData: ArtWork[] = [
     description: [
       `An interactive story about a grandfather, his daughter and her children. The old man's Tinnitus and partial deafness is a source of friction yet he stubbornly refuses to contemplate treatment or hearing aids. The daughter is hurt and mystified by his angry reactions, but the key to his behaviour lies deep in the past.`
   ],
-    pubdate: '2008',
+  youtubeId: '',
+  images: [''],
+  pubdate: '2008',
     tech: 'originally created in Flash',
     tags: ['elit'],
     displayType: 'major',
@@ -239,6 +247,8 @@ export const artworksData: ArtWork[] = [
 
       `In memory of my father, Bernard Wilks (1925-2012). I made the work while he was still living but in the latter stages of Alzheimer's disease.`
     ],
+    youtubeId: '',
+    images: [''],
     pubdate: '2011',
     tech: 'originally created in Flash',
     tags: ['elit'],
@@ -283,7 +293,9 @@ export const artworksData: ArtWork[] = [
 
       `'Out of Touch' was commissioned by the San Francisco Museum of Modern Art for the Third Hand Plays series, curated by Brian Kim Stefans, published at SFMOMA's Open Space in Summer 2011. The poem randomly generates the text so it's different every time you view it.`
   ],
-    pubdate: '2011',
+  youtubeId: '',
+  images: [''],
+  pubdate: '2011',
     tech: 'originally created in Flash',
     tags: ['oot'],
     displayType: 'major',
@@ -313,6 +325,8 @@ export const artworksData: ArtWork[] = [
 
       `After making the original 'Out of Touch' piece for San Francisco Museum of Modern Art's Open Space, I developed the ideas further, in 'Out of Hand' and 'Out of Sight', to create a collection of playable media for live digital performance.`
     ],
+    youtubeId: '',
+    images: [''],
     pubdate: '2012',
     tech: 'originally created in Flash',
     tags: ['oot'],
@@ -347,6 +361,8 @@ export const artworksData: ArtWork[] = [
 
       `The R3M1XW0RX site hosts more than 500 remixes of digital art, animation, sound, music, poetry and writing.`
     ],
+    youtubeId: '',
+    images: [''],
     pubdate: '2012',
     tech: 'HTML & video (originally included Flash)',
     tags: ['remixworx'],
@@ -376,6 +392,8 @@ export const artworksData: ArtWork[] = [
 
       `R3M1XW0RX is a tribute to the creativity, generosity and unique spirit of Randy Adams, aka runran, (1951-2014).`
     ],
+    youtubeId: '',
+    images: [''],
     pubdate: '2006-2016',
     tech: 'various media',
     tags: ['remixworx'],
@@ -414,7 +432,9 @@ export const artworksData: ArtWork[] = [
 
       `"This multiplatform digital work references an event connected with the history of Košice and its tobacco factory from 1851 which employed mostly women workers. Some decades later, when St. Elizabeth's Cathedral was being renovated, the women workers donated a candle chandelier. The chandelier itself was repurposed twice – from the original candles, to gas lighting and with the advent of electricity, was turned upside down. In the installation, images of the chandelier from the cathedral are randomly generated and projected onto a screen in a flux of forms. Simultaneously the words connected with this story appear projected on the walls of the room, and phonetic sounds from Slovakian, Hungarian and German are generatively mixed in to create the soundscape of languages that were once spoken in the very same place by women workers" (María Mencía 2013).`,
   ],
-    pubdate: '2013/2014',
+  youtubeId: '',
+  images: [''],
+  pubdate: '2013/2014',
     tech: 'originally created in Flash',
     tags: ['remixworx'],
     displayType: 'major',
@@ -451,6 +471,8 @@ export const artworksData: ArtWork[] = [
 
       `In memory of Randy, aka runran. The concept was his and he wrote the text and sourced the images between bouts of chemotherapy. I wrote the code and designed the user experience.`
     ],
+    youtubeId: '',
+    images: [''],
     pubdate: '2013',
     tech: 'HTML, CSS & JavaScript',
     tags: ['remixworx'],
@@ -478,6 +500,8 @@ export const artworksData: ArtWork[] = [
 
       `I discuss the work in more detail in an interview I gave for De geuzen's 'Female Icons' (link to interview coming soon).`
     ],
+    youtubeId: '',
+    images: [''],
     pubdate: '2005',
     tech: 'originally created in Flash',
     tags: ['movingpix'],
@@ -515,6 +539,8 @@ export const artworksData: ArtWork[] = [
     description: [
       `An animated digital poem with my own ambient music.`
     ],
+    youtubeId: '',
+    images: [''],
     pubdate: '2005',
     tech: 'originally created in Flash',
     tags: ['movingpix'],
@@ -545,6 +571,8 @@ export const artworksData: ArtWork[] = [
     description: [
       `An animated poem with my own ambient music based on my experience of visiting Gaudi's 'Sagrada Familia' in Barcelona some years before.`
     ],
+    youtubeId: '',
+    images: [''],
     pubdate: '2006',
     tech: 'originally created in Flash',
     tags: ['movingpix'],
@@ -567,6 +595,8 @@ export const artworksData: ArtWork[] = [
     description: [
       `My first digital poem created in Flash where I begin to explore some possibilities of animating text and using sound.`
     ],
+    youtubeId: '',
+    images: [''],
     pubdate: '2004',
     tech: 'originally created in Flash',
     tags: ['movingpix'],
@@ -590,6 +620,8 @@ export const artworksData: ArtWork[] = [
     description: [
       `This interactive and whimisical 'Hypertext' was my first creative work for the web, combining text, image and sound.`
     ],
+    youtubeId: '',
+    images: [''],
     pubdate: '2004',
     tech: 'HTML & CSS',
     tags: ['movingpix'],

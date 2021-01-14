@@ -2,6 +2,11 @@
 
   <h1> {{fittingThePattern?.title}} </h1>
 
+  <cx-youtube-video
+    [videoId]="fittingThePattern?.youtubeId"
+  ></cx-youtube-video>
+
+
   <p *ngFor="let para of fittingThePattern?.description"> {{para}} </p>
 
   <cx-accolades-list

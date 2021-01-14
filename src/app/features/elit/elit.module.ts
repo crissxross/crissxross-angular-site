@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 
 import { SharedModule } from '../../shared/shared.module';
 import { routes } from './elit.routes';
+import { YoutubeVideoModule } from '../../components/youtube-video/youtube-video.module';
 
 import { ElitComponent } from './elit.component';
 import { UnderbellyComponent } from './underbelly/underbelly.component';
@@ -22,6 +23,7 @@ import { FittingThePatternComponent } from './fitting-the-pattern/fitting-the-pa
   ],
   imports: [
     SharedModule,
+    YoutubeVideoModule,
     RouterModule.forChild(routes)
   ]
 })

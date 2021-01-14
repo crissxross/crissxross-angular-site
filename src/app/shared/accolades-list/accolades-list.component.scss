@@ -1,3 +1,9 @@
 a {
   color: var(--clr-accent-base);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
 }

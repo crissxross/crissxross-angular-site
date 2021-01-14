@@ -4,9 +4,8 @@ export interface ArtWork {
   title: string;
   blurb: string;
   description?: string[];
+  youtubeId?: string;
   images?: string[];
-  // TODO: check youTube type
-  youTube?: string;
   pubdate: string;
   tech: string;
   tags?: string[];
