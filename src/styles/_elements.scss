@@ -3,48 +3,36 @@
 // added by ng add material schematic
 html, body {
   height: 100%;
-  // TODO: why not 100vh?
-  // height: 100vh;
+  // TODO: why does 100vh (from reset) not work?
 }
 
-body {
-  font-family: var(--ff-sans);
-  line-height: 1.3;
-  font-size: var(--fs-400);
-  font-size: 1rem;
-}
 // added by ng add material schematic
 // body { font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-// p {
-//   line-height: 1.5em;
-// }
-
-main {
-  line-height: 1.5em;
-  // max-width: 50rem;
-  // margin: 0 auto;
+body {
+  font-family: var(--ff-sans);
+  // 1rem is browser default so don't need to set font-size unless I want a different body size.
+  // font-size: var(--fs-400);
 }
 
-// main > * + * {
-//   margin-top: 2em;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+figcaption {
+  max-width: var(--measure);
+}
+
+a {
+  // color: var(--clr-neutral-100);
+  color: var(--clr-accent-base);
+  // text-decoration: none;
+}
+
+// a:hover,
+// a:focus {
+//   text-decoration: underline;
 // }
-
-
-/* NOTE
-.mat-typography on body element applies:
-
-  font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif;
-  font-style: normal;
-  font-variant-ligatures: normal;
-  font-variant-caps: normal;
-  font-variant-numeric: normal;
-  font-variant-east-asian: normal;
-  font-weight: 400;
-  font-stretch: normal;
-  font-size: 14px;
-  line-height: 20px;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  letter-spacing: normal;
-
-*/

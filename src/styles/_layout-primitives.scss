@@ -32,23 +32,18 @@
 }
 
 
-// .grid {
-//   display: grid;
-//   gap: 1rem;
-//   grid-template-columns: repeat(auto-fit, minmax(min(45ch, 100%), 1fr));
-// }
 
-.grid {
+.grid-auto {
   display: grid;
-  gap: var(--space-lg);
+  gap: var(--s2);
 }
-@supports (width: min(var(--box-measure), 100%)) {
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(min(var(--box-measure), 100%), 1fr));
+@supports (width: min(340px, 100%)) {
+  .grid-auto {
+    grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
   }
 }
 // 👆 min() calculates the shortest length from a set of comma-separated values
-// so if viewport is narrower than --box-measure (45ch), it goes to 100%
+// so if viewport is narrower than 340px, it goes to 100%
 // @supports because a few mobile browsers don't yet support min()
 // See https://every-layout.dev/layouts/grid/#the-solution
 

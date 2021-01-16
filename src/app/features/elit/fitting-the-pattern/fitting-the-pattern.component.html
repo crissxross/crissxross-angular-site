@@ -1,12 +1,14 @@
-<main class="wrapper flow">
+<main class="center pad-block flow">
 
   <ng-container *ngIf="fittingThePattern">
 
     <h1> {{fittingThePattern.title}} </h1>
 
-    <cx-youtube-video
-      [videoId]="fittingThePattern.youtubeId"
-    ></cx-youtube-video>
+    <!-- <div class="video-player"> -->
+      <cx-youtube-video
+        [videoId]="fittingThePattern.youtubeId"
+      ></cx-youtube-video>
+    <!-- </div> -->
 
 
     <p *ngFor="let para of fittingThePattern.description"> {{para}} </p>
@@ -19,4 +21,3 @@
 
 
 </main>
-

@@ -1,6 +1,11 @@
-// TODO: maybe container should be wrapper instead ???
+// NOTE: container is good for auto-grid of cards
 .container {
-  padding: var(--s0);
+  padding: var(--s2);
+}
+
+.pad-block {
+  padding-top: var(--s1);
+  padding-bottom: var(--s1);
 }
 
 // TODO: I think this wrapper is trying to do what .center LAYOUT PRIMITIVE does ???
