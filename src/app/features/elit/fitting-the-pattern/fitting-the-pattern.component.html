@@ -1,17 +1,22 @@
-<main class="container">
+<main class="wrapper flow">
 
-  <h1> {{fittingThePattern?.title}} </h1>
+  <ng-container *ngIf="fittingThePattern">
 
-  <cx-youtube-video
-    [videoId]="fittingThePattern?.youtubeId"
-  ></cx-youtube-video>
+    <h1> {{fittingThePattern.title}} </h1>
+
+    <cx-youtube-video
+      [videoId]="fittingThePattern.youtubeId"
+    ></cx-youtube-video>
 
 
-  <p *ngFor="let para of fittingThePattern?.description"> {{para}} </p>
+    <p *ngFor="let para of fittingThePattern.description"> {{para}} </p>
 
-  <cx-accolades-list
-    [artwork]=fittingThePattern
-  ></cx-accolades-list>
+    <cx-accolades-list
+      [artwork]=fittingThePattern
+    ></cx-accolades-list>
+
+  </ng-container>
+
 
 </main>
 

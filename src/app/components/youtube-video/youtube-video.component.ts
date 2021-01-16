@@ -7,8 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class YoutubeVideoComponent implements OnInit {
 
-  @Input() videoId = '';
   apiLoaded = false;
+  @Input() videoId: string | undefined = '';
 
   constructor() { }
 
