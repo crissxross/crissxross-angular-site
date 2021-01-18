@@ -1,6 +1,6 @@
-// NOTE: container is good for auto-grid of cards
-.container {
-  padding: var(--s2);
+// similar to stack layout primitive but for normal flow
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
 }
 
 .pad-block {
@@ -8,29 +8,3 @@
   padding-bottom: var(--s1);
 }
 
-// TODO: I think this wrapper is trying to do what .center LAYOUT PRIMITIVE does ???
-.wrapper {
-  max-width: 50rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* can also include padding left & right */
-
-.full-bleed {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-}
-
-.flow > * + * {
-  margin-top: var(--flow-space, 1em);
-}
-
-// wrapper as used in web-platform tonmjs
-// .wrapper {
-//   display: flex;
-//   flex-direction: column;
-//   gap: var(--s-1);
-//   min-height: 100vh;
-//   padding: var(--s-1);
-//   padding-right: 6rem;
-// }

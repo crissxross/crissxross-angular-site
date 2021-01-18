@@ -155,6 +155,12 @@ export const artworksData: ArtWork[] = [
       `Cutting through memories, pinning down facts, stitching fabrications, unpicking the past - an interactive, animated memoir, exploring aspects of my relationship with my dressmaking mother.`
   ],
   youtubeId: 'XlMetNCa_Cc',
+  youtubeVideos: [
+    {
+      id: 'XlMetNCa_Cc',
+      name: 'Fitting The Pattern talk'
+    }
+  ],
   images: [''],
   pubdate: '2008',
     tech: 'originally created in Flash',

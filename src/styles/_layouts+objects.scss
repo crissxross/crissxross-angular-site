@@ -1,0 +1,120 @@
+/* Class-based selectors for layouts & objects */
+
+/****** LAYOUT PRIMITIVES ******/
+
+/* LAYOUT PRIMITIVES based on Every Layout https://every-layout.dev/layouts/ */
+
+/* box-sizing overrides to content-box so that if left & right padding is needed, it won't take away from the --measure (default 75ch) maximum width */
+.center {
+  box-sizing: content-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--measure);
+  padding-left: var(--s0);
+  padding-right: var(--s0);
+  // outline: 1px solid green;
+}
+
+.stack {
+  --space: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.stack > * + * {
+  margin-top: var(--space);
+}
+
+.grid-auto {
+  display: grid;
+  gap: var(--s2);
+}
+@supports (width: min(340px, 100%)) {
+  .grid-auto {
+    grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
+  }
+}
+// 👆 min() calculates the shortest length from a set of comma-separated values
+// so if viewport is narrower than 340px, it goes to 100%
+// @supports because a few mobile browsers don't yet support min()
+// See https://every-layout.dev/layouts/grid/#the-solution
+
+// TODO: check these 👇
+/* LAYOUT PRIMITIVE COMPONENTS - intrinsically styled */
+
+.box {
+  padding: var(--s0);
+  border: 1px #000 solid;
+  --color-light: #fff;
+  --color-dark: #000;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.box * {
+  color: inherit;
+}
+
+.box.invert {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
+/****** LAYOUT UTILITIES ******/
+
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+// to use with full bleed for consistent centred content - see https://piccalil.li/tutorial/creating-a-full-bleed-css-utility
+.wrapper {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* can also include padding left & right
+  OR use .center layout primitive ??
+*/
+
+.wide-wrapper {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  // padding-left: var(--s0);
+  // padding-right: var(--s0);
+}
+
+/****** OBJECTS ******/
+
+// used with .wide-wrapper
+.page-title {
+  padding-top: var(--s0);
+  padding-bottom: var(--s0);
+  padding-left: var(--s0);
+  padding-right: var(--s0);
+}
+
+@media (min-width: 1160px) {
+  .page-title {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+// wrapper as used in web-platform tonmjs
+// .wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   gap: var(--s-1);
+//   min-height: 100vh;
+//   padding: var(--s-1);
+//   padding-right: 6rem;
+// }

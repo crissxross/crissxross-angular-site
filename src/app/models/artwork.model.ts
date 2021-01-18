@@ -4,7 +4,8 @@ export interface ArtWork {
   title: string;
   blurb: string;
   description?: string[];
-  youtubeId?: string;
+  youtubeId?: string; // TODO remove ??
+  youtubeVideos?: YoutubeVideo[];
   images?: string[];
   pubdate: string;
   tech: string;
@@ -25,6 +26,11 @@ interface Accolade {
 interface Award {
   name: string;
   url: string;
+}
+
+interface YoutubeVideo {
+  id: string;
+  name: string;
 }
 
 
