@@ -4,8 +4,7 @@ export interface ArtWork {
   title: string;
   blurb: string;
   description?: string[];
-  youtubeId?: string; // TODO remove ??
-  youtubeVideos?: YoutubeVideo[];
+  youtubeVideos?: Video[];
   images?: string[];
   pubdate: string;
   tech: string;
@@ -18,6 +17,11 @@ export interface ArtWork {
   accolades?: Accolade[];
 }
 
+export interface Video {
+  id: string;
+  name: string;
+}
+
 interface Accolade {
   name: string;
   url: string;
@@ -28,10 +32,3 @@ interface Award {
   url: string;
 }
 
-interface YoutubeVideo {
-  id: string;
-  name: string;
-}
-
-
-// TODO: featured: boolean??? Or set featured work/s dynamically in a featured component.

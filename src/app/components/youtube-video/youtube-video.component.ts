@@ -7,7 +7,11 @@ import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, Input, OnDestr
 })
 export class YoutubeVideoComponent implements OnInit, AfterViewInit, OnDestroy {
 
-  @ViewChild('videoPlayer') videoPlayer: ElementRef<HTMLDivElement>;
+  // @ViewChild('videoPlayer') videoPlayer: ElementRef<HTMLDivElement>;
+  @ViewChild('videoPlayer') private _videoPlayer?: ElementRef;
+  private get videoPlayer(): HTMLDivElement {
+    return this._videoPlayer?.nativeElement
+  }
 
   apiLoaded = false;
   @Input() videoId: string | undefined = '';
@@ -32,12 +36,12 @@ export class YoutubeVideoComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   onResize = (): void => {
-    // Automatically expand the video to fit the page up to 1200px x 720px
-    this.videoWidth = Math.min(this.videoPlayer.nativeElement.clientWidth, 1200);
-    // 16:9 aspect ratio
-    this.videoHeight = this.videoWidth * 0.5625;
-    this._changeDetectorRef.detectChanges();
-  }
+      // Automatically expand the video to fit the page up to 1200px x 720px
+      this.videoWidth = Math.min(this.videoPlayer.clientWidth, 1200);
+      // 16:9 aspect ratio
+      this.videoHeight = this.videoWidth * 0.5625;
+      this._changeDetectorRef.detectChanges();
+    }
 
   ngOnDestroy(): void {
     window.removeEventListener('resize', this.onResize);

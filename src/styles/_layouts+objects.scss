@@ -68,6 +68,11 @@
 
 /****** LAYOUT UTILITIES ******/
 
+// NOTE: container is good for auto-grid of cards
+.container {
+  padding: var(--s2);
+}
+
 .full-bleed {
   width: 100vw;
   margin-left: calc(50% - 50vw);
