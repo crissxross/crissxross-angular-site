@@ -1,11 +1,20 @@
-<main class="center pad-block flow">
+<main class="flow">
 
-  <h1> {{outoftouch?.title}} </h1>
+  <ng-container *ngIf="outoftouch">
 
-  <p *ngFor="let para of outoftouch?.description"> {{para}} </p>
+    <div class="wide-wrapper">
+      <h1 class="page-title"> {{outoftouch.title}} </h1>
+      VIDEO
+    </div>
 
-  <cx-accolades-list
-    [artwork]=outoftouch
-  ></cx-accolades-list>
+    <div class="center flow">
+      <p *ngFor="let para of outoftouch.description"> {{para}} </p>
+
+      <cx-accolades-list
+        [artwork]=outoftouch
+      ></cx-accolades-list>
+    </div>
+
+  </ng-container>
 
 </main>

@@ -1,1 +1,20 @@
-<p>rememori works!</p>
+<main class="flow">
+
+  <ng-container *ngIf="rememori">
+
+    <div class="wide-wrapper">
+      <h1 class="page-title"> {{rememori.title}} </h1>
+      VIDEO
+    </div>
+
+    <div class="center flow">
+      <p *ngFor="let para of rememori.description"> {{para}} </p>
+
+      <cx-accolades-list
+        [artwork]=rememori
+      ></cx-accolades-list>
+    </div>
+
+  </ng-container>
+
+</main>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ArtWork } from '../../../models/artwork.model';
+import { ArtWork, Video } from '../../../models/artwork.model';
 import { artworksData } from '../../../shared/artworks-data';
 
 @Component({

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ArtWork, Video } from '../../../models/artwork.model';
+import { artworksData } from '../../../shared/artworks-data';
+
 @Component({
   selector: 'cx-tailspin',
   templateUrl: './tailspin.component.html',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TailspinComponent implements OnInit {
 
+  artworks: ArtWork[] = artworksData;
+  tailspin?: ArtWork;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.tailspin = this.artworks.find( ( {id} ) => id === 'tailspin');
   }
 
 }

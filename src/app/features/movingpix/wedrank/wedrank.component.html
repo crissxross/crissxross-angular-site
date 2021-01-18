@@ -1,1 +1,20 @@
-<p>wedrank works!</p>
+<main class="flow">
+
+  <ng-container *ngIf="wedrank">
+
+    <div class="wide-wrapper">
+      <h1 class="page-title"> {{wedrank.title}} </h1>
+      VIDEO
+    </div>
+
+    <div class="center flow">
+      <p *ngFor="let para of wedrank.description"> {{para}} </p>
+
+      <cx-accolades-list
+        [artwork]=wedrank
+      ></cx-accolades-list>
+    </div>
+
+  </ng-container>
+
+</main>

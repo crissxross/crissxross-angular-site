@@ -1,1 +1,20 @@
-<p>tailspin works!</p>
+<main class="flow">
+
+  <ng-container *ngIf="tailspin">
+
+    <div class="wide-wrapper">
+      <h1 class="page-title"> {{tailspin.title}} </h1>
+      VIDEO
+    </div>
+
+    <div class="center flow">
+      <p *ngFor="let para of tailspin.description"> {{para}} </p>
+
+      <cx-accolades-list
+        [artwork]=tailspin
+      ></cx-accolades-list>
+    </div>
+
+  </ng-container>
+
+</main>

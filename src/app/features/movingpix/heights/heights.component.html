@@ -1,1 +1,20 @@
-<p>heights works!</p>
+<main class="flow">
+
+  <ng-container *ngIf="heights">
+
+    <div class="wide-wrapper">
+      <h1 class="page-title"> {{heights.title}} </h1>
+      VIDEO
+    </div>
+
+    <div class="center flow">
+      <p *ngFor="let para of heights.description"> {{para}} </p>
+
+      <cx-accolades-list
+        [artwork]=heights
+      ></cx-accolades-list>
+    </div>
+
+  </ng-container>
+
+</main>
