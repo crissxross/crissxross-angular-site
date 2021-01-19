@@ -156,10 +156,6 @@ export const artworksData: ArtWork[] = [
   ],
   youtubeVideos: [
     {
-      id: '2SLFuyZCtPo',
-      name: 'Fitting the Pattern screencast'
-    },
-    {
       id: 'XlMetNCa_Cc',
       name: 'Fitting The Pattern talk'
     }
@@ -296,17 +292,17 @@ export const artworksData: ArtWork[] = [
     url: '/oot/outoftouch',
     title: 'Out of Touch',
     // tslint:disable-next-line:max-line-length
-    blurb: 'In our world of perpetual connectivity, touching interfaces that keep us out of reach, we form attachments whilst remaining detached, by turns kindling and dampening emotions. A suite of animated and interactive digital poems for the web and/or live performance.',
+    blurb: 'In our world of perpetual connectivity, touching interfaces that keep us out of reach, we form attachments whilst remaining detached, by turns kindling and dampening emotions. An animated multimedia poem.',
     description: [
-      `In our world of perpetual connectivity, touching interfaces that keep us out of reach, we form attachments whilst remaining detached, by turns kindling and dampening emotions. A suite of animated and interactive digital poems for the web and/or live performance.`,
+      `In our world of perpetual connectivity, touching interfaces that keep us out of reach, we form attachments whilst remaining detached, by turns kindling and dampening emotions. An animated multimedia poem.`,
 
-      `'Out of Touch' was commissioned by the San Francisco Museum of Modern Art for the Third Hand Plays series, curated by Brian Kim Stefans, published at SFMOMA's Open Space in Summer 2011. In the original Flash poem, the text was randomly generated so every viewing was a unique experience.`
+      `'Out of Touch' was commissioned by the San Francisco Museum of Modern Art for the Third Hand Plays series, curated by Brian Kim Stefans, published at SFMOMA's Open Space in Summer 2011. The poem randomly generates the text so it's different every time you view it.`
   ],
   youtubeVideos: [],
   images: [''],
   pubdate: '2011',
     tech: 'originally created in Flash',
-    tags: ['oot', 'elit'],
+    tags: ['oot'],
     displayType: 'major',
     collaborators: '',
     publisher: 'SFMOMA\'s Open Space; Mad Hatters\' Review',
@@ -330,7 +326,9 @@ export const artworksData: ArtWork[] = [
     // tslint:disable-next-line:max-line-length
     blurb: 'Variations of \'Out of Touch\' - a suite of digital works I made for live performance. Touching interfaces that keep us out of reach yet perpetually connected and forever desiring...',
     description: [
-      `After making the original 'Out of Touch' piece for SFMOMA, I developed the ideas further, in 'Out of Hand' and 'Out of Sight', to create a collection of playable media for live digital performance.`
+      `Variations of 'Out of Touch' - a suite of digital works I made for live performance. Touching interfaces that keep us out of reach yet perpetually connected and forever desiring...`,
+
+      `After making the original 'Out of Touch' piece for San Francisco Museum of Modern Art's Open Space, I developed the ideas further, in 'Out of Hand' and 'Out of Sight', to create a collection of playable media for live digital performance.`
     ],
     youtubeVideos: [],
     images: [''],
@@ -341,7 +339,7 @@ export const artworksData: ArtWork[] = [
     collaborators: '',
     publisher: '',
     // tslint:disable-next-line:max-line-length
-    moreinfo: `After making the original 'Out of Touch' piece for San Francisco Museum of Modern Art's Open Space, I developed the ideas further, in 'Out of Hand' and 'Out of Sight', to create a collection of playable media for live digital performance.  'Out of Hand' references the disclosures of Edward Snowden that came to light in 2013.`,
+    moreinfo: 'After making the original \'Out of Touch\' piece for San Francisco Museum of Modern Art\'s Open Space, I developed the ideas further, in \'Out of Hand\' and \'Out of Sight\', to create a collection of playable media for live digital performance.',
     accolades: [
       {
         name: 'E-Poetry 2013, London, UK',

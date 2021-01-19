@@ -13,6 +13,19 @@
       <cx-accolades-list
         [artwork]=outoftouch
       ></cx-accolades-list>
+
+      <ng-container *ngIf="ioOutoftouch">
+        <h2> {{ioOutoftouch.title}} </h2>
+
+        <p *ngFor="let para of ioOutoftouch.description"> {{para}} </p>
+
+      <cx-accolades-list
+        [artwork]=ioOutoftouch
+      ></cx-accolades-list>
+
+      <p>'Out Of Hand' references the disclosures of <a href="https://en.wikipedia.org/wiki/Edward_Snowden">Edward Snowden</a> that came to light in 2013.</p>
+
+      </ng-container>
     </div>
 
   </ng-container>

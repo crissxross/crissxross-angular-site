@@ -12,12 +12,15 @@ export class OutoftouchComponent implements OnInit {
 
   artworks: ArtWork[] = artworksData;
   outoftouch?: ArtWork;
+  ioOutoftouch?: ArtWork;
 
   constructor() { }
 
   ngOnInit(): void {
     // uses destructuring
     this.outoftouch = this.artworks.find( ( {id} ) => id === 'outoftouch');
+
+    this.ioOutoftouch = this.artworks.find( ( {id} ) => id === 'io-outoftouch');
   }
 
 }
