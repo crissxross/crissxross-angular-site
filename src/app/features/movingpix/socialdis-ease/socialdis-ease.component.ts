@@ -12,11 +12,16 @@ export class SocialdisEaseComponent implements OnInit {
 
   artworks: ArtWork[] = artworksData;
   socialdisEase?: ArtWork;
+  video?: Video;
 
   constructor() { }
 
   ngOnInit(): void {
     this.socialdisEase = this.artworks.find( ( {id} ) => id === 'socialdis-ease');
+
+    if (this.socialdisEase && this.socialdisEase.youtubeVideos) {
+      this.video = this.socialdisEase.youtubeVideos[0]
+    }
   }
 
 }

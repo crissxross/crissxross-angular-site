@@ -12,11 +12,16 @@ export class UpsidedownChandelierComponent implements OnInit {
 
   artworks: ArtWork[] = artworksData;
   upsidedownChandelier?: ArtWork;
+  video?: Video;
 
   constructor() { }
 
   ngOnInit(): void {
     this.upsidedownChandelier = this.artworks.find( ( {id} ) => id === 'upsidedown-chandelier');
+
+    if (this.upsidedownChandelier && this.upsidedownChandelier.youtubeVideos) {
+      this.video = this.upsidedownChandelier.youtubeVideos[0]
+    }
   }
 
 }

@@ -12,11 +12,16 @@ export class UnderbellyComponent implements OnInit {
 
   artworks: ArtWork[] = artworksData;
   underbelly?: ArtWork;
+  video?: Video;
 
   constructor() { }
 
   ngOnInit(): void {
     this.underbelly = this.artworks.find( ( {id} ) => id === 'underbelly');
+
+    if (this.underbelly && this.underbelly.youtubeVideos) {
+      this.video = this.underbelly.youtubeVideos[0]
+    }
   }
 
 }

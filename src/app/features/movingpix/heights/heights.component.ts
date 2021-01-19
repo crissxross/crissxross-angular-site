@@ -12,11 +12,16 @@ export class HeightsComponent implements OnInit {
 
   artworks: ArtWork[] = artworksData;
   heights?: ArtWork;
+  video?: Video;
 
   constructor() { }
 
   ngOnInit(): void {
     this.heights = this.artworks.find( ( {id} ) => id === 'heights');
+
+    if (this.heights && this.heights.youtubeVideos) {
+      this.video = this.heights.youtubeVideos[0]
+    }
   }
 
 }

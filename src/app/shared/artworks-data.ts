@@ -49,7 +49,12 @@ export const artworksData: ArtWork[] = [
     description: [
       `An award-winning playable story about a woman sculptor, carving on the site of a former colliery in the north of England. As she carves, she is disturbed by a medley of voices, some from the site's dark industrial past, and the player/reader is plunged into an underworld of repressed fears and desires.`
     ],
-    youtubeVideos: [],
+    youtubeVideos: [
+      {
+        id: 'h3WcjF8aZqM',
+        name: 'Fitting the Pattern screencast'
+      }
+    ],
     images: [''],
     pubdate: '2010',
     tech: 'originally created in Flash',
@@ -225,7 +230,12 @@ export const artworksData: ArtWork[] = [
     description: [
       `An interactive story about a grandfather, his daughter and her children. The old man's Tinnitus and partial deafness is a source of friction yet he stubbornly refuses to contemplate treatment or hearing aids. The daughter is hurt and mystified by his angry reactions, but the key to his behaviour lies deep in the past.`
   ],
-  youtubeVideos: [],
+  youtubeVideos: [
+    {
+      id: 'q8z5YIJIedw',
+      name: 'Tailspin screencast'
+    }
+  ],
   images: [''],
   pubdate: '2008',
     tech: 'originally created in Flash',
@@ -302,7 +312,20 @@ export const artworksData: ArtWork[] = [
 
       `'Out of Touch' was commissioned by the San Francisco Museum of Modern Art for the Third Hand Plays series, curated by Brian Kim Stefans, published at SFMOMA's Open Space in Summer 2011. In the original Flash poem, the text was randomly generated so every viewing was a unique experience.`
   ],
-  youtubeVideos: [],
+  youtubeVideos: [
+    {
+      id: 'wG_TzAD0Vp4',
+      name: 'Out of Touch'
+    },
+    {
+      id: 'bzyBwooPzeo',
+      name: 'Out of Sight'
+    },
+    {
+      id: 'UkCXK2foL3c',
+      name: 'Out of Hand'
+    },
+  ],
   images: [''],
   pubdate: '2011',
     tech: 'originally created in Flash',
@@ -332,7 +355,20 @@ export const artworksData: ArtWork[] = [
     description: [
       `After making the original 'Out of Touch' piece for SFMOMA, I developed the ideas further, in 'Out of Hand' and 'Out of Sight', to create a collection of playable media for live digital performance.`
     ],
-    youtubeVideos: [],
+    youtubeVideos: [
+      {
+        id: 'wG_TzAD0Vp4',
+        name: 'Out of Touch screencast'
+      },
+      {
+        id: 'bzyBwooPzeo',
+        name: 'Out of Sight screencast'
+      },
+      {
+        id: 'UkCXK2foL3c',
+        name: 'Out of Hand screencast'
+      },
+    ],
     images: [''],
     pubdate: '2012',
     tech: 'originally created in Flash',
@@ -439,7 +475,12 @@ export const artworksData: ArtWork[] = [
 
       `"This multiplatform digital work references an event connected with the history of Košice and its tobacco factory from 1851 which employed mostly women workers. Some decades later, when St. Elizabeth's Cathedral was being renovated, the women workers donated a candle chandelier. The chandelier itself was repurposed twice – from the original candles, to gas lighting and with the advent of electricity, was turned upside down. In the installation, images of the chandelier from the cathedral are randomly generated and projected onto a screen in a flux of forms. Simultaneously the words connected with this story appear projected on the walls of the room, and phonetic sounds from Slovakian, Hungarian and German are generatively mixed in to create the soundscape of languages that were once spoken in the very same place by women workers" (María Mencía 2013).`,
   ],
-  youtubeVideos: [],
+  youtubeVideos: [
+    {
+      id: 'ypAUiOTRkZQ',
+      name: 'Upsidedown Chandelier'
+    }
+  ],
   images: [''],
   pubdate: '2013/2014',
     tech: 'originally created in Flash',
@@ -507,7 +548,12 @@ export const artworksData: ArtWork[] = [
 
       `I discuss the work in more detail in an interview I gave for De geuzen's 'Female Icons' (link to interview coming soon).`
     ],
-    youtubeVideos: [],
+    youtubeVideos: [
+      {
+        id: 'JKRhRPIKmkc',
+        name: 'IntraVenus'
+      }
+    ],
     images: [''],
     pubdate: '2005',
     tech: 'originally created in Flash',
@@ -546,7 +592,12 @@ export const artworksData: ArtWork[] = [
     description: [
       `An animated digital poem with my own ambient music.`
     ],
-    youtubeVideos: [],
+    youtubeVideos: [
+      {
+        id: '8qE00frm6d8',
+        name: 'We Drank'
+      }
+    ],
     images: [''],
     pubdate: '2005',
     tech: 'originally created in Flash',
@@ -578,7 +629,12 @@ export const artworksData: ArtWork[] = [
     description: [
       `An animated poem with my own ambient music based on my experience of visiting Gaudi's 'Sagrada Familia' in Barcelona some years before.`
     ],
-    youtubeVideos: [],
+    youtubeVideos: [
+      {
+        id: 'Ho-ZhEbchTw',
+        name: 'Heights'
+      }
+    ],
     images: [''],
     pubdate: '2006',
     tech: 'originally created in Flash',
@@ -602,7 +658,12 @@ export const artworksData: ArtWork[] = [
     description: [
       `My first digital poem created in Flash where I begin to explore some possibilities of animating text and using sound.`
     ],
-    youtubeVideos: [],
+    youtubeVideos: [
+      {
+        id: 'a_Zzqbhrrpc',
+        name: 'Social Dis-Ease'
+      }
+    ],
     images: [''],
     pubdate: '2004',
     tech: 'originally created in Flash',

@@ -21,7 +21,6 @@ export class FittingThePatternComponent implements OnInit {
 
     if (this.fittingThePattern && this.fittingThePattern.youtubeVideos) {
       this.video = this.fittingThePattern.youtubeVideos[0]
-
     }
 
   }

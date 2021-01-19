@@ -12,11 +12,17 @@ export class IntravenusComponent implements OnInit {
 
   artworks: ArtWork[] = artworksData;
   intravenus?: ArtWork;
+  video?: Video;
 
   constructor() { }
 
   ngOnInit(): void {
     this.intravenus = this.artworks.find( ( {id} ) => id === 'intravenus');
+
+    if (this.intravenus && this.intravenus.youtubeVideos) {
+      this.video = this.intravenus.youtubeVideos[0]
+    }
   }
+
 
 }

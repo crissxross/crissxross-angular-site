@@ -12,11 +12,16 @@ export class RememoriComponent implements OnInit {
 
   artworks: ArtWork[] = artworksData;
   rememori?: ArtWork;
+  video?: Video;
 
   constructor() { }
 
   ngOnInit(): void {
     this.rememori = this.artworks.find( ( {id} ) => id === 'rememori');
+
+    if (this.rememori && this.rememori.youtubeVideos) {
+      this.video = this.rememori.youtubeVideos[0]
+    }
   }
 
 }

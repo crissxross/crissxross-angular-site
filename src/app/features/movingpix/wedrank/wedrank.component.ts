@@ -12,11 +12,16 @@ export class WedrankComponent implements OnInit {
 
   artworks: ArtWork[] = artworksData;
   wedrank?: ArtWork;
+  video?: Video;
 
   constructor() { }
 
   ngOnInit(): void {
     this.wedrank = this.artworks.find( ( {id} ) => id === 'wedrank');
+
+    if (this.wedrank && this.wedrank.youtubeVideos) {
+      this.video = this.wedrank.youtubeVideos[0]
+    }
   }
 
 }

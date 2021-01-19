@@ -4,7 +4,22 @@
 
     <div class="wide-wrapper">
       <h1 class="page-title"> {{outoftouch.title}} </h1>
-      VIDEO
+
+      <cx-youtube-video
+        [videoId]="selectedVideo && selectedVideo.id"
+      ></cx-youtube-video>
+
+      <ng-container *ngIf="selectedVideo && selectedVideo.id">
+
+        <label>Select a video:</label>
+        <mat-radio-group aria-label="Select a video" [(ngModel)]="selectedVideo.id">
+          <mat-radio-button *ngFor="let video of videos" [value]="video.id">
+            {{video.name}}
+          </mat-radio-button>
+        </mat-radio-group>
+
+      </ng-container>
+
     </div>
 
     <div class="center flow">

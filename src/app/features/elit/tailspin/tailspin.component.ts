@@ -12,11 +12,16 @@ export class TailspinComponent implements OnInit {
 
   artworks: ArtWork[] = artworksData;
   tailspin?: ArtWork;
+  video?: Video;
 
   constructor() { }
 
   ngOnInit(): void {
     this.tailspin = this.artworks.find( ( {id} ) => id === 'tailspin');
+
+    if (this.tailspin && this.tailspin.youtubeVideos) {
+      this.video = this.tailspin.youtubeVideos[0]
+    }
   }
 
 }
