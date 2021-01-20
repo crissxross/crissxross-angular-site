@@ -348,7 +348,8 @@ export const artworksData: ArtWork[] = [
   },
   {
     id: 'io-outoftouch',
-    url: 'http://crissxross.net/oot/indexoot.html',
+    // url: 'http://crissxross.net/oot/indexoot.html',
+    url: '/oot/outoftouch',
     title: 'I/O Out of Touch',
     // tslint:disable-next-line:max-line-length
     blurb: 'Variations of \'Out of Touch\' - a suite of digital works I made for live performance. Touching interfaces that keep us out of reach yet perpetually connected and forever desiring...',
@@ -395,12 +396,13 @@ export const artworksData: ArtWork[] = [
   },
   {
     id: 'crissxross-trail-remixworx',
-    url: 'http://crissxross.net/remixworx/indexcxtrail.html',
+    // url: 'http://crissxross.net/remixworx/indexcxtrail.html',
+    url: '/remixworx/cx-trail-remix',
     title: 'A crissxross trail < R3M1XW0RX',
     // tslint:disable-next-line:max-line-length
-    blurb: 'Conceived as a poetic interactive infographic with plenty of multimedia animated content, this \'scenic route\' through Remixworx presents a sample trail of 33 remixes out of the 100 or more that I\'ve created since joining the online collaborative creative project in Jan 2007.',
+    blurb: `Conceived as a poetic interactive infographic full of multimedia animated content, this 'scenic route' through Remixworx presents a sample trail of 33 of my remixes with personal commentary. Remixworx was an online collaborative creative project and this trail represents about one third of the remixes I created for it.`,
     description: [
-      `Conceived as a poetic interactive infographic with plenty of multimedia animated content, this 'scenic route' through Remixworx presents a sample trail of 33 remixes out of the 100 or more that I've created since joining the online collaborative creative project in Jan 2007.`,
+      `Conceived as a poetic interactive infographic full of multimedia animated content, this 'scenic route' through Remixworx presents a sample trail of 33 of my remixes with personal commentary. Remixworx was an online collaborative creative project and this trail represents about one third of the remixes I created for it.`,
 
       `The R3M1XW0RX site hosts more than 500 remixes of digital art, animation, sound, music, poetry and writing.`
     ],
@@ -429,9 +431,9 @@ export const artworksData: ArtWork[] = [
     url: 'http://remixworx.com',
     title: 'R3M1XW0RX',
     // tslint:disable-next-line:max-line-length
-    blurb: 'Remixworx was a collaborative creative space for remixing visual poetry, e-poetry, playable media, animation, art, music, spoken word, texts and more. Initiated by Randy Adams as a blog in 2006, it grew to number more than 500 individual creative works. I contributed approximately 100 Flash works.',
+    blurb: 'Remixworx was a collaborative creative space for remixing visual poetry, e-poetry, playable media, animation, art, music, spoken word, texts and more. Initiated by Randy Adams (1951-2014) in 2006, it grew to number more than 500 individual creative works. I contributed about 100 Flash works.',
     description: [
-      `Remixworx was a collaborative creative space for remixing visual poetry, e-poetry, playable media, animation, art, music, spoken word, texts and more. Initiated by Randy Adams as a blog in 2006, it grew to number more than 500 individual creative works. I contributed approximately 100 Flash works.`,
+      `Remixworx was a collaborative creative space for remixing visual poetry, e-poetry, playable media, animation, art, music, spoken word, texts and more. Initiated by Randy Adams (1951-2014) in 2006, it grew to number more than 500 individual creative works. I contributed about 100 Flash works.`,
 
       `R3M1XW0RX is a tribute to the creativity, generosity and unique spirit of Randy Adams, aka runran, (1951-2014).`
     ],
@@ -441,7 +443,7 @@ export const artworksData: ArtWork[] = [
     tech: 'various media',
     tags: ['remixworx'],
     displayType: 'major',
-    collaborators: 'Made by the R3M1XW0RX collective',
+    collaborators: 'Made with the R3M1XW0RX collective.',
     publisher: 'R3M1XW0RX',
     moreinfo: 'R3M1XW0RX is a tribute to the creativity, generosity and unique spirit of Randy Adams, aka runran, (1951-2014).',
     accolades: [

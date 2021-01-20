@@ -10,13 +10,15 @@ import { MatRadioModule } from '@angular/material/radio';
 
 import { ArtworkCardComponent } from './artwork-card/artwork-card.component';
 import { AccoladesListComponent } from './accolades-list/accolades-list.component';
+import { UnderConstructionComponent } from './under-construction/under-construction.component';
 
 
 
 @NgModule({
   declarations: [
     ArtworkCardComponent,
-    AccoladesListComponent
+    AccoladesListComponent,
+    UnderConstructionComponent
   ],
   imports: [
     CommonModule,
@@ -41,6 +43,7 @@ import { AccoladesListComponent } from './accolades-list/accolades-list.componen
     // components
     ArtworkCardComponent,
     AccoladesListComponent,
+    UnderConstructionComponent,
   ]
 })
 export class SharedModule { }

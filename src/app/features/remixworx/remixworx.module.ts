@@ -7,13 +7,15 @@ import { YoutubeVideoModule } from '../../components/youtube-video/youtube-video
 
 import { RemixworxComponent } from './remixworx.component';
 import { UpsidedownChandelierComponent } from './upsidedown-chandelier/upsidedown-chandelier.component';
+import { CxTrailRemixworxComponent } from './cx-trail-remixworx/cx-trail-remixworx.component';
 
 
 
 @NgModule({
   declarations: [
     RemixworxComponent,
-    UpsidedownChandelierComponent
+    UpsidedownChandelierComponent,
+    CxTrailRemixworxComponent
   ],
   imports: [
     SharedModule,
