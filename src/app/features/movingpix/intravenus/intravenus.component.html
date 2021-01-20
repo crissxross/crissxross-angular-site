@@ -2,15 +2,12 @@
 
   <ng-container *ngIf="intravenus">
 
-    <div class="wide-wrapper">
+    <div class="center-wrapper">
       <h1 class="page-title"> {{intravenus.title}} </h1>
-
-      <cx-youtube-video
-        [videoId]="video && video.id"
-      ></cx-youtube-video>
+      (VIDEO screencast to come)
     </div>
 
-    <div class="center flow">
+    <div class="center-measure flow">
       <p *ngFor="let para of intravenus.description"> {{para}} </p>
 
       <cx-accolades-list

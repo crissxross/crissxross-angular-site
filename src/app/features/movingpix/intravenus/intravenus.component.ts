@@ -12,6 +12,7 @@ export class IntravenusComponent implements OnInit {
 
   artworks: ArtWork[] = artworksData;
   intravenus?: ArtWork;
+  // NOTE: not able to host video on youtube
   video?: Video;
 
   constructor() { }
@@ -19,9 +20,6 @@ export class IntravenusComponent implements OnInit {
   ngOnInit(): void {
     this.intravenus = this.artworks.find( ( {id} ) => id === 'intravenus');
 
-    if (this.intravenus && this.intravenus.youtubeVideos) {
-      this.video = this.intravenus.youtubeVideos[0]
-    }
   }
 
 

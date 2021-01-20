@@ -548,12 +548,7 @@ export const artworksData: ArtWork[] = [
 
       `I discuss the work in more detail in an interview I gave for De geuzen's 'Female Icons' (link to interview coming soon).`
     ],
-    youtubeVideos: [
-      {
-        id: 'JKRhRPIKmkc',
-        name: 'IntraVenus'
-      }
-    ],
+    youtubeVideos: [],
     images: [''],
     pubdate: '2005',
     tech: 'originally created in Flash',
