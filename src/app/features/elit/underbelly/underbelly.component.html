@@ -2,7 +2,7 @@
 
   <ng-container *ngIf="underbelly">
 
-    <div class="wide-wrapper">
+    <div class="center-wrapper">
       <h1 class="page-title"> {{underbelly.title}} </h1>
 
       <cx-youtube-video
@@ -10,7 +10,7 @@
       ></cx-youtube-video>
     </div>
 
-    <div class="center flow">
+    <div class="center-measure flow">
       <p *ngFor="let para of underbelly.description"> {{para}} </p>
 
       <cx-accolades-list

@@ -1,7 +1,4 @@
-// similar to stack layout primitive but for normal flow
-.flow > * + * {
-  margin-top: var(--flow-space, 1em);
-}
+// utilities are loaded last and should be able to override previous rules therefore it's ok to important! where necessary
 
 .pad-block {
   padding-top: var(--s1);

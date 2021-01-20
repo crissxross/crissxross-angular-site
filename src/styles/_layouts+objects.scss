@@ -1,11 +1,11 @@
 /* Class-based selectors for layouts & objects */
 
-/****** LAYOUT PRIMITIVES ******/
+/* LAYOUT PRIMITIVES based on Every Layout https://every-layout.dev/layouts/ - I've adapted the naming conventions to make things clearer for my purposes */
 
-/* LAYOUT PRIMITIVES based on Every Layout https://every-layout.dev/layouts/ */
+/*********** LAYOUT PRIMITIVES ***********/
 
 /* box-sizing overrides to content-box so that if left & right padding is needed, it won't take away from the --measure (default 75ch) maximum width */
-.center {
+.center-measure {
   box-sizing: content-box;
   margin-left: auto;
   margin-right: auto;
@@ -45,8 +45,8 @@
 // @supports because a few mobile browsers don't yet support min()
 // See https://every-layout.dev/layouts/grid/#the-solution
 
-// TODO: check these 👇
 /* LAYOUT PRIMITIVE COMPONENTS - intrinsically styled */
+// TODO: check these 👇
 
 .box {
   padding: var(--s0);
@@ -66,11 +66,20 @@
   background-color: var(--color-dark);
 }
 
-/****** LAYOUT UTILITIES ******/
+/*********** LAYOUT UTILITIES ***********/
+
+// similar to stack layout primitive but for normal flow
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
 
 // NOTE: container is good for auto-grid of cards
 .container {
-  padding: var(--s2);
+  // individually set so they can be individually overwritten
+  padding-top: var(--s2);
+  padding-bottom: var(--s2);
+  padding-left: var(--s2);
+  padding-right: var(--s2);
 }
 
 .full-bleed {
@@ -79,26 +88,18 @@
 }
 
 // to use with full bleed for consistent centred content - see https://piccalil.li/tutorial/creating-a-full-bleed-css-utility
-.wrapper {
-  max-width: 50rem;
+.center-wrapper {
+  max-width: var(--width, 60rem);
   margin-left: auto;
   margin-right: auto;
+  padding-left: var(--pad, 0);
+  padding-right: var(--pad, 0);
 }
-/* can also include padding left & right
-  OR use .center layout primitive ??
-*/
+/* can also include padding left & right */
 
-.wide-wrapper {
-  max-width: 60rem;
-  margin-left: auto;
-  margin-right: auto;
-  // padding-left: var(--s0);
-  // padding-right: var(--s0);
-}
+/*********** OBJECTS ***********/
 
-/****** OBJECTS ******/
-
-// used with .wide-wrapper
+// used with .center-wrapper
 .page-title {
   padding-top: var(--s0);
   padding-bottom: var(--s0);
@@ -106,11 +107,26 @@
   padding-right: var(--s0);
 }
 
+.container > .page-title {
+  padding-top: 0;
+}
+
+.video-select {
+  padding-left: var(--s0);
+  padding-right: var(--s0);
+}
+
 @media (min-width: 1160px) {
-  .page-title {
+  .page-title,
+  .video-select {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.intro {
+  // padding-top: var(--s5);
+  // outline: 1px solid white;
 }
 
 

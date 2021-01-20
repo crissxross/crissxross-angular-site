@@ -2,14 +2,14 @@
 
   <ng-container *ngIf="outoftouch">
 
-    <div class="wide-wrapper">
+    <div class="center-wrapper">
       <h1 class="page-title"> {{outoftouch.title}} </h1>
 
       <cx-youtube-video
         [videoId]="selectedVideo && selectedVideo.id"
       ></cx-youtube-video>
 
-      <ng-container *ngIf="selectedVideo && selectedVideo.id">
+      <div class="video-select" *ngIf="selectedVideo && selectedVideo.id">
 
         <label>Select a video:</label>
         <mat-radio-group aria-label="Select a video" [(ngModel)]="selectedVideo.id">
@@ -18,11 +18,11 @@
           </mat-radio-button>
         </mat-radio-group>
 
-      </ng-container>
+      </div>
 
     </div>
 
-    <div class="center flow">
+    <div class="center-measure flow">
       <p *ngFor="let para of outoftouch.description"> {{para}} </p>
 
       <cx-accolades-list

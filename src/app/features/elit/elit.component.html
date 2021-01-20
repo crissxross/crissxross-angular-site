@@ -1,8 +1,11 @@
 <main class="container">
 
-  <h1>Archive of E-Lit works (or just Flash?)</h1>
+  <h1 class="page-title">Archive of E-Lit works</h1>
   <!-- TODO: change heading and add intro -->
   <div class="grid-auto">
+    <p class="intro">
+      Introduce this section... explain that most of these works were created in Flash...
+    </p>
     <div *ngFor="let artwork of artworks" class="artwork">
       <cx-artwork-card [artwork]="artwork" class="crissxross-light-theme"
       ></cx-artwork-card>
