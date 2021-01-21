@@ -38,7 +38,6 @@ export class OutoftouchComponent implements OnInit {
   videos?: Video[];
   selectedVideo?: Video;
   // selectedVideo: YoutubeVideo | undefined = youtubeVideos[0];
-  // TODO: FIX the faulty selectedVideo functionality - should I be using OnChanges ???
 
   constructor() { }
 

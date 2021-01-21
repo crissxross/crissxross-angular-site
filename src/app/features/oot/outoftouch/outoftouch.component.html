@@ -9,11 +9,12 @@
         [videoId]="selectedVideo && selectedVideo.id"
       ></cx-youtube-video>
 
-      <div class="video-select" *ngIf="selectedVideo && selectedVideo.id">
+      <div class="video-select">
 
         <label>Select a video:</label>
-        <mat-radio-group aria-label="Select a video" [(ngModel)]="selectedVideo.id">
-          <mat-radio-button *ngFor="let video of videos" [value]="video.id">
+        <mat-radio-group aria-label="Select a video"
+          [(ngModel)]="selectedVideo">
+          <mat-radio-button *ngFor="let video of videos" [value]="video">
             {{video.name}}
           </mat-radio-button>
         </mat-radio-group>
