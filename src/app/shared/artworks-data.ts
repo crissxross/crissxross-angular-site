@@ -266,7 +266,12 @@ export const artworksData: ArtWork[] = [
 
       `In memory of my father, Bernard Wilks (1925-2012). I made the work while he was still living but in the latter stages of Alzheimer's disease.`
     ],
-    youtubeVideos: [],
+    youtubeVideos: [
+      {
+        id: '4eKCgQ85rh8',
+        name: 'Rememori'
+      }
+    ],
     images: [''],
     pubdate: '2011',
     tech: 'originally created in Flash',

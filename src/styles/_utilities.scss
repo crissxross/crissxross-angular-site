@@ -1,7 +1,26 @@
 // utilities are loaded last and should be able to override previous rules therefore it's ok to important! where necessary
 
+.marg-top {
+  margin-top: var(--space, var(--s0));
+}
+.marg-bottom {
+  margin-bottom: var(--space, var(--s0));
+}
+
+.pad-top {
+  padding-top: var(--space, var(--s0));
+}
+.pad-bottom {
+  padding-bottom: var(--space, var(--s0));
+}
+
+.pad-inline {
+  padding-left: var(--space, var(--s0));
+  padding-right: var(--space, var(--s0));
+}
+
 .pad-block {
-  padding-top: var(--s1);
-  padding-bottom: var(--s1);
+  padding-top: var(--space, var(--s0));
+  padding-bottom: var(--space, var(--s0));
 }
 

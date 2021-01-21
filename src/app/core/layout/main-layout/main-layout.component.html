@@ -42,7 +42,14 @@
       <span>crissxross</span>
     </mat-toolbar>
     <!-- Add Content Here -->
-    <router-outlet></router-outlet>
+    <div class="content-grid">
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+      <footer>
+        <cx-footer></cx-footer>
+      </footer>
+    </div>
   </mat-sidenav-content>
 
 </mat-sidenav-container>
