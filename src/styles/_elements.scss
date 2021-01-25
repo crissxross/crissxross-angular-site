@@ -29,14 +29,29 @@ figcaption {
 a {
   // color: var(--clr-neutral-100);
   color: var(--clr-accent-base);
-  // text-decoration: none;
+  text-decoration-thickness: 0.063;
+  text-underline-offset: 0.3em;
 }
 
-// a:hover,
-// a:focus {
-//   text-decoration: underline;
-// }
+a:hover,
+a:focus {
+  text-decoration-thickness: 0.125em;
+  text-underline-offset: 0.15em;
+}
+
+a:not([class]):focus {
+  outline: 1px solid currentColor;
+  outline-offset: 0.15em;
+}
+
+button:focus {
+  outline-color: var(--clr-accent-base);
+}
 
 main {
   padding-bottom: var(--s1);
+}
+
+blockquote {
+  padding-left: var(--s0);
 }

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog, MatDialogConfig } from "@angular/material/dialog";
+
+import { CxTrailStoryDialogComponent } from '../cx-trail-story-dialog/cx-trail-story-dialog.component';
 
 @Component({
   selector: 'cx-cx-trail-remixworx',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CxTrailRemixworxComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  openStoryDialog(id: string) {
+
+    const dialogConfig = new MatDialogConfig();
+
+    dialogConfig.data = { id };
+
+    this.dialog.open(CxTrailStoryDialogComponent, dialogConfig);
+
   }
 
 }
