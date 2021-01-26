@@ -32,6 +32,7 @@ export class CxTrailRemixworxComponent implements OnInit {
     const dialogConfig = new MatDialogConfig();
 
     dialogConfig.data = { id, name, details };
+    dialogConfig.restoreFocus = false;
 
     this.dialog.open(CxTrailVideoDialogComponent, dialogConfig);
   }

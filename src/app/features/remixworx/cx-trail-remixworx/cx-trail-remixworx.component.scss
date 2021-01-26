@@ -36,17 +36,6 @@ h1.page-title {
   font-size: var(--fs-800);
 }
 
-figure,
-img {
-  border-radius: 0.3em;
-  cursor: pointer;
-}
-
-img:hover {
-  box-shadow: 0px 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
-  outline: 1px solid red;
-}
-
 footer {
   text-align: center;
   font-size: var(--fs-300);
@@ -58,6 +47,31 @@ footer {
 
 footer a {
   color: var(--clr-accent-dark);
+}
+
+img,
+.image,
+.image > button {
+  border-radius: 0.3em;
+}
+
+.image > button {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.image > button:hover {
+  filter: brightness(1.2);
+  // box-shadow: horizontal vertical blur spread color
+  // for reference elevation-z4:
+    // box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%),
+    //             0px 4px 5px 0px rgb(0 0 0 / 14%),
+    //             0px 1px 10px 0px rgb(0 0 0 / 12%);
+  // elevation-z8
+    box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%),
+                0px 8px 10px 1px rgb(0 0 0 / 14%),
+                0px 3px 14px 2px rgb(0 0 0 / 12%);
 }
 
 .story > button {
@@ -90,14 +104,15 @@ footer a {
   grid-row: 1;
 }
 
-figure {
+.image,
+.story {
   grid-column-end: span 3;
 }
 
 .story {
   align-self: start;
   justify-self: start;
-  grid-column-end: span 3;
+  // grid-column-end: span 3;
 }
 
 // stories..............
@@ -187,165 +202,136 @@ figure {
 }
 
 // figures..................................
-.fig1 {
+.pic1 {
   grid-column-start: 6;
   grid-row: 1;
 }
-.fig2 {
+.pic2 {
   grid-column-start: 3;
   grid-row: 2;
 }
-.fig3 {
+.pic3 {
   grid-column-start: 14;
   grid-row: 2;
 }
-.fig4 {
+.pic4 {
   grid-column-start: 8;
   grid-row: 3;
 }
-.fig5 {
+.pic5 {
   grid-column-start: 1;
   grid-row: 4;
 }
-.fig6 {
+.pic6 {
   grid-column-start: 11;
   grid-row: 4;
 }
-.fig7 {
+.pic7 {
   grid-column-start: 5;
   grid-row: 5;
 }
-.fig8 {
+.pic8 {
   grid-column-start: 13;
   grid-row: 5;
 }
-.fig9 {
+.pic9 {
   grid-column-start: 2;
   grid-row: 6;
 }
-.fig10 {
+.pic10 {
   grid-column-start: 10;
   grid-row: 6;
 }
-.fig11 {
+.pic11 {
   grid-column-start: 4;
   grid-row: 7;
 }
-.fig12 {
+.pic12 {
   grid-column-start: 11;
   grid-row: 7;
 }
-.fig13 {
+.pic13 {
   grid-column-start: 9;
   grid-row: 8;
 }
-.fig14 {
+.pic14 {
   grid-column-start: 5;
   grid-row: 9;
 }
-.fig15 {
+.pic15 {
   grid-column-start: 14;
   grid-row: 9;
 }
-.fig16 {
+.pic16 {
   grid-column-start: 2;
   grid-row: 10;
 }
-.fig17 {
+.pic17 {
   grid-column-start: 10;
   grid-row: 10;
 }
-.fig18 {
+.pic18 {
   grid-column-start: 6;
   grid-row: 11;
 }
-.fig19 {
+.pic19 {
   grid-column-start: 12;
   grid-row: 11;
 }
-.fig20 {
+.pic20 {
   grid-column-start: 1;
   grid-row: 12;
 }
-.fig21 {
+.pic21 {
   grid-column-start: 4;
   grid-row: 13;
 }
-.fig22 {
+.pic22 {
   grid-column-start: 11;
   grid-row: 13;
 }
-.fig23 {
+.pic23 {
   grid-column-start: 14;
   grid-row: 14;
 }
-.fig24 {
+.pic24 {
   grid-column-start: 8;
   grid-row: 15;
 }
-.fig25 {
+.pic25 {
   grid-column-start: 5;
   grid-row: 16;
 }
-.fig26 {
+.pic26 {
   grid-column-start: 12;
   grid-row: 17;
 }
-.fig27 {
+.pic27 {
   grid-column-start: 3;
   grid-row: 18;
 }
-.fig28 {
+.pic28 {
   grid-column-start: 10;
   grid-row: 19;
 }
-.fig29 {
+.pic29 {
   grid-column-start: 6;
   grid-row: 20;
 }
-.fig30 {
+.pic30 {
   grid-column-start: 14;
   grid-row: 21;
 }
-.fig31 {
+.pic31 {
   grid-column-start: 1;
   grid-row: 22;
 }
-.fig32 {
+.pic32 {
   grid-column-start: 8;
   grid-row: 22;
 }
-.fig33 {
+.pic33 {
   grid-column-start: 11;
   grid-row: 23;
 }
 
-
-
-
-
-
-
-
-// .row1 {
-//   grid-row: 1;
-// }
-// .row2 {
-//   grid-row: 2;
-// }
-
-// .col1 {
-//   grid-column: 1 / span 3;
-// }
-// .col2 {
-//   grid-column: 2 / span 3;
-// }
-// .col5 {
-//   grid-column: 5 / span 3;
-// }
-// .col6 {
-//   grid-column: 6 / span 3;
-// }
-// .col8 {
-//   grid-column: 8 / span 3;
-// }
