@@ -24,3 +24,7 @@
   padding-bottom: var(--space, var(--s0));
 }
 
+.cx-bg-black-dialog .mat-dialog-container {
+  background-color: black;
+  color: var(--clr-neutral-300);
+}

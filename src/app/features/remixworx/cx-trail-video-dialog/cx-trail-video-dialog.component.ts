@@ -1,7 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
-
-import { Video } from '../../../models/artwork.model';
+import {MatDialog, MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 
 export interface DialogData {
   id: string;
@@ -17,11 +15,13 @@ export interface DialogData {
 })
 export class CxTrailVideoDialogComponent implements OnInit {
 
-  video?: Video;
-
-  constructor(@Inject(MAT_DIALOG_DATA) public data: DialogData) { }
+  constructor(
+    private diaglogRef: MatDialogRef<CxTrailVideoDialogComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: DialogData
+  ) { }
 
   ngOnInit(): void {
+    this.diaglogRef.addPanelClass('cx-bg-black-dialog');
   }
 
 }

@@ -21,6 +21,8 @@ export class CxTrailRemixworxComponent implements OnInit {
     const dialogConfig = new MatDialogConfig();
 
     dialogConfig.data = { id };
+    dialogConfig.autoFocus = false;
+    dialogConfig.restoreFocus = false;
 
     this.dialog.open(CxTrailStoryDialogComponent, dialogConfig);
   }
