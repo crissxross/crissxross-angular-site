@@ -10,11 +10,15 @@ import { artworksData } from '../../../shared/artworks-data';
 })
 export class ShowcaseComponent implements OnInit {
 
-  artworks: ArtWork[] = artworksData;
+  allArtworks: ArtWork[] = artworksData;
+  artworks: ArtWork[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
+    this.artworks = this.allArtworks.filter(
+      artwork => artwork.tags?.includes('showcase')
+    )
   }
 
 }

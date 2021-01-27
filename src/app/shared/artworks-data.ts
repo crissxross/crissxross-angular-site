@@ -1,7 +1,5 @@
 import { ArtWork } from '../models/artwork.model';
 
-// TODO: Add YouTube link/url (& any metadata?)
-
 export const artworksData: ArtWork[] = [
   {
     id: 'inkubus',
@@ -16,7 +14,7 @@ export const artworksData: ArtWork[] = [
     images: [''],
     pubdate: '2014',
     tech: 'Unity 3D',
-    tags: ['elit'],
+    tags: ['showcase', 'elit'],
     displayType: 'major',
     collaborators: 'Made in collaboration with Andy Campbell.',
     publisher: 'Dreaming Methods',
@@ -58,7 +56,7 @@ export const artworksData: ArtWork[] = [
     images: [''],
     pubdate: '2010',
     tech: 'originally created in Flash',
-    tags: ['elit'],
+    tags: ['showcase', 'elit'],
     displayType: 'major',
     collaborators: '',
     // tslint:disable-next-line:max-line-length
@@ -172,7 +170,7 @@ export const artworksData: ArtWork[] = [
   images: [''],
   pubdate: '2008',
     tech: 'originally created in Flash',
-    tags: ['elit'],
+    tags: ['showcase', 'elit'],
     displayType: 'major',
     collaborators: '',
     publisher: 'Published in the Electronic Literature Collection, Volume 2, Feb 2011',
@@ -239,7 +237,7 @@ export const artworksData: ArtWork[] = [
   images: [''],
   pubdate: '2008',
     tech: 'originally created in Flash',
-    tags: ['elit'],
+    tags: ['showcase', 'elit'],
     displayType: 'major',
     collaborators: '',
     publisher: 'Published in the Electronic Literature Collection, Volume 2, Feb 2011',
@@ -275,7 +273,7 @@ export const artworksData: ArtWork[] = [
     images: [''],
     pubdate: '2011',
     tech: 'originally created in Flash',
-    tags: ['elit'],
+    tags: ['showcase', 'elit'],
     displayType: 'major',
     collaborators: '',
     publisher: 'The New River Journal, Spring 2012',
@@ -311,7 +309,7 @@ export const artworksData: ArtWork[] = [
     url: '/oot/outoftouch',
     title: 'Out of Touch',
     // tslint:disable-next-line:max-line-length
-    blurb: 'In our world of perpetual connectivity, touching interfaces that keep us out of reach, we form attachments whilst remaining detached, by turns kindling and dampening emotions. A suite of animated and interactive digital poems for the web and/or live performance.',
+    blurb: `In our world of perpetual connectivity, touching interfaces that keep us out of reach, we form attachments whilst remaining detached, by turns kindling and dampening emotions. 'Out of Touch' includes a suite of animated and interactive digital poems for the web and live performance.`,
     description: [
       `In our world of perpetual connectivity, touching interfaces that keep us out of reach, we form attachments whilst remaining detached, by turns kindling and dampening emotions. A suite of animated and interactive digital poems for the web and/or live performance.`,
 
@@ -334,7 +332,7 @@ export const artworksData: ArtWork[] = [
   images: [''],
   pubdate: '2011',
     tech: 'originally created in Flash',
-    tags: ['oot', 'elit'],
+    tags: ['showcase', 'oot', 'elit'],
     displayType: 'major',
     collaborators: '',
     publisher: 'SFMOMA\'s Open Space; Mad Hatters\' Review',
@@ -548,7 +546,7 @@ export const artworksData: ArtWork[] = [
     images: [''],
     pubdate: '2012',
     tech: 'HTML & video (originally included Flash)',
-    tags: ['remixworx'],
+    tags: ['showcase', 'remixworx'],
     displayType: 'major',
     collaborators: '',
     publisher: '',
@@ -579,7 +577,7 @@ export const artworksData: ArtWork[] = [
     images: [''],
     pubdate: '2006-2016',
     tech: 'various media',
-    tags: ['remixworx'],
+    tags: ['showcase', 'remixworx'],
     displayType: 'major',
     collaborators: 'Made with the R3M1XW0RX collective.',
     publisher: 'R3M1XW0RX',
@@ -624,7 +622,7 @@ export const artworksData: ArtWork[] = [
   images: [''],
   pubdate: '2013/2014',
     tech: 'originally created in Flash',
-    tags: ['remixworx'],
+    tags: ['showcase', 'remixworx'],
     displayType: 'major',
     collaborators: 'Made in collaboration with María Mencía, Jeneen Naji and Zuzana Husárová.',
     publisher: 'María Mencía',
@@ -663,7 +661,7 @@ export const artworksData: ArtWork[] = [
     images: [''],
     pubdate: '2013',
     tech: 'HTML, CSS & JavaScript',
-    tags: ['remixworx'],
+    tags: ['showcase', 'remixworx'],
     displayType: 'major',
     collaborators: 'My last collaboration with Randy Adams (1951-2014).',
     publisher: 'remixworx',
@@ -692,7 +690,7 @@ export const artworksData: ArtWork[] = [
     images: [''],
     pubdate: '2005',
     tech: 'originally created in Flash',
-    tags: ['movingpix'],
+    tags: ['showcase', 'movingpix'],
     displayType: 'minor',
     moreinfo: 'I discuss the work in more detail in an interview I gave for De geuzen\'s \'Female Icons\' (link to interview coming soon).',
     accolades: [
@@ -736,7 +734,7 @@ export const artworksData: ArtWork[] = [
     images: [''],
     pubdate: '2005',
     tech: 'originally created in Flash',
-    tags: ['movingpix'],
+    tags: ['showcase', 'movingpix'],
     displayType: 'minor',
     moreinfo: '',
     accolades: [
@@ -773,7 +771,7 @@ export const artworksData: ArtWork[] = [
     images: [''],
     pubdate: '2006',
     tech: 'originally created in Flash',
-    tags: ['movingpix'],
+    tags: ['showcase', 'movingpix'],
     displayType: 'minor',
     moreinfo: '',
     accolades: [
@@ -802,7 +800,7 @@ export const artworksData: ArtWork[] = [
     images: [''],
     pubdate: '2004',
     tech: 'originally created in Flash',
-    tags: ['movingpix'],
+    tags: ['showcase', 'movingpix'],
     displayType: 'minor',
     moreinfo: '',
     accolades: [
@@ -827,7 +825,7 @@ export const artworksData: ArtWork[] = [
     images: [''],
     pubdate: '2004',
     tech: 'HTML & CSS',
-    tags: ['movingpix'],
+    tags: ['showcase', 'movingpix'],
     displayType: 'minor',
     moreinfo: '',
     accolades: [
