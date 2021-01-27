@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { CoreModule } from './core/core.module';
 import { routes } from './app.routes';
 import { AppComponent } from './app.component';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { AppComponent } from './app.component';
     CoreModule,
     RouterModule.forRoot(routes, {
       scrollPositionRestoration: 'enabled'
-    })
+    }),
+    ScullyLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
