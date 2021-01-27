@@ -7,6 +7,7 @@ import { routes } from './home.routes';
 import { HomeComponent } from './home.component';
 import { AboutComponent } from './about/about.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
+import { HeroSectionComponent } from './hero-section/hero-section.component';
 
 
 
@@ -15,6 +16,7 @@ import { ShowcaseComponent } from './showcase/showcase.component';
     HomeComponent,
     AboutComponent,
     ShowcaseComponent,
+    HeroSectionComponent,
   ],
   imports: [
     SharedModule,
