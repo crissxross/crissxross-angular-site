@@ -1,10 +1,9 @@
 /* For styling bare HTML elements */
 
-// added by ng add material schematic
-html, body {
-  height: 100%;
-  // TODO: why does 100vh (from reset) not work?
-}
+// ↓ added by ng add material schematic but NOT recommended now, see: https://greggod.medium.com/css-do-not-put-height-100-on-the-body-html-e36bda3551b3
+// html, body {
+//   height: 100%;
+// }
 
 // added by ng add material schematic
 // body { font-family: Roboto, "Helvetica Neue", sans-serif; }
@@ -27,7 +26,6 @@ figcaption {
 }
 
 a {
-  // color: var(--clr-neutral-100);
   color: var(--clr-accent-base);
   text-decoration-thickness: 0.063;
   text-underline-offset: 0.3em;

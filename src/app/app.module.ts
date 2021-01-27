@@ -11,7 +11,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     CoreModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
