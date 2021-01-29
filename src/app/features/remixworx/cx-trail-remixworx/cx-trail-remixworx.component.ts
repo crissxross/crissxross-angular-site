@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from "@angular/material/dialog";
 
 import { CxTrailStoryDialogComponent } from '../cx-trail-story-dialog/cx-trail-story-dialog.component';
-import { CxTrailVideoDialogComponent } from '../cx-trail-video-dialog/cx-trail-video-dialog.component';
 
 @Component({
   selector: 'cx-cx-trail-remixworx',
@@ -25,16 +24,6 @@ export class CxTrailRemixworxComponent implements OnInit {
     dialogConfig.restoreFocus = false;
 
     this.dialog.open(CxTrailStoryDialogComponent, dialogConfig);
-  }
-
-  openVideoDialog(id: string, name: string, details?: string) {
-
-    const dialogConfig = new MatDialogConfig();
-
-    dialogConfig.data = { id, name, details };
-    dialogConfig.restoreFocus = false;
-
-    this.dialog.open(CxTrailVideoDialogComponent, dialogConfig);
   }
 
 }

@@ -12,6 +12,7 @@ import { UpsidedownChandelierComponent } from './upsidedown-chandelier/upsidedow
 import { CxTrailRemixworxComponent } from './cx-trail-remixworx/cx-trail-remixworx.component';
 import { CxTrailStoryDialogComponent } from './cx-trail-story-dialog/cx-trail-story-dialog.component';
 import { CxTrailVideoDialogComponent } from './cx-trail-video-dialog/cx-trail-video-dialog.component';
+import { TrailGridComponent } from './cx-trail-remixworx/trail-grid/trail-grid.component';
 
 
 
@@ -22,6 +23,7 @@ import { CxTrailVideoDialogComponent } from './cx-trail-video-dialog/cx-trail-vi
     CxTrailRemixworxComponent,
     CxTrailStoryDialogComponent,
     CxTrailVideoDialogComponent,
+    TrailGridComponent,
   ],
   imports: [
     SharedModule,
