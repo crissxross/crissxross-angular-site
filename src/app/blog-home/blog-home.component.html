@@ -1,15 +1,19 @@
-<h1>Blog home</h1>
+<div class="container">
 
-<div class="blog-posts container">
+  <h1>Blog</h1>
 
-  <ul>
-    <li *ngFor="let post of posts$ | async">
-      <a [routerLink]="post.route">
-        <h2> {{ post.title }} </h2>
-        <p> {{ post.description }} - {{ post.route }} </p>
-      </a>
-    </li>
-  </ul>
+  <div class="blog-posts">
+
+    <ul role="list">
+      <li *ngFor="let post of posts$ | async">
+        <a [routerLink]="post.route">
+          <h2> {{ post.title }} </h2>
+        </a>
+        <p> {{ post.description }} </p>
+      </li>
+    </ul>
+
+  </div>
 
 </div>
 
