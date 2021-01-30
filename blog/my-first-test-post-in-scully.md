@@ -1,7 +1,11 @@
 ---
 title: 'My First Test Post in Scully'
-description: 'First test description'
+description: 'Testing all the different elements and Markdown features that I will likely use so that I can style them with CSS.'
 published: true
+author: 'Christine Wilks'
+date: 2021-01-30
+updated:
+tags:
 
 ---
 
@@ -9,15 +13,18 @@ published: true
 
 This is the first blog post I've generated myself in Scully. It's merely a test post. The main purpose of its content is to provide (almost) all the elements and features in Markdown so that I can style the generated HTML with CSS.
 
+![Image from Underbelly](/assets/img/underbelly.png)
+<figcaption>This is an image from Underbelly</figcaption>
+
 Note: I generate this post by running the the following command:
 
 `ng generate @scullyio/init:post --name="My First Test Post in Scully"`
 
 Let's see what happens next when I run *scully & serve*...
 
-![Image from Underbelly](/assets/img/underbelly.png)
-
 When writing the Markdown samples, I referred to [Markdown Guide basic syntax](https://www.markdownguide.org/basic-syntax/)
+
+<p class="callout">This is a callout paragraph and therefore needs to be in a <strong>paragraph with callout class</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales suscipit elit imperdiet pellentesque. Maecenas rutrum tempor bibendum. Nulla sit amet urna est.</p>
 
 ## Heading Two
 
@@ -41,13 +48,9 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 2. two pears
 3. three oranges
 
-Tasks?
-
-- [x] task one
-- [ ] task two
-- [ ] task three
-
 ## Blockquotes
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales suscipit elit imperdiet pellentesque. Maecenas rutrum tempor bibendum. Nulla sit amet urna est.
 
 > Integer in nisi tristique, ullamcorper lectus vel, suscipit sem. Fusce porta leo nunc, feugiat mollis sem aliquam ac. Aenean libero magna, efficitur et mattis et, elementum nec tellus. Sed sit amet lorem et felis congue rutrum. Donec porttitor metus vitae ligula sagittis consectetur. Maecenas et gravida quam. Morbi tincidunt at risus vitae feugiat.
 
@@ -57,22 +60,21 @@ More blockquotes follow on from here.
 >
 > The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
 
+Lorem ipsum dolor sit **amet**, consectetur adipiscing elit. Morbi sodales suscipit elit imperdiet pellentesque. Maecenas rutrum tempor bibendum. Nulla sit amet urna est.
+
 ![image from I/O OOT](assets/img/io-outoftouch.png)
 
 ## URLS & Email addresses
 
 <https://www.markdownguide.org>
+<br>
 <fake@example.com>
 
-Does automatic URL linking work? http://www.example.com
+Does automatic URL linking work? http://www.example.com Yes!
 
 <h2>A heading 2 in HTML tags</h2>
 
 <p>It's always possible to insert some actual HTML markup, like this paragraph, inside a Markdown document.</p>
-
-Horizontal rule:
-
----
 
 ## Tables
 
@@ -83,19 +85,7 @@ Tables are part of Markdown's [Extended Syntax](https://www.markdownguide.org/ex
 | Header      | Title       |
 | Paragraph   | Text        |
 
-Also...
-
 ## Fenced Code Blocks
-
-```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-
-And with syntax highlighting (I think I need to add the prism plugin?):
 
 ```json
 {

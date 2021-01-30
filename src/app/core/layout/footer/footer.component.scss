@@ -7,10 +7,15 @@ span {
   font-weight: var(--fw-700);
 }
 
-.license {
+.license,
+.tech {
   font-size: var(--fs-300);
 }
 
 ul {
   margin-top: 0;
+}
+
+.license p {
+  margin-top: 0.5em;
 }
