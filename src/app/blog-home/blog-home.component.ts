@@ -24,9 +24,9 @@ export class BlogHomeComponent implements OnInit {
     );
 
     // debug current pages
-    this.posts$.subscribe((links) => {
-      console.log(links);
-    });
+    // this.posts$.subscribe((links) => {
+    //   console.log(links);
+    // });
   }
 
 }

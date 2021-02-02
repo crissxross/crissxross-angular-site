@@ -1,18 +1,24 @@
-<div class="container">
+<div class="center-measure">
+  <h1 class="page-title">Blog</h1>
 
-  <h1>Blog</h1>
-
-  <div class="blog-posts">
-
-    <ul role="list">
-      <li *ngFor="let post of posts$ | async">
-        <a [routerLink]="post.route">
-          <h2> {{ post.title }} </h2>
-        </a>
-        <p> {{ post.description }} </p>
-      </li>
-    </ul>
-
+  <div class="stack">
+    <div class="post flow" *ngFor="let post of posts$ | async">
+      <a [routerLink]="post.route">
+        <h2> {{ post.title }} </h2>
+      </a>
+      <p> {{ post.description }} </p>
+      <div class="meta">
+        <div class="date">
+          <time>{{post.date | date:"d MMM y"}}</time><time *ngIf="post.updated"> - updated on {{post.updated | date:"d MMM y"}}</time>
+        </div>
+        <div class="categories" *ngIf="post.categories">
+          <span *ngFor="let category of post.categories">{{category}}</span>
+        </div>
+        <div class="tags" *ngIf="post.tags">
+          # <span *ngFor="let tag of post.tags">{{tag}}</span>
+        </div>
+      </div>
+    </div>
   </div>
 
 </div>

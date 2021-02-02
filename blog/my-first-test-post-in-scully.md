@@ -1,11 +1,16 @@
 ---
-title: 'My First Test Post in Scully'
-description: 'Testing all the different elements and Markdown features that I will likely use so that I can style them with CSS.'
+title: My First Test Post in Scully
+description: Testing all the different elements and Markdown features that I will likely use so that I can style them with CSS.
 published: true
-author: 'Christine Wilks'
+author: Christine Wilks
 date: 2021-01-30
 updated:
+categories:
+  - Web Development
 tags:
+   - Scully
+   - Angular
+image:
 
 ---
 
@@ -13,8 +18,10 @@ tags:
 
 This is the first blog post I've generated myself in Scully. It's merely a test post. The main purpose of its content is to provide (almost) all the elements and features in Markdown so that I can style the generated HTML with CSS.
 
-![Image from Underbelly](/assets/img/underbelly.png)
+<figure>
+  <img src="/assets/img/underbelly.png">
 <figcaption>This is an image from Underbelly</figcaption>
+</figure>
 
 Note: I generate this post by running the the following command:
 
