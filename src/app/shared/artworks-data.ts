@@ -567,19 +567,19 @@ export const artworksData: ArtWork[] = [
     url: 'http://remixworx.com',
     title: 'R3M1XW0RX',
     // tslint:disable-next-line:max-line-length
-    blurb: 'Remixworx was a collaborative creative space for remixing visual poetry, e-poetry, playable media, animation, art, music, spoken word, texts and more. Initiated by Randy Adams (1951-2014) in 2006, it grew to number more than 500 individual creative works. I contributed about 100 Flash works.',
+    blurb: 'Remixworx was a collaborative creative space for remixing visual poetry, e-poetry, playable media, animation, art, music, spoken word, texts and more. Initiated by Randy Adams (1951-2014) in 2006, it grew to number more than 500 individual creative works. I was an active member from 2007 to 2013 and contributed more than 100 works, mainly in Flash.',
     description: [
-      `Remixworx was a collaborative creative space for remixing visual poetry, e-poetry, playable media, animation, art, music, spoken word, texts and more. Initiated by Randy Adams (1951-2014) in 2006, it grew to number more than 500 individual creative works. I contributed about 100 Flash works.`,
+      `Remixworx was a collaborative creative space for remixing visual poetry, e-poetry, playable media, animation, art, music, spoken word, texts and more. Initiated by Randy Adams (1951-2014) in 2006, it grew to number more than 500 individual creative works. I was an active member from 2007 to 2013 and contributed more than 100 works, mainly in Flash.`,
 
       `R3M1XW0RX is a tribute to the creativity, generosity and unique spirit of Randy Adams, aka runran, (1951-2014).`
     ],
     youtubeVideos: [],
     images: [''],
-    pubdate: '2006-2016',
+    pubdate: '2007-2013',
     tech: 'various media',
     tags: ['showcase', 'remixworx'],
     displayType: 'major',
-    collaborators: 'Made with the R3M1XW0RX collective.',
+    collaborators: 'In collaboration with the R3M1XW0RX collective.',
     publisher: 'R3M1XW0RX',
     moreinfo: 'R3M1XW0RX is a tribute to the creativity, generosity and unique spirit of Randy Adams, aka runran, (1951-2014).',
     accolades: [
@@ -609,7 +609,7 @@ export const artworksData: ArtWork[] = [
     // tslint:disable-next-line:max-line-length
     blurb: 'A digital installation by an international group of women artists responding to the idea of repurposing during our residency at DIG Gallery in a former Slovak tobacco factory which had employed mostly women. (Web version shown here.)',
     description: [
-      `A digital installation by an international group of women artists responding to the idea of repurposing during our residency at DIG Gallery in a former Slovak tobacco factory which had employed mostly women. (Web version shown here.)`,
+      `A digital installation by an international group of women artists responding to the idea of repurposing during our residency at DIG Gallery in a former Slovak tobacco factory which had employed mostly women. To create the animation (shown above), which was projected in the installation, I repurposed code from some of my Remixworx remixes.`,
 
       `"This multiplatform digital work references an event connected with the history of Košice and its tobacco factory from 1851 which employed mostly women workers. Some decades later, when St. Elizabeth's Cathedral was being renovated, the women workers donated a candle chandelier. The chandelier itself was repurposed twice – from the original candles, to gas lighting and with the advent of electricity, was turned upside down. In the installation, images of the chandelier from the cathedral are randomly generated and projected onto a screen in a flux of forms. Simultaneously the words connected with this story appear projected on the walls of the room, and phonetic sounds from Slovakian, Hungarian and German are generatively mixed in to create the soundscape of languages that were once spoken in the very same place by women workers" (María Mencía 2013).`,
   ],

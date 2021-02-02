@@ -9,7 +9,7 @@
       <p> {{ post.description }} </p>
       <div class="meta">
         <div class="date">
-          <time>{{post.date | date:"d MMM y"}}</time><time *ngIf="post.updated"> - updated on {{post.updated | date:"d MMM y"}}</time>
+          <time>{{post.date | date:"d MMM y"}}</time><time *ngIf="post.updated"> / updated {{post.updated | date:"d MMM y"}}</time>
         </div>
         <div class="categories" *ngIf="post.categories">
           <span *ngFor="let category of post.categories">{{category}}</span>

@@ -94,11 +94,11 @@ Tables are part of Markdown's [Extended Syntax](https://www.markdownguide.org/ex
 
 ## Fenced Code Blocks
 
-```json
+```js
 {
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
+  firstName: "Jane",
+  lastName: "Smith",
+  age: 25
 }
 ```
 
