@@ -20,6 +20,10 @@ export const artworksData: ArtWork[] = [
     publisher: 'Dreaming Methods',
     accolades: [
       {
+        name: '\'Dyscorpia\' exhibition, Enterprise Square Galleries, Edmonton, Alberta, Canada, 2019',
+        url: 'https://www.dyscorpia.com/home-2'
+      },
+      {
         name: 'The New River Journal, Spring 2014',
         url: 'http://www.cddc.vt.edu/journals/newriver/14Spring/index.html'
       },
@@ -50,7 +54,7 @@ export const artworksData: ArtWork[] = [
     youtubeVideos: [
       {
         id: 'h3WcjF8aZqM',
-        name: 'Fitting the Pattern screencast'
+        name: 'Underbelly screencast'
       }
     ],
     images: [''],
@@ -75,6 +79,14 @@ export const artworksData: ArtWork[] = [
       {
         name: 'The ELMCIP Anthology of European Electronic Literature',
         url: 'http://anthology.elmcip.net/index.html'
+      },
+      {
+        name: '\'Dyscorpia\' exhibition, Enterprise Square Galleries, Edmonton, Alberta, Canada, 2019',
+        url: 'https://www.dyscorpia.com/home-2'
+      },
+      {
+        name: '\'Underbelly: Turned to Stone\' exhibition, Index Visual Arts Festival, a fringe festival during Yorkshire Sculpture International, 2019',
+        url: 'https://indexfestival.org/listings/underbelly-turned-to-stone/'
       },
       {
         // tslint:disable-next-line:max-line-length
@@ -178,6 +190,18 @@ export const artworksData: ArtWork[] = [
       {
         name: 'The Electronic Literature Collection, Volume Two',
         url: 'http://collection.eliterature.org/2/works/wilks_fittingthepattern.html'
+      },
+      {
+        name: '\'A Toast to the Flash Generation\', live Zoom performance, hosted by Electronic Literature Lab, ELO, 2020',
+        url: 'http://dtc-wsuv.org/wp/ell/2020/12/23/tribute-to-the-flash-generation/'
+      },
+      {
+        name: '\'Dyscorpia\' exhibition, Enterprise Square Galleries, Edmonton, Alberta, Canada, 2019',
+        url: 'https://www.dyscorpia.com/home-2'
+      },
+      {
+        name: '\'Digital Textiles\', NonfictioNOW conference, Phoenix, Arizona, USA, 2018',
+        url: 'https://static1.squarespace.com/static/56c41e694c2f85372f0ad8b5/t/5bd88cb1e2c483784a737351/1540918457726/NFN+FY19+Program+Final+For+Web+updated+20181030.pdf'
       },
       {
         // tslint:disable-next-line:max-line-length
@@ -339,6 +363,10 @@ export const artworksData: ArtWork[] = [
     // tslint:disable-next-line:max-line-length
     moreinfo: '\'Out of Touch\' was commissioned by the San Francisco Museum of Modern Art for the Third Hand Plays series, curated by Brian Kim Stefans, published at SFMOMA\'s Open Space in Summer 2011. The poem randomly generates the text so it\'s different every time you view it.',
     accolades: [
+      {
+        name: 'VisoVox: Visual and Sound Poetry exhibition, Centro de Arte e Cultura, Fundação Eugénio de Almeida, Évora, Portugal, 2018',
+        url: 'https://www.fea.pt/index.php?pag=centrodearteecultura/6143-visovox-poesia-visual-e-sonora'
+      },
       {
         name: 'Third Hand Plays series published at Open Space, SFMOMA, 2011',
         url: 'http://openspace.sfmoma.org/2011/07/third-hand-plays-out-of-touch-by-christine-wilks/'
