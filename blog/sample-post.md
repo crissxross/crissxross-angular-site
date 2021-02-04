@@ -1,8 +1,8 @@
 ---
-title: 'A Sample Post'
-description: 'A post of mock content designed to test the Markdown features supported by Scully and my CSS styles.'
+title: Sample Post
+description: A sampler post of mock content designed to test the Markdown features supported by Scully and my CSS styles.
 published: true
-author: 'Christine Wilks'
+author: Christine Wilks
 date: 2021-01-30
 updated: null
 categories:
@@ -11,12 +11,11 @@ tags:
   - design
   - sample
 image: null
-
 ---
 
 # A Sample Post
 
-This is a sample post of mock content designed to test my CSS styles and most of the features of [Markdown](https://www.markdownguide.org/) that [Scully](https://scully.io/) can process and turn into HTML. The great thing about Markdown is that you can also include HTML markup, as in the following figure element and the callout paragraph below.
+This is a sampler post. It contains mock content designed to test my CSS styles and most of the features of [Markdown](https://www.markdownguide.org/) that [Scully](https://scully.io/) can process and turn into HTML. The great thing about Markdown is that you can also include HTML markup, as in the following figure element and the callout paragraph below.
 
 <figure>
   <img src="/assets/img/io-outoftouch.png">

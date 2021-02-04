@@ -30,3 +30,6 @@ export class BlogHomeComponent implements OnInit {
   }
 
 }
+
+// TODO: implement SORTING IN REVERSE chronological order - e.g. like this service:
+// https://github.com/notiz-dev/notiz/blob/d9aedb3d4122ceaea600b1eb077d78c371f0e9eb/src/app/services/scully-content.service.ts#L203
