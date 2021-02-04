@@ -1,6 +1,6 @@
 import { ScullyConfig, setPluginConfig } from '@scullyio/scully';
 
-require('scully-plugin-page-title');
+// require('scully-plugin-page-title');
 
 /**
  * configuration for the markdown plugin
@@ -13,7 +13,7 @@ export const config: ScullyConfig = {
   outDir: './dist/static',
   defaultPostRenderers: [
     'seoHrefOptimise',
-    'changeTitlePlugin',
+    // 'changeTitlePlugin',
   ],
   routes: {
     '/blog/:slug': {
