@@ -17,19 +17,15 @@ export class BlogHomeComponent implements OnInit {
   ngOnInit(): void {
     this.posts$ = this.scully.available$.pipe(
       map(routeList => {
-        return routeList.filter((route: ScullyRoute) =>
+        let posts = routeList.filter((route: ScullyRoute) =>
           route.route.startsWith(`/blog/`)
         );
+        // sort posts in reverse chronological order
+        return posts.sort((pA, pB) =>
+           new Date(pA.date) > new Date(pB.date) ? -1 : 1
+        );
       })
-    );
-
-    // debug current pages
-    // this.posts$.subscribe((links) => {
-    //   console.log(links);
-    // });
+    )
   }
 
 }
-
-// TODO: implement SORTING IN REVERSE chronological order - e.g. like this service:
-// https://github.com/notiz-dev/notiz/blob/d9aedb3d4122ceaea600b1eb077d78c371f0e9eb/src/app/services/scully-content.service.ts#L203
