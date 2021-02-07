@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "crissxross-site"
+  },
+  "targets": {
+    "crissxross-site": {
+      "hosting": {
+        "crissxross": [
+          "crissxross-site"
+        ]
+      }
+    }
   }
 }
