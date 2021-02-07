@@ -1,6 +1,7 @@
 import { ScullyConfig, setPluginConfig } from '@scullyio/scully';
+import { criticalCSS } from '@scullyio/scully-plugin-critical-css';
 
-// require('scully-plugin-page-title');
+const defaultPostRenderers = ['seoHrefOptimise', criticalCSS];
 
 /**
  * configuration for the markdown plugin
@@ -11,10 +12,7 @@ export const config: ScullyConfig = {
   projectRoot: "./src",
   projectName: "crissxross",
   outDir: './dist/static',
-  defaultPostRenderers: [
-    'seoHrefOptimise',
-    // 'changeTitlePlugin',
-  ],
+  defaultPostRenderers,
   routes: {
     '/blog/:slug': {
       type: 'contentFolder',
