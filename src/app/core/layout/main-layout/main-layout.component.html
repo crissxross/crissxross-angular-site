@@ -1,30 +1,58 @@
 <mat-sidenav-container class="sidenav-container">
+<!-- previously used: isHandset$ -->
   <mat-sidenav #drawer class="sidenav" fixedInViewport
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>menu</mat-toolbar>
+      [attr.role]="(isSmallToMedium$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isSmallToMedium$ | async) ? 'over' : 'side'"
+      [opened]="(isSmallToMedium$ | async) === false">
+    <mat-toolbar>
+      <span *ngIf="(isSmallToMedium$ | async) === true">crissxross</span>
+    </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item [routerLink]="['/home']" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{ exact: true }">
+        <mat-icon aria-label="home icon">home</mat-icon>
+      </a>
+      <a mat-list-item [routerLink]="['/elit']" routerLinkActive="router-link-active">
+        Electronic Literature
+      </a>
+      <!-- <a mat-list-item [routerLink]="['/oot']" routerLinkActive="router-link-active">
+        OOT
+      </a> -->
+      <a mat-list-item [routerLink]="['/remixworx']" routerLinkActive="router-link-active">
+        Remixworx
+      </a>
+      <a mat-list-item [routerLink]="['/movingpix']" routerLinkActive="router-link-active">
+        Moving Pix
+      </a>
+      <a mat-list-item [routerLink]="['/home/about']" routerLinkActive="router-link-active">
+        About
+      </a>
+      <a mat-list-item [routerLink]="['/blog']" routerLinkActive="router-link-active">
+        Blog
+      </a>
     </mat-nav-list>
   </mat-sidenav>
+
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar class="main-toolbar">
       <button
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
+        *ngIf="isSmallToMedium$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>crissxross</span>
     </mat-toolbar>
     <!-- Add Content Here -->
-
-    <router-outlet></router-outlet>
-
+    <div class="content-grid">
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+      <footer>
+        <cx-footer></cx-footer>
+      </footer>
+    </div>
   </mat-sidenav-content>
+
 </mat-sidenav-container>

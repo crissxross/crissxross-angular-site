@@ -12,10 +12,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 
 import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 
 @NgModule({
-  declarations: [MainLayoutComponent],
+  declarations: [MainLayoutComponent, FooterComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

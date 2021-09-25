@@ -1,0 +1,23 @@
+<main class="artwork-page flow">
+
+  <ng-container *ngIf="upsidedownChandelier">
+
+    <div class="center-wrapper">
+      <h1 class="video-page-title"> {{upsidedownChandelier.title}} </h1>
+
+      <cx-youtube-video
+        [videoId]="video && video.id"
+      ></cx-youtube-video>
+    </div>
+
+    <div class="center-measure flow">
+      <p *ngFor="let para of upsidedownChandelier.description"> {{para}} </p>
+
+      <cx-accolades-list
+        [artwork]=upsidedownChandelier
+      ></cx-accolades-list>
+    </div>
+
+  </ng-container>
+
+</main>

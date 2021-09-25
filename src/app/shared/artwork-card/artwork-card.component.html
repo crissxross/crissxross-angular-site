@@ -1,0 +1,42 @@
+<mat-card class="mat-typography">
+
+  <ng-container *ngIf="artwork">
+
+    <mat-card-title> {{artwork.title}} </mat-card-title>
+
+    <img *ngIf="artwork.displayType === 'major'"
+          mat-card-image [alt]="artwork.id"
+          src="assets/img/{{artwork.id}}.png">
+
+    <mat-card-content>
+
+      <div class="major" *ngIf="artwork.displayType === 'major'; else minor">
+        <p>{{artwork.blurb}}</p>
+        <p>{{artwork.collaborators}}</p>
+      </div>
+
+      <ng-template #minor>
+        <div class="minor">
+          <p>{{artwork.blurb}}</p>
+          <img mat-card-sm-image [alt]="artwork.id"
+            src="assets/img/{{artwork.id}}-thumb.png">
+        </div>
+      </ng-template>
+
+    </mat-card-content>
+
+    <footer>
+      <span class="specs">{{artwork.pubdate}}, {{artwork.tech}}</span>
+
+      <ng-container *ngIf="!externalLink; else external">
+        <a mat-raised-button [routerLink]="artwork.url">View</a>
+      </ng-container>
+
+      <ng-template #external>
+        <a mat-raised-button href={{artwork.url}}>View <mat-icon>launch</mat-icon> </a>
+      </ng-template>
+    </footer>
+
+  </ng-container>
+
+</mat-card>

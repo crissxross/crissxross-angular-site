@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 
+// Note: Scully depends an AppRoutingModule
+import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
-import { routes } from './app.routes';
 import { AppComponent } from './app.component';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     CoreModule,
-    RouterModule.forRoot(routes)
+    AppRoutingModule,
+    ScullyLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]

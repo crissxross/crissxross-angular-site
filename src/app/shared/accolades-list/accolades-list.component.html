@@ -1,0 +1,16 @@
+<div class="accolades">
+  <!-- <p>{{artwork.moreinfo}}</p> -->
+    <ul class="awards">
+      <li *ngFor="let award of artwork?.awards">
+        <a href="{{award.url}}">
+        {{award.name}}</a>
+      </li>
+    </ul>
+    <p><strong>{{artwork?.title}}</strong> publications/exhibitions/performances:</p>
+    <ul>
+      <li *ngFor="let accolade of artwork?.accolades">
+        <a href="{{accolade.url}}">
+        {{accolade.name}}</a>
+      </li>
+    </ul>
+</div>

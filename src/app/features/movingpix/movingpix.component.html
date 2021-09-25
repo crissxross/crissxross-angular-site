@@ -1,0 +1,16 @@
+<main class="container">
+
+  <h1 class="page-title">Archive of early 'Moving Pix' works</h1>
+  <!-- TODO: change heading and add intro -->
+  <div class="grid-auto">
+    <p class="intro">
+      Here are my first forays into creating digital art and writing for the web. Most were created in Flash. Since the Flash Player is no longer available in most browsers, I have made video screencasts of the Flash works.
+    </p>
+    <div *ngFor="let artwork of artworks" class="artwork">
+      <cx-artwork-card [artwork]="artwork" class="crissxross-light-theme"
+      ></cx-artwork-card>
+    </div>
+  </div>
+
+</main>
+

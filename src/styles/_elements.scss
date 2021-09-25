@@ -1,0 +1,66 @@
+/* For styling bare HTML elements */
+
+// ↓ added by ng add material schematic but NOT recommended now, see: https://greggod.medium.com/css-do-not-put-height-100-on-the-body-html-e36bda3551b3
+// html, body {
+//   height: 100%;
+// }
+
+// added by ng add material schematic
+// body { font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  font-family: var(--ff-sans);
+  // 1rem is browser default so don't need to set font-size unless I want a different body size.
+  // font-size: var(--fs-400);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+figcaption {
+  max-width: var(--measure);
+}
+
+a {
+  color: var(--clr-accent-base);
+  text-decoration-thickness: 0.063;
+  text-underline-offset: 0.25em;
+}
+
+a:hover,
+a:focus {
+  text-decoration-thickness: 0.125em;
+  text-underline-offset: 0.15em;
+}
+
+a:not([class]):focus {
+  outline: 1px solid currentColor;
+  outline-offset: 0.15em;
+}
+
+button:focus {
+  outline-color: var(--clr-accent-base);
+}
+
+// main {
+//   padding-bottom: var(--s1);
+// }
+
+blockquote {
+  padding-left: var(--s1);
+  border-left: 0.3em solid var(--clr-neutral-200);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid var(--clr-neutral-600);
+  padding: 0.5rem;
+  text-align: left;
+}

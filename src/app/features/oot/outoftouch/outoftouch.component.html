@@ -1,0 +1,49 @@
+<main class="artwork-page flow">
+
+  <ng-container *ngIf="outoftouch">
+
+    <div class="center-wrapper">
+      <h1 class="video-page-title"> {{outoftouch.title}} </h1>
+
+      <cx-youtube-video
+        [videoId]="selectedVideo && selectedVideo.id"
+      ></cx-youtube-video>
+
+      <div class="video-select">
+
+        <label>Select a video:</label>
+        <mat-radio-group aria-label="Select a video"
+          [(ngModel)]="selectedVideo">
+          <mat-radio-button *ngFor="let video of videos" [value]="video">
+            {{video.name}}
+          </mat-radio-button>
+        </mat-radio-group>
+
+      </div>
+
+    </div>
+
+    <div class="center-measure flow">
+      <p *ngFor="let para of outoftouch.description"> {{para}} </p>
+
+      <cx-accolades-list
+        [artwork]=outoftouch
+      ></cx-accolades-list>
+
+      <ng-container *ngIf="ioOutoftouch">
+        <h2> {{ioOutoftouch.title}} </h2>
+
+        <p *ngFor="let para of ioOutoftouch.description"> {{para}} </p>
+
+      <cx-accolades-list
+        [artwork]=ioOutoftouch
+      ></cx-accolades-list>
+
+      <p class="marg-bottom">'Out Of Hand' references the disclosures of <a href="https://en.wikipedia.org/wiki/Edward_Snowden">Edward Snowden</a> that came to light in 2013.</p>
+
+      </ng-container>
+    </div>
+
+  </ng-container>
+
+</main>
