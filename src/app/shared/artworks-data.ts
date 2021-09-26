@@ -2,6 +2,32 @@ import { ArtWork } from '../models/artwork.model';
 
 export const artworksData: ArtWork[] = [
   {
+    id: 'writing-new-body-worlds',
+    url: '/projects/writing-new-body-worlds',
+    title: 'Writing New Body Worlds',
+    blurb: 'blurb... about creative work',
+    description: [
+      `Description of the creative work in progress... to come...`
+    ],
+    pubdate: 'work in progress',
+    tech: 'web app',
+    tags: ['projects', 'work-in-progress', 'showcase'],
+    displayType: 'major',
+  },
+  {
+    id: 'stitched-up',
+    url: '/projects/stitched-up',
+    title: 'Stitched Up',
+    blurb: 'blurb... about creative work',
+    description: [
+      `Description of the creative work in progress... to come...`
+    ],
+    pubdate: 'work in progress',
+    tech: 'web app',
+    tags: ['projects', 'work-in-progress', 'showcase'],
+    displayType: 'major',
+  },
+  {
     id: 'inkubus',
     url: 'https://dreamingmethods.com/portfolio/inkubus/',
     title: 'Inkubus',

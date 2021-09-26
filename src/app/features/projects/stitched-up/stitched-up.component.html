@@ -1,0 +1,19 @@
+<main class="artwork-page flow">
+
+  <ng-container *ngIf="stitchedUp">
+
+    <div class="center-wrapper">
+      <h1 class="page-title"> {{stitchedUp.title}} </h1>
+      <!-- TODO: VIDEO screencast to come -->
+    </div>
+    <!-- TODO... -->
+  <cx-under-construction></cx-under-construction>
+
+    <div class="center-measure flow">
+      <p *ngFor="let para of stitchedUp.description"> {{para}} </p>
+
+    </div>
+
+  </ng-container>
+
+</main>
