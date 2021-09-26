@@ -5,8 +5,18 @@ import { artworksData } from '../../../shared/artworks-data';
 
 @Component({
   selector: 'cx-showcase',
-  templateUrl: './showcase.component.html',
-  styleUrls: ['./showcase.component.scss']
+  template: `
+    <main class="container">
+      <h1 class="page-title">Creative Works</h1>
+      <div class="grid-auto">
+        <div *ngFor="let artwork of artworks" class="artwork">
+          <cx-artwork-card [artwork]="artwork" class="crissxross-light-theme"
+          ></cx-artwork-card>
+        </div>
+      </div>
+    </main>
+  `,
+  styles: [],
 })
 export class ShowcaseComponent implements OnInit {
 

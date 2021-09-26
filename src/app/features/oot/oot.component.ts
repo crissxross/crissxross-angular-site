@@ -6,7 +6,7 @@ import { artworksData } from '../../shared/artworks-data';
 @Component({
   selector: 'cx-oot',
   templateUrl: './oot.component.html',
-  styleUrls: ['./oot.component.scss']
+  styles: [],
 })
 export class OotComponent implements OnInit {
 

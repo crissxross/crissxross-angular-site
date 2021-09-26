@@ -2,12 +2,12 @@ export interface ArtWork {
   id: string;
   url: string;
   title: string;
-  blurb: string;
+  blurb?: string;
   description?: string[];
   youtubeVideos?: Video[];
   images?: string[];
-  pubdate: string;
-  tech: string;
+  pubdate?: string;
+  tech?: string;
   tags?: string[];
   displayType?: 'minor' | 'major';
   collaborators?: string;

@@ -3,7 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'cx-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  styles: [`
+    main { padding-bottom: var(--s7); }
+  `]
 })
 export class AboutComponent implements OnInit {
 

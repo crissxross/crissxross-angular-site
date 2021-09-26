@@ -6,7 +6,7 @@ import { artworksData } from '../../shared/artworks-data';
 @Component({
   selector: 'cx-remixworx',
   templateUrl: './remixworx.component.html',
-  styleUrls: ['./remixworx.component.scss']
+  styles: [],
 })
 export class RemixworxComponent implements OnInit {
 
