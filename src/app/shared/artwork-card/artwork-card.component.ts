@@ -13,12 +13,17 @@ export class ArtworkCardComponent implements OnInit {
   // for more info, see https://fluin.io/blog/property-has-no-initializer-and-is-not-definitely-assigned
   @Input() artwork?: ArtWork;
   externalLink = false;
+  buttonText = 'View';
 
   constructor() { }
 
   ngOnInit(): void {
     if(this.artwork?.url.startsWith('http')) {
       this.externalLink = true;
+    }
+
+    if(this.artwork?.tags?.includes('work-in-progress')) {
+      this.buttonText = 'Read more';
     }
   }
 

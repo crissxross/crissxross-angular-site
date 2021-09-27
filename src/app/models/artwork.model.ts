@@ -9,7 +9,7 @@ export interface ArtWork {
   pubdate?: string;
   tech?: string;
   tags?: string[];
-  displayType?: 'minor' | 'major';
+  displayType?: 'minor' | 'major' | 'wip';
   collaborators?: string;
   publisher?: string;
   moreinfo?: string;
