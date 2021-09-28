@@ -7,6 +7,10 @@ import { artworksData } from '../../../shared/artworks-data';
   selector: 'cx-writing-new-body-worlds',
   templateUrl: './writing-new-body-worlds.component.html',
   styles: [
+    `.funding {
+      font-weight: var(--fw-200);
+      font-style: italic;
+    }`
   ]
 })
 export class WritingNewBodyWorldsComponent implements OnInit {

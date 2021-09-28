@@ -5,7 +5,7 @@ export const artworksData: ArtWork[] = [
     id: 'writing-new-body-worlds',
     url: '/projects/writing-new-body-worlds',
     title: 'Writing New Body Worlds',
-    blurb: `An interactive digital fiction for body image bibliotherapy. Part of an international research-creation project and with the participation of a group of young women and non-binary individuals from diverse backgrounds. We aim to address body dissatisfaction, which is so prevalent now, it has become the norm.`,
+    blurb: `An interactive digital fiction for body image bibliotherapy. This is an international research-creation project with the participation of a group of young women and non-binary individuals from diverse backgrounds. We aim to address body dissatisfaction, which is so prevalent now, it has become the norm.`,
     description: [
       `Body dissatisfaction is so common in the western world that it has become the norm, especially among women and girls. 'Writing New Body Worlds' is a transdisciplinary research-creation project that aims to address these issues by developing an interactive digital fiction for body image bibliotherapy. I've been creating it with the critical co-design participation of a group of young women and non-binary individuals (aged 18-25) from diverse backgrounds, who are representative of its intended audience.`
     ],
@@ -870,7 +870,7 @@ export const artworksData: ArtWork[] = [
     // id: 'sitting-pretty',
     // title: 'Sitting Pretty',
     id: 'beforewebegin',
-    title: 'Before We Begin',
+    title: 'Sitting Pretty (aka Before We Begin)',
     url: 'http://crissxross.net/MovingPix/BeforeWeBegin/index.html',
     // tslint:disable-next-line:max-line-length
     blurb: 'This interactive and whimisical \'Hypertext\' was my first creative work for the web, combining text, image and sound.',
