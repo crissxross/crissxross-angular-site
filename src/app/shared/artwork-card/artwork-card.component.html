@@ -29,11 +29,11 @@
       <span class="specs">{{artwork.pubdate}}, {{artwork.tech}}</span>
 
       <ng-container *ngIf="!externalLink; else external">
-        <a mat-raised-button [routerLink]="artwork.url">View</a>
+        <a mat-raised-button [routerLink]="artwork.url">{{buttonText}}</a>
       </ng-container>
 
       <ng-template #external>
-        <a mat-raised-button href={{artwork.url}}>View <mat-icon>launch</mat-icon> </a>
+        <a mat-raised-button href={{artwork.url}}>{{buttonText}} <mat-icon>launch</mat-icon> </a>
       </ng-template>
     </footer>
 

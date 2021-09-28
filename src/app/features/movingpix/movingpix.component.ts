@@ -6,7 +6,7 @@ import { artworksData } from '../../shared/artworks-data';
 @Component({
   selector: 'cx-movingpix',
   templateUrl: './movingpix.component.html',
-  styleUrls: ['./movingpix.component.scss']
+  styles: [],
 })
 export class MovingpixComponent implements OnInit {
 

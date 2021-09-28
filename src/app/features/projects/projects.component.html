@@ -1,0 +1,15 @@
+<main class="container">
+
+  <h1 class="page-title">Creative Projects</h1>
+
+  <div class="grid-auto">
+    <p class="intro">
+      Digital fiction, interactive storytelling, video-games... Here are projects that I'm currently working on and other creations not made in Flash (see my <a [routerLink]="['/elit']">Flash E-Lit Archive</a> for those).
+    </p>
+    <div *ngFor="let artwork of artworks" class="artwork">
+      <cx-artwork-card [artwork]="artwork" class="crissxross-light-theme"
+      ></cx-artwork-card>
+    </div>
+  </div>
+
+</main>

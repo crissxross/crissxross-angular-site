@@ -2,8 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `
+    <cx-main-layout></cx-main-layout>
+  `,
+  styles: []
 })
 export class AppComponent {
   title = 'crissxross';

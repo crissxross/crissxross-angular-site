@@ -6,7 +6,7 @@ import { artworksData } from '../../shared/artworks-data';
 @Component({
   selector: 'cx-elit',
   templateUrl: './elit.component.html',
-  styleUrls: ['./elit.component.scss']
+  styles: [],
 })
 export class ElitComponent implements OnInit {
 

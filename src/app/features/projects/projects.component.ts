@@ -4,11 +4,12 @@ import { ArtWork } from '../../models/artwork.model';
 import { artworksData } from '../../shared/artworks-data';
 
 @Component({
-  selector: 'cx-oot',
-  templateUrl: './oot.component.html',
-  styles: [],
+  selector: 'cx-projects',
+  templateUrl: './projects.component.html',
+  styles: [
+  ]
 })
-export class OotComponent implements OnInit {
+export class ProjectsComponent implements OnInit {
 
   allArtworks: ArtWork[] = artworksData;
   artworks: ArtWork[] = [];
@@ -17,7 +18,7 @@ export class OotComponent implements OnInit {
 
   ngOnInit(): void {
     this.artworks = this.allArtworks.filter(
-      artwork => artwork.tags?.includes('oot')
+      artwork => artwork.tags?.includes('projects')
     )
   }
 
