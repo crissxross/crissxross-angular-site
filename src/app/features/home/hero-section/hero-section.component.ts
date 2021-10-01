@@ -2,10 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'cx-hero-section',
-<<<<<<< HEAD
-  templateUrl: './hero-section.component.html',
-  styleUrls: ['./hero-section.component.scss']
-=======
   template: `
     <header class="container hero-section">
       <h1>Christine Wilks</h1>
@@ -13,7 +9,6 @@ import { Component, OnInit } from '@angular/core';
     </header>
   `,
   styles: [],
->>>>>>> development
 })
 export class HeroSectionComponent implements OnInit {
 

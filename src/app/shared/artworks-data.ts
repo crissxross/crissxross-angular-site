@@ -5,7 +5,7 @@ export const artworksData: ArtWork[] = [
     id: 'writing-new-body-worlds',
     url: '/projects/writing-new-body-worlds',
     title: 'Writing New Body Worlds',
-    blurb: `An interactive digital fiction for body image bibliotherapy. This is an international research-creation project with the participation of a group of young women and non-binary individuals from diverse backgrounds. We aim to address body dissatisfaction, which is so prevalent now, it has become the norm.`,
+    blurb: `An interactive digital fiction for body image bibliotherapy. This is an international research-creation project with the participation of a group of young women and non-binary individuals from diverse backgrounds. We aim to address body dissatisfaction, which is so prevalent it has become the norm.`,
     description: [
       `Body dissatisfaction is so common in the western world that it has become the norm, especially among women and girls. 'Writing New Body Worlds' is a transdisciplinary research-creation project that aims to address these issues by developing an interactive digital fiction for body image bibliotherapy. I've been creating it with the critical co-design participation of a group of young women and non-binary individuals (aged 18-25) from diverse backgrounds, who are representative of its intended audience.`
     ],
@@ -18,9 +18,9 @@ export const artworksData: ArtWork[] = [
     id: 'stitched-up',
     url: '/projects/stitched-up',
     title: 'Stitched Up',
-    blurb: `An interactive psychological thriller, featuring a 'Dude' rather than a 'Damsel' in distress. Sarah's husband, Joel, has disappeared but she refuses to believe he has left her. Alone and desperate, she goes in search for him. Meanwhile, Joel is held prisoner in a dark place, subjected to the twisted interrogations of his female captor.`,
+    blurb: `An interactive psychological thriller, featuring a 'Dude' rather than a 'Damsel' in distress. Sarah's husband, Joel, has disappeared but she refuses to believe he's left her. Alone and desperate, she goes in search of him. Meanwhile, Joel is held prisoner in a dark place, subjected to the twisted interrogations of his female captor.`,
     description: [
-      `An interactive psychological thriller, featuring a 'Dude' rather than a 'Damsel' in distress. Sarah's husband, Joel, has disappeared but she refuses to believe he has left her. Alone and desperate, she goes in search for him and meets Hannah who befriends her. As the mystery deepens, she's relieved to find someone to confide in. Meanwhile, Joel is held prisoner in a dark place, subjected to the twisted interrogations of his female captor. Can he convince her to release him? Will Sarah find him before it's too late? With their faith in one another sorely put to the test, their lives hang in the balance.`,
+      `An interactive psychological thriller, featuring a 'Dude' rather than a 'Damsel' in distress. Sarah's husband, Joel, has disappeared but she refuses to believe he has left her. Alone and desperate, she goes in search of him and meets Hannah who befriends her. As the mystery deepens, she's relieved to find someone to confide in. Meanwhile, Joel is held prisoner in a dark place, subjected to the twisted interrogations of his female captor. Can he convince her to release him? Will Sarah find him before it's too late? With their faith in one another sorely put to the test, their lives hang in the balance.`,
 
       `The reader-player experiences the interactive narrative through the first-person perspectives of both Sarah and Joel, and has to make decisions on their behalf. The choices they make dramatically affect the outcome of the story.`
     ],

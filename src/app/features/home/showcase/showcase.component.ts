@@ -5,10 +5,6 @@ import { artworksData } from '../../../shared/artworks-data';
 
 @Component({
   selector: 'cx-showcase',
-<<<<<<< HEAD
-  templateUrl: './showcase.component.html',
-  styleUrls: ['./showcase.component.scss']
-=======
   template: `
     <main class="container">
       <h1 class="page-title">Creative Works</h1>
@@ -21,7 +17,6 @@ import { artworksData } from '../../../shared/artworks-data';
     </main>
   `,
   styles: [],
->>>>>>> development
 })
 export class ShowcaseComponent implements OnInit {
 
