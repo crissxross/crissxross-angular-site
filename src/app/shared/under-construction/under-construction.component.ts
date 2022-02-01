@@ -4,11 +4,12 @@ import { Component, OnInit } from '@angular/core';
   selector: 'cx-under-construction',
   template: `
     <div class="center-wrapper pad-block">
-      <h2><mat-icon>build</mat-icon> Please note: this page is under construction <mat-icon>build</mat-icon></h2>
+      <h2><mat-icon>build</mat-icon> Please note: this page is in development <mat-icon>build</mat-icon></h2>
     </div>
   `,
   styles: [`
     h2 {
+      font-size: 1.2em;
       font-weight: var(--fw-200);
       color: var(--clr-red-400);
     }
