@@ -1,0 +1,147 @@
+// NOTES RE. styles/_color-variables.scss
+
+// See red & amber in MATERIAL PALETTE tool:
+// https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=b71c1c&secondary.color=ffc107
+
+// Theme generated from MATERIAL PALETTE COLOR TOOL👆 in HEX colors
+/*
+  // from mat Red palette
+  --clr-primary-base: #b71c1c;
+  --clr-primary-light: #f05545;
+  --clr-primary-dark: #7f0000;
+  // from mat Amber palette
+  --clr-secondary-base: #ffc107;
+  --clr-secondary-light: #fff350;
+  --clr-secondary-dark: #c79100;
+*/
+
+/*
+// crissxross MATERIAL THEME COLOURS
+// see https://material.io/design/color/the-color-system.html#tools-for-picking-colors
+// crissxross-primary
+$mat-grey: (
+  50: #fafafa,
+  100: #f5f5f5,
+  200: #eeeeee,
+  300: #e0e0e0,
+  400: #bdbdbd,
+  500: #9e9e9e,
+  600: #757575,
+  700: #616161,
+  800: #424242,
+  900: #212121,
+  A100: #ffffff,
+  A200: #eeeeee,
+  A400: #bdbdbd,
+  A700: #616161,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $dark-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $light-primary-text,
+  )
+);
+// crissxross-accent
+$mat-amber: (
+  50: #fff8e1,
+  100: #ffecb3,
+  200: #ffe082,
+  300: #ffd54f,
+  400: #ffca28,
+  500: #ffc107,
+  600: #ffb300,
+  700: #ffa000,
+  800: #ff8f00,
+  900: #ff6f00,
+  A100: #ffe57f,
+  A200: #ffd740,
+  A400: #ffc400,
+  A700: #ffab00,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $dark-primary-text,
+    600: $dark-primary-text,
+    700: $dark-primary-text,
+    800: $dark-primary-text,
+    900: $dark-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $dark-primary-text,
+  )
+);
+// crissxross-warn
+$mat-red: (
+  50: #ffebee,
+  100: #ffcdd2,
+  200: #ef9a9a,
+  300: #e57373,
+  400: #ef5350,
+  500: #f44336,
+  600: #e53935,
+  700: #d32f2f,
+  800: #c62828,
+  900: #b71c1c,
+  A100: #ff8a80,
+  A200: #ff5252,
+  A400: #ff1744,
+  A700: #d50000,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+// MATERIAL TEXT COLOURS
+$dark-primary-text: rgba(black, 0.87);
+$dark-secondary-text: rgba(black, 0.54);
+$dark-disabled-text: rgba(black, 0.38);
+$dark-dividers: rgba(black, 0.12);
+$dark-focused: rgba(black, 0.12);
+$light-primary-text: white;
+$light-secondary-text: rgba(white, 0.7);
+$light-disabled-text: rgba(white, 0.5);
+$light-dividers: rgba(white, 0.12);
+$light-focused: rgba(white, 0.12);
+
+*/
+
+/*
+  // from Smart Swatch
+  --red-50: hsl(0, 100%, 95%);
+  --red-100: hsl(0, 86%, 86%);
+  --red-200: hsl(0, 76%, 75%);
+  --red-300: hsl(0, 74%, 65%);
+  --red-400: hsl(0, 74%, 55%);
+  --red-500: hsl(0, 74%, 45%);
+  --red-600: hsl(360, 75%, 35%);
+  --red-700: hsl(359, 78%, 25%);
+  --red-800: hsl(359, 84%, 15%);
+  --red-900: hsl(0, 100%, 6%);
+*/
