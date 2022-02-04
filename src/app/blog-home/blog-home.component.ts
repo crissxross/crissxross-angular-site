@@ -22,7 +22,7 @@ export class BlogHomeComponent implements OnInit {
         );
         // sort posts in reverse chronological order
         return posts.sort((pA, pB) =>
-           new Date(pA.date) > new Date(pB.date) ? -1 : 1
+           new Date(pA['date']) > new Date(pB['date']) ? -1 : 1
         );
       })
     )

@@ -6,16 +6,16 @@
       <a [routerLink]="post.route">
         <h2> {{ post.title }} </h2>
       </a>
-      <p> {{ post.description }} </p>
+      <p> {{ post['description'] }} </p>
       <div class="meta">
         <div class="date">
-          <time>{{post.date | date:"d MMM y"}}</time><time *ngIf="post.updated"> / updated {{post.updated | date:"d MMM y"}}</time>
+          <time>{{post['date'] | date:"d MMM y"}}</time><time *ngIf="post['updated']"> / updated {{post['updated'] | date:"d MMM y"}}</time>
         </div>
-        <div class="categories" *ngIf="post.categories">
-          <span *ngFor="let category of post.categories">{{category}}</span>
+        <div class="categories" *ngIf="post['categories']">
+          <span *ngFor="let category of post['categories']">{{category}}</span>
         </div>
-        <div class="tags" *ngIf="post.tags">
-          # <span *ngFor="let tag of post.tags">{{tag}}</span>
+        <div class="tags" *ngIf="post['tags']">
+          # <span *ngFor="let tag of post['tags']">{{tag}}</span>
         </div>
       </div>
     </div>
