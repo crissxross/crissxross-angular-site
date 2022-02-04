@@ -1,4 +1,5 @@
 // utilities are loaded last and should be able to override previous rules therefore it's ok to important! where necessary
+@use 'abstracts' as *;
 
 .marg-top {
   margin-top: var(--space, var(--s0));

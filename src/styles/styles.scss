@@ -1,20 +1,71 @@
-@import "variables";
-@import "color-variables";
-@import "reset";
-@import "crissxross-mat-theme";
-@import "elements";
-@import "layouts+objects";
-
-/* include CSS for prism toolbar */
-@import '~prismjs/plugins/toolbar/prism-toolbar.css';
-/* check node_modules/prismjs/themes/ for the available themes */
-@import '~prismjs/themes/prism-tomorrow';
-
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use "@angular/material" as mat;
+// Plus imports for other components in your app.
+@use "reset";
+@use "abstracts" as *;
+@use "elements";
+@use "layouts";
+@use "objects";
 // Always import utilities last
-@import "utilities";
+@use "utilities";
 
+// Include the common styles for Angular Material. We include this here so that
+// you only have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+@include mat.strong-focus-indicators();
 
+// Define the palettes for your theme using the Material Design palettes
+// available in palette.scss (imported above). For each palette, you can
+// optionally specify a default, lighter, and darker hue.
+// Available color palettes: https://material.io/design/color/
+$crissxross-primary: mat.define-palette(mat.$gray-palette);
+$crissxross-accent: mat.define-palette(mat.$amber-palette, A200, A100, A400);
+// The warn palette is optional (defaults to red).
+$crissxross-warn: mat.define-palette(mat.$red-palette);
 
-/* You can add global styles to this file, and also import other style files */
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
 
-// TODO: Change SCSS “@import” to “@use” - e.g. see Kevin Powell's video - https://youtu.be/CR-a8upNjJ0
+// define dark theme
+$crissxross-dark-theme: mat.define-dark-theme((
+  color: (
+    primary: $crissxross-primary,
+    accent: $crissxross-accent,
+    warn: $crissxross-warn,
+  )
+));
+
+// define light theme
+$crissxross-light-theme: mat.define-light-theme((
+  color: (
+    primary: $crissxross-primary,
+    accent: $crissxross-accent,
+    warn: $crissxross-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each
+// component that you are using.
+
+// Apply the dark theme by default
+@include mat.core-theme($crissxross-dark-theme);
+@include mat.button-theme($crissxross-dark-theme);
+@include mat.card-theme($crissxross-dark-theme);
+@include mat.icon-theme($crissxross-dark-theme);
+@include mat.radio-theme($crissxross-dark-theme);
+@include mat.list-theme($crissxross-dark-theme);
+@include mat.sidenav-theme($crissxross-dark-theme);
+@include mat.toolbar-theme($crissxross-dark-theme);
+@include mat.strong-focus-indicators-theme($crissxross-dark-theme);
+
+// Apply the light theme only when the `.my-light-theme` CSS class is applied
+// to an ancestor element of the components (such as `body`).
+.crissxross-light-theme {
+  @include mat.core-color($crissxross-light-theme);
+  @include mat.button-color($crissxross-light-theme);
+  @include mat.card-color($crissxross-light-theme);
+}
+

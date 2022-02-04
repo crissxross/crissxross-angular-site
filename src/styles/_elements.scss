@@ -1,4 +1,5 @@
 /* For styling bare HTML elements */
+@use 'abstracts' as *;
 
 // ↓ added by ng add material schematic but NOT recommended now, see: https://greggod.medium.com/css-do-not-put-height-100-on-the-body-html-e36bda3551b3
 // html, body {
