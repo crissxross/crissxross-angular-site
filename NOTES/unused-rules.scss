@@ -1,0 +1,25 @@
+// UNUSED RULES REMOVED FROM APP STYLES
+
+/* LAYOUT PRIMITIVES based on Every Layout https://every-layout.dev/layouts/ - I've adapted the naming conventions to make things clearer for my purposes */
+
+/* LAYOUT PRIMITIVE COMPONENTS - intrinsically styled */
+
+// 👇 Not currently using .box so removed from _layouts.scss
+
+.box {
+  padding: var(--s0);
+  border: 1px #000 solid;
+  --color-light: #fff;
+  --color-dark: #000;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.box * {
+  color: inherit;
+}
+
+.box.invert {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}

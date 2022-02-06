@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
       <h2>digital writer, artist, developer & practice-based researcher... @crissxross</h2>
     </header>
   `,
-  styles: [],
+  styleUrls: ['./hero-section.component.scss'],
 })
 export class HeroSectionComponent implements OnInit {
 

@@ -2,8 +2,8 @@
 
   <header>
     <div class="post-label" *ngIf="currentPost$ | async as currentPost">
-      <div class="categories" *ngIf="currentPost.categories">
-        <span *ngFor="let category of currentPost.categories">{{category}}</span>
+      <div class="categories" *ngIf="currentPost['categories']">
+        <span *ngFor="let category of currentPost['categories']">{{category}}</span>
       </div>
     </div>
   </header>
@@ -16,10 +16,10 @@
 
       <ng-container *ngIf="currentPost$ | async as currentPost">
         <div class="date">
-          <time>{{currentPost.date | date:"d MMM y"}}</time><time *ngIf="currentPost.updated"> - updated on {{currentPost.updated | date:"d MMM y"}}</time>
+          <time>{{currentPost['date'] | date:"d MMM y"}}</time><time *ngIf="currentPost['updated']"> - updated on {{currentPost['updated'] | date:"d MMM y"}}</time>
         </div>
-        <div class="tags" *ngIf="currentPost.tags">
-          <b>Tags:</b> <span *ngFor="let tag of currentPost.tags">{{tag}}</span>
+        <div class="tags" *ngIf="currentPost['tags']">
+          <b>Tags:</b> <span *ngFor="let tag of currentPost['tags']">{{tag}}</span>
         </div>
       </ng-container>
     </div>

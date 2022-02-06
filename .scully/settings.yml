@@ -1,2 +1,11 @@
 identifier: k5k5g4qb7132j9sc
 allowErrorCollect: true
+appPort: 1864
+staticPort: 1668
+reloadPort: 2667
+hostName: localhost
+projectName: crissxross
+homeFolder: /Users/christine/GitHub/crissxross
+distFolder: dist/crissxross
+outDir: /Users/christine/GitHub/crissxross/dist/static
+handle404: ''

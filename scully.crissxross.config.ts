@@ -1,5 +1,7 @@
 import { ScullyConfig, setPluginConfig } from '@scullyio/scully';
 import { criticalCSS } from '@scullyio/scully-plugin-critical-css';
+// A Deprication Notice from npx scully advised adding this Puppeteer import here
+import '@scullyio/scully-plugin-puppeteer';
 
 const defaultPostRenderers = ['seoHrefOptimise', criticalCSS];
 

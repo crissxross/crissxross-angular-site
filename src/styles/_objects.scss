@@ -1,0 +1,43 @@
+/* Class-based selectors for objects */
+@use 'abstracts' as *;
+
+/*********** OBJECTS or components ***********/
+
+.page-title,
+.video-page-title {
+  padding-top: var(--s0);
+  padding-bottom: var(--s0);
+}
+
+// used with .center-wrapper
+.video-page-title {
+  padding-left: var(--s0);
+  padding-right: var(--s0);
+}
+
+.container > .page-title,
+.container > .video-page-title {
+  padding-top: 0;
+}
+
+.video-select {
+  padding-left: var(--s0);
+  padding-right: var(--s0);
+}
+
+@media (min-width: 1160px) {
+  .video-page-title,
+  .video-select {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.intro {
+  padding-top: var(--s5);
+  // outline: 1px solid white;
+}
+
+.artwork-page {
+  padding-bottom: var(--s5);
+}
