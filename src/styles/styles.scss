@@ -59,6 +59,7 @@ $crissxross-light-theme: mat.define-light-theme((
 @include mat.list-theme($crissxross-dark-theme);
 @include mat.sidenav-theme($crissxross-dark-theme);
 @include mat.toolbar-theme($crissxross-dark-theme);
+@include mat.dialog-theme($crissxross-dark-theme);
 @include mat.strong-focus-indicators-theme($crissxross-dark-theme);
 
 // Apply the light theme only when the `.my-light-theme` CSS class is applied
@@ -67,5 +68,6 @@ $crissxross-light-theme: mat.define-light-theme((
   @include mat.core-color($crissxross-light-theme);
   @include mat.button-color($crissxross-light-theme);
   @include mat.card-color($crissxross-light-theme);
+  @include mat.dialog-color($crissxross-light-theme);
 }
 

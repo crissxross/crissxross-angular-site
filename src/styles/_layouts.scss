@@ -46,27 +46,6 @@
 // @supports because a few mobile browsers don't yet support min()
 // See https://every-layout.dev/layouts/grid/#the-solution
 
-/* LAYOUT PRIMITIVE COMPONENTS - intrinsically styled */
-// TODO: check these 👇
-
-.box {
-  padding: var(--s0);
-  border: 1px #000 solid;
-  --color-light: #fff;
-  --color-dark: #000;
-  color: var(--color-dark);
-  background-color: var(--color-light);
-}
-
-.box * {
-  color: inherit;
-}
-
-.box.invert {
-  color: var(--color-light);
-  background-color: var(--color-dark);
-}
-
 /*********** LAYOUT UTILITIES ***********/
 
 // similar to stack layout primitive but for normal flow

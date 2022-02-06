@@ -38,24 +38,6 @@
   // outline: 1px solid white;
 }
 
-.hero-section {
-  color: var(--clr-amber-700);
-  h1 {
-    font-size: var(--fs-900);
-    font-weight: var(--fw-400);
-  }
-  h2 {
-    font-size: var(--fs-600);
-    font-weight: var(--fw-300);
-  }
-}
-
-@media (min-width: 40em) {
-  .hero-section h1 {
-      font-weight: var(--fw-300);
-    }
-}
-
 .artwork-page {
   padding-bottom: var(--s5);
 }
